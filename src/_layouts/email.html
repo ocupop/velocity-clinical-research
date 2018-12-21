@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Language" content="en_US" />
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include socialshare.html %}
+
+  <!-- Adding feed.xml: https://github.com/jekyll/jekyll-feed -->
+  {% feed_meta %}
+
+  <!-- Fav and Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+
+  
+  <!-- Analytics -->
+  {% include analytics.html %}
+
+<script>
+  function selectText(containerid) {
+      if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+      } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().addRange(range);
+      }
+    }
+</script>
+</head>
+
+<body class="{{ page.layout }}">
+  <main id="page-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+
+</html>
