@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-cloudcannon-template",
+  "name": "velocity-clinical",
   "version": "0.3.0",
-  "description": "Project description...",
+  "description": "Velocity Clinical Research",
   "private": true,
   "repository": {
     "type": "git",

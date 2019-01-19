@@ -1,16 +1,16 @@
 // https://www.npmjs.com/package/webfontloader
-import WebFont from 'webfontloader';
+import WebFont from "webfontloader";
 
 WebFont.load({
-  google: {
-    families: ['Open Sans']
-  },
+  // google: {
+  //   families: ['Open Sans']
+  // },
   // typekit: { id: '' },
   loading: function() {
-    window.console.log('LOADING FONTS');
+    window.console.log("LOADING FONTS");
   },
   active: function() {
-    window.console.log('ACTIVE FONTS');
+    window.console.log("ACTIVE FONTS");
   },
   inactive: function() {},
   fontloading: function(familyName, fvd) {},
