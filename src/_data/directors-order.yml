@@ -1,4 +1,6 @@
 - name: Executive Directors
-  directors: 
+  directors:
+    - gregory-m-gottschlich
 - name: Medical Directors
   directors:
+    - firstname-lastname
