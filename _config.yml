@@ -18,18 +18,10 @@ analytics_code:
 
 # Collections
 collections:
-  examples:
+  directors:
     output: true
-    layout: default
-    permalink: /examples/:path/
-
-# defaults:
-#   - 
-#     scope:
-#       type: 'examples'
-#     values:
-#       layout: default
-#       variable_name: value
+    layout: director
+    permalink: /directors/:path/
 
 # Build settings
 safe: false
