@@ -73,7 +73,7 @@ title: Home
 </section>
 <section id="directors">
   <div class="container">
-    {% for object in site.data.directors-order %}
+    {% for object in site.data.team-order %}
     <div class="row">
       <div class="col-12">
         <div class="content">
@@ -82,13 +82,13 @@ title: Home
       </div>
     </div>
     <div class="row justify-content-center">
-      {% for item in object.directors %}
-        {% assign director = site.directors | where: "slug", item | first %}
+      {% for item in object.team %}
+        {% assign member = site.team | where: "slug", item | first %}
         <div class="col-md-6 col-lg-3">
           <div class="content">
             <a href="{{ director.url }}">
-              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ director.image | default: 'https://via.placeholder.com/500x500'}})"></div>
-              <p class="mt-3 text-center text-dark">{{ director.title }} {{ director.designation }}</p>
+              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image | default: 'https://via.placeholder.com/500x500'}})"></div>
+              <p class="mt-3 text-center text-dark">{% if member.name %}{{ member.name }}{% else %}{{ member.title }}{% endif %}</p>
             </a>
           </div>
         </div>

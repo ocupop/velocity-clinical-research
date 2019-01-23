@@ -3,13 +3,29 @@ layout: email
 title: Email Signatures
 ---
 
-<div style="width:350px; box-sizing:border-box; padding:10px 0; margin:0; display:block;" id="cardcopy">
-  <table width="100%" height="100%" cellpadding="0" cellspacing="0">
-    <tr align="left" valign="center">
-      <td align="left" valign="center" width="150"><img src="/assets/img/velocity.png" width="150" height="64"></td>
-      <td align="left" valign="center"><span style=" display:block; font-family:Arial, Helvetica, sans-serif; font-size: 13px; padding:0; margin:0; line-height:13px; color:#294199;">Blandy Fisher</span><span style=" display:block; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:0; margin:0; margin-bottom:6px; line-height:13px; color:#294199;">Manager, Site Support</span><a href="tel:919.599.8478" style="font-family:Arial, Helvetica, sans-serif; color:#35bed5; display:block;  font-size:11px; letter-spacing: 0.1em; padding:0; margin:0; line-height:11px; text-decoration:none;">919.599.8478</a><a href="https://velocityclinical.com" style="font-family:Arial, Helvetica, sans-serif; color:#35bed5; display:block; padding:0; margin:0; font-size:11px; line-height:11px; letter-spacing: 0.1em; text-decoration:none;">velocityclinical.com</a></td>
-    </tr>
-  </table>
-</div>
-
-<button onclick="selectText('cardcopy')">Select signature</button>
+{% for member in site.team %}
+  <div style="width:350px; box-sizing:border-box; padding:10px 0; margin:0; display:block;" id="cardcopy-{{ forloop.index }}">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+      <tr align="left" valign="center">
+        <td align="left" valign="center" width="150"><img src="/assets/img/velocity.png" width="150" height="64"></td>
+        <td align="left" valign="center">
+          {% if member.name %}
+            <span style=" display:block; font-family:Arial, Helvetica, sans-serif; font-size: 13px; padding:0; margin:0; {% unless member.role %}margin-bottom: 6px;{% endunless %} line-height:13px; color:#294199;">{{ member.name }}</span>
+          {% else %}
+            <span style=" display:block; font-family:Arial, Helvetica, sans-serif; font-size: 13px; padding:0; margin:0; line-height:13px; color:#294199;">{{ member.title }}</span>
+          {% endif %}
+          {% if member.role %}
+            <span style=" display:block; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:0; margin:0; margin-bottom:6px; line-height:13px; color:#294199;">{{ member.role }}</span>
+          {% endif %}
+          {% if member.phone %}
+            <a href="tel:{{ member.phone }}" style="font-family:Arial, Helvetica, sans-serif; color:#35bed5; display:block;  font-size:11px; letter-spacing: 0.1em; padding:0; margin:0; line-height:11px; text-decoration:none;">{{ member.phone | replace: "-", "." }}</a>
+          {% else %}
+            <a href="tel:919-599-8478" style="font-family:Arial, Helvetica, sans-serif; color:#35bed5; display:block;  font-size:11px; letter-spacing: 0.1em; padding:0; margin:0; line-height:11px; text-decoration:none;">919.599.8478</a>
+          {% endif %}
+          <a href="https://velocityclinical.com" style="font-family:Arial, Helvetica, sans-serif; color:#35bed5; display:block; padding:0; margin:0; font-size:11px; line-height:11px; letter-spacing: 0.1em; text-decoration:none;">velocityclinical.com</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <button onclick="selectText('cardcopy-{{ forloop.index }}')">Select signature</button>
+{% endfor %}

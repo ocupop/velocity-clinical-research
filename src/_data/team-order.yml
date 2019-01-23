@@ -1,6 +1,6 @@
 - name: Executive Directors
-  directors:
+  team:
     - gregory-m-gottschlich
 - name: Medical Directors
-  directors:
+  team:
     - firstname-lastname

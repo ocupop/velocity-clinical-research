@@ -18,10 +18,10 @@ analytics_code:
 
 # Collections
 collections:
-  directors:
+  team:
     output: true
-    layout: director
-    permalink: /directors/:path/
+    layout: team
+    permalink: /team/:path/
 
 # Build settings
 safe: false
