@@ -1,0 +1,11 @@
+.mobile-content-image-overlay {
+  @include media-breakpoint-down(md) {
+    .container {
+      padding: 0;
+      .overlay-mobile {
+        margin: -75px 15px 0;
+        background: $white;
+      }
+    }
+  }
+}

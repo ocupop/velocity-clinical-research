@@ -1,3 +1,23 @@
 .curved-border {
-  border-radius: 0% 0% 1000% 1000% / 0% 0% 150% 150%;
-} 
+  position: relative;
+  overflow: hidden;
+  &.curved-border-top {
+    padding-top: 150px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: -5%;
+      width: 110%;
+      height: 225px;
+      border-radius: 50%;
+      background-color: $primary-dark;
+      @include media-breakpoint-down(md) {
+        left: -50%;
+        width: 200%;
+      }
+    }
+  }
+}
+

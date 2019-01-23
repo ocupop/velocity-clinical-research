@@ -1,5 +1,20 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-down(sm) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  html {
+    font-size: .95rem;
+  }
+}
+
 body {
-  font-size: 16px;
   line-height: 1.25rem;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
