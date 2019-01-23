@@ -1,7 +1,8 @@
 ---
 layout: team
-name: Tom Beck
+name: Thomas Beck M.D.
 image:
-role:
-phone:
+role: AssitaNT GOHER
+phone: 604.555.1212
 ---
+
