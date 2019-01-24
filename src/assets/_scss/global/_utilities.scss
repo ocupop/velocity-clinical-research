@@ -40,6 +40,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  
   &.aspect-1x1 {
     padding-top: 100%;
   }
@@ -48,6 +49,12 @@
   }
   &.aspect-16x9 {
     padding-top: 56.25%;
+  }
+  &.hover-zoom {
+    @include transition(.7s);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
