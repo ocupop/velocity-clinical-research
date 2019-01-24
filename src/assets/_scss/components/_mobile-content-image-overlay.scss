@@ -1,5 +1,5 @@
 .mobile-content-image-overlay {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     .container {
       padding: 0;
       .overlay-mobile {
