@@ -1,6 +1,7 @@
 .cognito {
   color: $white;
   .c-field {
+    padding: 12px 0 !important;
     @include media-breakpoint-up(md) {
       display: flex;
       align-items: center;
@@ -24,7 +25,7 @@
       .c-label {
         width: 30%;
         text-align: right;
-        padding-right: 10px;
+        padding-right: 20px;
       }
       .c-editor {
         width: 50%;
@@ -32,9 +33,12 @@
     }
   }
   .c-yesno-radiobuttons {
-    border-top: 1px solid $white;
-    padding-top: 20px !important;
-    margin-top: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px !important;
+    margin-bottom: 20px;
+  }
+  .c-yesno-radio {
+    display: block !important;
   }
   .c-button-section {
     .c-action {
@@ -48,11 +52,16 @@
     border-radius: 0;
     border: 1px solid $white;
     color: $white;
+    font-size: 20px;
     font-family: $font-family-base;
+    width: 40%;
     padding: 10px 75px;
     background-color: transparent;
     float: none;
-    margin: 0 auto;
+    margin: 50px auto 15px;
     display: block;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
 }
