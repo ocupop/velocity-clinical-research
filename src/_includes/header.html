@@ -1,13 +1,15 @@
-<header id="page-header" class="text-white">
+<header id="page-header" class="bg-header text-white">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="content">
           <img src="/assets/img/logo-white.svg" class="img-fluid d-block mx-auto mt-3 pb-4" alt="Velocity Clinical Research Logo">
+          {% if page.url == '/' %}
           <h1 class="text-center text-white mt-5">Trusted research, valued patients.</h1>
           <p class="lead">Velocity Clinical Research is 100% committed to the successful delivery of clinical
             studies&mdash;helping our clients maintain the highest standards of care while bringing new medications
             directly to the patients who need them, as quickly and efficiently as possible.</p>
+          {% endif %}  
         </div>
       </div>
     </div>
