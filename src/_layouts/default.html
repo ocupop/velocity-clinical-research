@@ -2,10 +2,15 @@
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}">
+    {% unless page.layout == 'team' %}
+      {% include header.html %}
+    {% endunless %}
     <main id="page-content">
       {{ content }}
     </main>
-    {% include footer.html %}
+    {% unless page.layout == 'team' %}
+      {% include footer.html %}
+    {% endunless %}
     {% include scripts.html %}
   </body>
 </html>
