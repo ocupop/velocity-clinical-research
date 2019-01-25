@@ -83,6 +83,11 @@
     float: none;
     margin: 50px auto 15px;
     display: block;
+    @include transition(.5s);
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
     @include media-breakpoint-down(md) {
       width: 100%;
     }
