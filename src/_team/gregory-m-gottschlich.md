@@ -1,7 +1,7 @@
 ---
 layout: team
 name: 'Gregory M. Gottschlich. M.D.'
-image: /uploads/gregory.png
+image:
 role:
 phone:
 ---
