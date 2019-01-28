@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  padding-bottom: 50px;
   hr {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
@@ -10,4 +11,19 @@
 
 .footer-logo {
   width: 230px;
+}
+
+.social-link {
+  padding: 15px;
+  &::before,
+  &::after
+   {
+    display: none;
+  }
+  &:hover {
+    opacity: .7;
+  }
+  img {
+    height: 20px;
+  }
 }
