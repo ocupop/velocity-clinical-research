@@ -80,6 +80,9 @@
     position: absolute;
     bottom: -8px;
     right: 10%;
+    @include media-breakpoint-down(md) {
+      right: 0;
+    }
   }
   #c-submit-button {
     border-radius: 0;
