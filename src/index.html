@@ -93,7 +93,7 @@ therapeutic_experience:
               {% endif %}
               
               <p class="mt-3 text-center text-dark mb-0">{% if member.name %}{{ member.name }}{% else %}{{ member.title }}{% endif %}</p>
-              {% if object.name == 'Executive Directors' %}
+              {% if object.name contains 'Executive' %}
                 {% if member.role %}
                   <p class="mb-0 text-center text-dark"><small>{{ member.role }}</small></p>
                 {% endif %}
