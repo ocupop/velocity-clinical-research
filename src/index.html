@@ -27,7 +27,7 @@ therapeutic_experience:
     <div class="row align-items-center">
       <div class="col-lg-7 order-lg-2">
         <div class="overflow-hidden">
-          <div class="bg-image zoom aspect-4x3" style="background-image: url(/assets/img/Velocity-US.jpg)"></div>
+          <div class="bg-image aspect-4x3" style="background-image: url(/assets/img/Velocity-US.jpg)"></div>
         </div>
       </div>
       <div class="col-lg-5 order-lg-1">
@@ -47,7 +47,7 @@ therapeutic_experience:
     <div class="row align-items-center">
       <div class="col-lg-7">
         <div class="overflow-hidden">
-          <div class="bg-image zoom aspect-4x3" style="background-image: url(/assets/img/Velocity-crowd.jpg)"></div>
+          <div class="bg-image aspect-4x3" style="background-image: url(/assets/img/Velocity-crowd.jpg)"></div>
         </div>
       </div>
       <div class="col-lg-5">
@@ -66,7 +66,7 @@ therapeutic_experience:
     <div class="row align-items-center">
       <div class="col-lg-7 order-lg-2">
         <div class="overflow-hidden">
-          <div class="bg-image zoom aspect-4x3" style="background-image: url(/assets/img/Velocity-people-grid.jpg)"></div>
+          <div class="bg-image aspect-4x3" style="background-image: url(/assets/img/Velocity-people-grid.jpg)"></div>
         </div>
       </div>
       <div class="col-lg-5 order-lg-1">
@@ -98,11 +98,14 @@ therapeutic_experience:
               {% if member.image %}
                 <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
               {% endif %}
-              
               <p class="mt-3 text-center text-dark mb-0">{% if member.name %}{{ member.name }}{% else %}{{ member.title }}{% endif %}</p>
               {% if object.name contains 'Executive' %}
                 {% if member.role %}
                   <p class="mb-0 text-center text-dark"><small>{{ member.role }}</small></p>
+                {% endif %}
+              {% else %}
+                {% if member.company %}
+                  <p class="mb-0 text-center text-dark"><small>{{ member.company }}</small></p>
                 {% endif %}
               {% endif %}
             </a>

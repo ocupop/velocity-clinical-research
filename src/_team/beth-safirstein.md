@@ -3,6 +3,7 @@ layout: team
 name: Beth Safirstein M.D.
 image:
 role:
+company: MD Clinical
 phone:
 ---
 

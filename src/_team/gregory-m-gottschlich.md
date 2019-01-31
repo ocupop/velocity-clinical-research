@@ -3,6 +3,7 @@ layout: team
 name: 'Gregory M. Gottschlich. M.D.'
 image:
 role:
+company: New Horizons Clinical Research
 phone:
 ---
 

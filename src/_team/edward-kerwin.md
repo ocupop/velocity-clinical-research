@@ -3,6 +3,7 @@ layout: team
 name: Edward Kerwin M.D.
 image:
 role:
+company: Clinical Research Institute of Southern Oregon
 phone:
 ---
 

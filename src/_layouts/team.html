@@ -25,7 +25,11 @@ layout: default
       <div class="col-lg-8 mx-auto">
         <div class="content">
           <h1 class="mb-0">{{ page.name }}</h1>
-          <h4>{{ page.role }}</h4>
+          {% if page.role %}
+            <h4>{{ page.role }}</h4>
+          {% else %}
+            <h4>{{ page.company }}</h4>
+          {% endif %}
           {{ page.content }}
         </div>
       </div>
