@@ -2,10 +2,18 @@
   color: $white;
   .c-field {
     padding: 12px 0 !important;
+    position: relative;
     @include media-breakpoint-up(md) {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    &.c-required {
+      .c-label {
+        &::after {
+          color: #e84142 !important;
+        }
+      }
     }
   }
   .c-forms-form {
@@ -64,12 +72,14 @@
     }
   }
   .c-validation {
-    height: 27px !important;
-    line-height: 27px !important;
+    height: 20px !important;
+    line-height: 20px !important;
     font-size: 12px !important;
     margin: 0;
     border-radius: 0 !important;
-
+    position: absolute;
+    bottom: -8px;
+    right: 10%;
   }
   #c-submit-button {
     border-radius: 0;
