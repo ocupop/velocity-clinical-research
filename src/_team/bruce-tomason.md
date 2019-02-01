@@ -1,7 +1,7 @@
 ---
 layout: team
 name: Bruce Tomason
-image:
+image: /uploads/velocity-bruce.jpg
 role: Executive Chairman
 company:
 phone: +1 908.337.3132
