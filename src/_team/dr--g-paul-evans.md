@@ -1,7 +1,7 @@
 ---
 layout: team
 name: Dr. G Paul Evans
-image:
+image: /uploads/velocity-paul.jpg
 role: President and Chief Executive Officer
 company:
 phone: +1 919.949.9182
