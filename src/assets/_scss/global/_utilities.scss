@@ -46,6 +46,9 @@
   }
   &.aspect-4x3 {
     padding-top: 75%;
+    @include media-breakpoint-down(md) {
+      padding-top: 60%;
+    }
   }
   &.aspect-16x9 {
     padding-top: 56.25%;
