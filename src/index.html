@@ -161,14 +161,14 @@ therapeutic_experience:
   {% assign articles = site.data.press | sort: 'date' %}
   {% for article in articles limit:3 %}
     <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card bg-light h-100 border-0">
+      <div class="card bg-info h-100 border-0">
         <div class="card-body">
             <h4 class="text-dark">{{ article.title }}</h4>
             {% if article.source %}
             {{ article.source }}
             {% endif %}
         </div>
-        <div class="card-footer bg-light border-0">
+        <div class="card-footer bg-info border-0">
             <p class="text-center pt-2"><a href="{{ article.source_url }}" target="_blank" title="Go to source...{{ article.source_url }}">View
               Article</a></p>
         </div>
