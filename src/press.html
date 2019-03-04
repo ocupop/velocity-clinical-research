@@ -13,7 +13,7 @@ title: Press
     </div>
   </div>
   <div class="row">
-  {% assign articles = site.data.press | sort: 'date' | reverse %}
+  {% assign articles = site.data.press | sort: 'date' %}
   {% for article in articles%}
     <div class="col-md-6 mb-4">
     <div class="card bg-light h-100 border-0">
