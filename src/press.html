@@ -1,0 +1,35 @@
+---
+layout: default
+title: Press
+---
+<section>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-auto">
+      <div class="content">
+        <h3 class="text-center mb-2">Velocity in the Press</h3>
+        <p class="text-center"><a href="/">Back to Velocity Clinical Research</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  {% assign articles = site.data.press | sort: 'date' %}
+  {% for article in articles%}
+    <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card bg-info h-100 border-0">
+      <div class="card-body">
+          <h4 class="text-dark">{{ article.title }}</h4>
+          {% if article.summary %}
+          {{ article.summary }}
+          {% endif %}
+      </div>
+      <div class="card-footer bg-info border-0">
+          <p class="text-center"><a href="{{ article.source_url }}" target="_blank" title="Go to source...{{ article.source_url }}">View
+            Article</a></p>
+      </div>
+    </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+</section>
