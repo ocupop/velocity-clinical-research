@@ -31,7 +31,7 @@ source: src
 
 plugins:
   - jekyll-sitemap
-  - jekyll-lunr-js-search
+  # - jekyll-lunr-js-search
 
 
 # feed:
