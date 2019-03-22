@@ -12,5 +12,5 @@ _site
 # Packages
 node_modules
 
-gemfile.lock
+# gemfile.lock
 package-lock.json
