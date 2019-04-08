@@ -89,7 +89,7 @@ therapeutic_experience:
     <div class="row justify-content-center">
       {% for item in object.team %}
         {% assign member = site.team | where: "slug", item | first %}
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="content">
             <a href="{{ member.url }}">
               {% if member.image %}
