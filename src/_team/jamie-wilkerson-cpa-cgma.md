@@ -1,7 +1,7 @@
 ---
 layout: team
 name: 'Jamie Wilkerson, CPA, CGMA'
-image:
+image: /uploads/workshopmedia-vcr-jamie-20190403-dsc9617-edit-final.jpg
 role: 'Vice President, Finance'
 company:
 phone: +1 919.260.7950
