@@ -1,7 +1,7 @@
 ---
 layout: team
 name: Edward Kerwin M.D.
-image: /uploads/ed-cropped-for-web-site.jpg
+image: /uploads/ed-cropped-for-web-site-1.jpg
 role:
 company: Clinical Research Institute of Southern Oregon
 phone:
