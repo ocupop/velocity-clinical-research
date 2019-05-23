@@ -1,7 +1,7 @@
 ---
 layout: team
 name: Gregory M Gottschlich M.D.
-image: /uploads/workshopmedia-vcr-greg-20190509-dsc4338-edit-final.jpg
+image: /uploads/g-gottschlich-cropped-for-web-site.jpg
 role:
 company: New Horizons Clinical Research
 phone:
