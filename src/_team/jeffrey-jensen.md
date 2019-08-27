@@ -2,7 +2,7 @@
 layout: team
 name: Jeffrey Jensen
 image: /uploads/velocity-jeff.jpg
-role: 'Senior Vice President, Operations'
+role: 'Senior Vice President, Corporate Development'
 company:
 phone: +1 425.941.0352
 ---
