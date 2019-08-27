@@ -1,7 +1,7 @@
 ---
 layout: team
 name: 'Melissa Holbrook, MSN, NP'
-image: /uploads/melissa-cropped-for-web-site.jpg
+image: /uploads/melissa-cropped-for-web-site-1.jpg
 role: 'Vice President, Operations'
 company:
 phone: 919.417.8384
