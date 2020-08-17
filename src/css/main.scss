@@ -1,0 +1,25 @@
+---
+---
+
+@import "settings";
+@import "vendor/bootstrap/scss/bootstrap"; // Copied from node_modules and committed to source to allow Bootstrap to compile during build
+
+//Global
+@import "global/mixins";
+@import "global/base";
+@import "global/typography";
+@import "global/utilities";
+
+
+//Components
+@import "components/cognito";
+@import "components/curved_border";
+@import "components/mobile-content-image-overlay";
+@import "components/page_footer";
+@import "components/page_header";
+
+//pages
+@import "pages/homepage";
+
+
+
