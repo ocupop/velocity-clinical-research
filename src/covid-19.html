@@ -42,9 +42,9 @@ research_sites:
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <img src="/img/logo.svg" class="img-fluid d-block mx-auto mt-3 pb-4 w-25"
-              alt="Velocity Clinical Research Logo" />
-            <h1 class="text-center mt-5 editable">Trusted research, valued patients.</h1>
+            <h1><img src="/img/logo.svg" class="img-fluid d-block mx-auto mt-3 pb-4 w-25" alt="Velocity Clinical Research Logo" /></h1>
+            
+            <h2 class="text-center mt-5 editable text-dark"><strong>Trusted</strong> research, <strong>valued</strong> patients.</h2>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@ research_sites:
 <section class="bg-primary text-white">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto">
+      <div class="col-12 col-lg-8 mx-lg-auto">
         <div class="content text-center">
-          <h2 class="text-white editable">COVID-19 Prevention Research</h2>
-          <div class="editable">
-            <p>The search for a coronavirus vaccine is unprecedented, not only in terms of how quickly the industry must pull
+          <h2 class="text-white editable"><strong>COVID-19 Prevention Research</strong></h2>
+          <div class="editable lead">
+            <p>"The search for a coronavirus vaccine is unprecedented, not only in terms of how quickly the industry must pull
               together to bring one to market but also in the sheer number of volunteers required."</p>
           </div>
         </div>
@@ -71,8 +71,12 @@ research_sites:
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="content text-center">
-          <h3>Thank you for your interest in our studies. Science can't move forward without your help!</h3>
-          <p>The purpose of this portal is to create a list of potential volunteers who want to take part in current or future COVID-19 prevention clinical trials. You must be 18 years or older to participate. Our research coordinators will reach out to you to answer your questions and see if you are suitable for any of our active or upcoming studies.</p>
+          <h3 class="text-cyan editable">Thank you for your interest in our studies.<br class="d-none d-lg-block">Science can't move forward without your help!</h3>
+          <div class="editable">
+            <p>The purpose of this portal is to create a list of potential volunteers who want to take part in current or future
+              COVID-19 prevention clinical trials. You must be 18 years or older to participate. Our research coordinators will
+              reach out to you to answer your questions and see if you are suitable for any of our active or upcoming studies.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -83,13 +87,21 @@ research_sites:
     <div class="row">
       <div class="col-lg-4">
         <div class="content">
-          <h4>Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
-          <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this information at any time.</p>
+          <h4 class="text-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
+          <div class="editable">
+            <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this
+              information at any time.</p>
+          </div>
         </div>
       </div>
       <div class="col-lg-8">
         <div class="content">
-          form
+          <div class="covid-19-form">
+            <div class="cognito ">
+              <script src="https://www.cognitoforms.com/s/B04jtT4dY0C6ZJWIm8hgcQ"></script>
+              <script>Cognito.load("forms", { id: "2" });</script>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -100,16 +112,20 @@ research_sites:
     <div class="row">
       <div class="col-12">
         <div class="content">
-          <div class="responsive-card-deck cards-lg-3">
+          <div class="responsive-card-deck location-cards cards-lg-3">
             {% for site in page.research_sites %}
-              <div class="card border-0 mb-4">
-                <div class="bg-image aspect-1x1 rounded" style="background-image: url({{ site.placeholder_image }})"></div>
+              <div class="card card-white mb-4">
+                <div class="image-wrapper">
+                  <div class="bg-image aspect-1x1 rounded-circle"
+                    style="background-image: url(https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder)"></div>
+                </div>
+                
                 <div class="card-body text-center">
                   <p class="mb-0">{{ site.location }}</p>
                   <p class="mb-0"><strong>{{ site.title }}</strong></p>
                 </div>
                 <div class="card-footer text-center border-0 bg-transparent">
-                  <a href="{{ site.link }}" class="btn btn-primary">Learn More &gt;</a>
+                  <a href="{{ site.link }}" class="btn btn-primary">Visit Website &gt;</a>
                 </div>
               </div>
             {% endfor %}

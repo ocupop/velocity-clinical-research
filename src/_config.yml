@@ -32,7 +32,7 @@ sass:
 plugins:
   - jekyll-sitemap
 
-placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
+placeholder_image: 'https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder'
 
 _options:
   layout:

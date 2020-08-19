@@ -108,6 +108,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334a9b', endColorstr='#13225a',GradientType=0 ); /* IE6-9 */
 }
 
+.text-cyan {
+  color: $cyan;
+}
+
+.text-green {
+  color: $green;
+}
+
 ul.column-list {
   -moz-column-count: 2;
   -moz-column-gap: 50px;
