@@ -2,6 +2,12 @@
   p {
     line-height: 1.7;
   }
+  .logo {
+    width: 50%;
+    @include media-breakpoint-up(lg) {
+      width: 25%;
+    }
+  }
 }
 
 .location-cards {
@@ -40,29 +46,47 @@
 #prevention-research {
   .dots-green-vertical {
     position: absolute;
-    top: -222px;
+    top: -15%;
     right: 0;
-    width: 300px;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      top: -222px;
+      right: 0;
+      width: 300px;
+    }
   }
   .dots-blue-horizontal {
     position: absolute;
-    bottom: -175px;
+    bottom: -15%;
     left: 0;
-    width: 440px;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      bottom: -175px;
+      width: 440px;
+    }
   }
 }
 
 #covid-form-section {
   .dots-green-vertical {
     position: absolute;
-    top: -111px;
+    top: -5%;
     right: 0;
-    width: 300px;
+    width: 20%;
+    @include media-breakpoint-up(lg) {
+      top: -111px;
+      width: 300px;
+    }
   }
   .dots-blue-horizontal {
     position: absolute;
-    bottom: -150px;
-    left: 375px;
-    width: 320px;
+    bottom: -7%;
+    left: 15%;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      bottom: -150px;
+      left: 375px;
+      width: 320px;
+    }
   }
 }
