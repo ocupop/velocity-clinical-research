@@ -61,6 +61,9 @@
       transform: scale(1.1);
     }
   }
+  &.aspect-auto {
+    height: auto;
+  }
 }
 
 // Sticky behavior
@@ -112,9 +115,10 @@
   color: $cyan;
 }
 
-.text-green {
-  color: $green;
+.text-lime-green {
+  color: $lime-green;
 }
+
 
 ul.column-list {
   -moz-column-count: 2;

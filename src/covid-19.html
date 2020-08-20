@@ -1,39 +1,39 @@
 ---
-layout: page
-title: Covid-19
+layout: covid-19
+title: Velocity Clinical Research - Covid-19
 research_sites:
   - title: Rapid Medical Research
     location: 'Cleveland, OH'
     link: 'http://rapidmedicalresearch.com/'
-    image:
+    image: /uploads/site-cleveland.jpg
   - title: ACR California
     location: 'Banning, CA'
     link: 'https://www.advancedclinicalresearch.com/locations/rancho-paseo-california'
-    image:
+    image: /uploads/site-banning.jpg
   - title: ACR Idaho
     location: 'Boise, ID'
     link: 'https://www.advancedclinicalresearch.com/locations/meridian-idaho'
-    image:
+    image: /uploads/site-boise.jpg
   - title: New Horizons Clinical Research
     location: 'Cincinnati, OH'
     link: 'https://www.nhcr.com/'
-    image:
+    image: /uploads/site-cincinnati.jpg
   - title: Omega Medical Research
     location: 'Warwick, RI'
     link: 'https://www.omegamedicalresearch.com/'
-    image:
+    image: /uploads/site-warwick.jpg
   - title: ACR Utah
     location: 'Salt Lake City, UT'
     link: 'https://www.advancedclinicalresearch.com/locations/jordan-valley-utah'
-    image:
+    image: /uploads/site-saltlakecity.jpg
   - title: CRISOR
     location: 'Medford, OR'
     link: 'https://clinicalresearchso.com/'
-    image:
+    image: /uploads/sites-medford.jpg
   - title: ACR Texas
     location: 'Austin, TX'
     link: 'https://www.advancedclinicalresearch.com/locations/austin-texas'
-    image:
+    image: /uploads/sites-austin.jpg
 ---
 
 <section>
@@ -51,7 +51,9 @@ research_sites:
     </div>
   </div>
 </section>
-<section class="bg-primary text-white">
+<section id="prevention-research" class="bg-image aspect-auto bg-primary text-white position-relative" style="background-image: url('/img/bg-microscope.jpg')">
+  <img src="/img/dots-green-vertical.svg" class="position-absolute dots-green-vertical" alt="dots image">
+  <img src="/img/dots-blue-horizontal.svg" class="position-absolute dots-blue-horizontal" alt="dots image">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto">
@@ -82,12 +84,14 @@ research_sites:
     </div>
   </div>
 </section>
-<section class="bg-light">
+<section id="covid-form-section" class="bg-light position-relative">
+  <img src="/img/dots-green-vertical.svg" class="dots-green-vertical" alt="dots image">
+  <img src="/img/dots-blue-horizontal.svg" class="dots-blue-horizontal" alt="dots image">
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
         <div class="content">
-          <h4 class="text-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
+          <h4 class="text-lime-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
           <div class="editable">
             <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this
               information at any time.</p>
@@ -100,6 +104,9 @@ research_sites:
             <div class="cognito ">
               <script src="https://www.cognitoforms.com/s/B04jtT4dY0C6ZJWIm8hgcQ"></script>
               <script>Cognito.load("forms", { id: "2" });</script>
+              <div class="preloader">
+                <img src="/img/siteicon.png" alt="loading icon">
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +124,7 @@ research_sites:
               <div class="card card-white mb-4">
                 <div class="image-wrapper">
                   <div class="bg-image aspect-1x1 rounded-circle"
-                    style="background-image: url(https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder)"></div>
+                    style="background-image: url({{ site.image }})"></div>
                 </div>
                 
                 <div class="card-body text-center">

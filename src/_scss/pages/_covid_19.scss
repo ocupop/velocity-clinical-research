@@ -1,3 +1,9 @@
+.covid-19 {
+  p {
+    line-height: 1.7;
+  }
+}
+
 .location-cards {
   .card {
     border: 1px solid $light;
@@ -28,5 +34,35 @@
         display: none;
       }
     }
+  }
+}
+
+#prevention-research {
+  .dots-green-vertical {
+    position: absolute;
+    top: -222px;
+    right: 0;
+    width: 300px;
+  }
+  .dots-blue-horizontal {
+    position: absolute;
+    bottom: -175px;
+    left: 0;
+    width: 440px;
+  }
+}
+
+#covid-form-section {
+  .dots-green-vertical {
+    position: absolute;
+    top: -111px;
+    right: 0;
+    width: 300px;
+  }
+  .dots-blue-horizontal {
+    position: absolute;
+    bottom: -150px;
+    left: 375px;
+    width: 320px;
   }
 }
