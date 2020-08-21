@@ -1,0 +1,89 @@
+// Color Palette
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+$blue:    #294199;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f5C938;
+$green:   #87a63e;
+$lime-green: #49a93a;
+$teal:    #20c997 !default;
+$cyan:    #60D0FF;
+
+$primary:       $blue;
+$primary-dark:  #13225a;
+$secondary:     #242424;
+$success:       $green !default;
+$info:          #EDEDED;;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100;
+$dark:          $gray-700;
+
+
+
+$body-bg:               $white;
+$body-color:            $secondary;
+
+
+$font-family-base: 'Avenir LT W01_35 Light1475496', sans-serif;
+$font-family-book: 'Avenir LT W01_45 Book1475508', sans-serif;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 3.1;
+$h2-font-size:                $font-size-base * 2.4;
+$h3-font-size:                $font-size-base * 2;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-font-family:        $font-family-book;
+$headings-font-weight:        400;
+$headings-line-height:        1.2 !default;
+$headings-color:              $primary;
+
+
+$border-radius:           0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$screen-sm-min:           576px;
+$screen-md-min:           768px;
+$screen-lg-min:           992px;
+$screen-xl-min:           1200px;

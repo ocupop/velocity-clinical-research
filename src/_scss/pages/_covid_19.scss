@@ -1,0 +1,96 @@
+.covid-19 {
+  p {
+    line-height: 1.7;
+  }
+  .logo {
+    width: 50%;
+    @include media-breakpoint-up(lg) {
+      width: 25%;
+    }
+  }
+}
+
+.location-cards {
+  .card {
+    border: 1px solid $light;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba($black, 0.1);
+    .image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px 0;
+    }
+    .bg-image {
+      width: 110px;
+      height: 110px;
+      padding-top: 0;
+    }
+    p {
+      color: $primary-dark;
+    }
+    .btn {
+      background-color: $cyan;
+      border-radius: 5px;
+      border-color: $cyan;
+      box-shadow: 0;
+      margin-bottom: 20px;
+      &::before,
+      &::after {
+        display: none;
+      }
+      img {
+        margin-top: -3px;
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+#prevention-research {
+  .dots-green-vertical {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      top: -222px;
+      right: 0;
+      width: 300px;
+    }
+  }
+  .dots-blue-horizontal {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      bottom: -175px;
+      width: 440px;
+    }
+  }
+}
+
+#covid-form-section {
+  .dots-green-vertical {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    width: 20%;
+    @include media-breakpoint-up(lg) {
+      top: -111px;
+      width: 300px;
+    }
+  }
+  .dots-blue-horizontal {
+    position: absolute;
+    bottom: -7%;
+    left: 15%;
+    width: 30%;
+    @include media-breakpoint-up(lg) {
+      bottom: -150px;
+      left: 375px;
+      width: 320px;
+    }
+  }
+}
