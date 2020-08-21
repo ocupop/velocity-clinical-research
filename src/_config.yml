@@ -1,19 +1,19 @@
 # Site settings
 title: Client Name
 email: dev@ocupop.com
-url: "https://velocityclinical.com/"
+url: "https://velocityclinicalresearch.com/"
 permalink: pretty
 
 # Social sharing
 description: 'Velocity Clinical Research is 100% committed to the successful delivery of clinical studies—helping our clients maintain the highest standards of care while bringing new medications directly to the patients who need them, as quickly and efficiently as possible.'
 socialshare:
-  featured_image: assets/img/socialshare.png
+  featured_image: /img/socialshare.png
   twitter:
     username:
-    image:
+    image: /img/socialshare.png
 
 # Google Analytics
-analytics_code: UA-106357720-7
+analytics_code: UA-140308205-1
 
 
 
