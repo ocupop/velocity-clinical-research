@@ -8,9 +8,7 @@
     <main id="page-content">
       {{ content }}
     </main>
-    {% unless page.layout == 'team' %}
-      {% include footer.html %}
-    {% endunless %}
+    {% include footer-basic.html %}
     {% include scripts.html %}
   </body>
 </html>

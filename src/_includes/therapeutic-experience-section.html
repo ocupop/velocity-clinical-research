@@ -1,0 +1,35 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-auto">
+        <div class="content">
+          <h3 class="text-center">Therapeutic Experience</h3>
+          <ul class="column-list">
+            {% for object in page.therapeutic_experience %}
+              <li>{{ object }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row icons-row justify-content-center">
+      <div class="col-auto">
+        <img src="/img/icon1.svg" class="img-fluid" alt="Icon" />
+      </div>
+      <div class="col-auto">
+        <img src="/img/icon2.svg" class="img-fluid" alt="Icon" />
+      </div>
+      <div class="col-auto">
+        <img src="/img/icon3.svg" class="img-fluid" alt="Icon" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="content text-center editable">
+          <p class="mt-3">If you would like to speak with a member of our team regarding our capabilities and experience, or about placing a study with our sites, <a href="mailto:info@velocityclinical.com">email us</a> or call 919.937.2458</p>
+          <p class="mt-3">.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<section id="team">
+  <div class="container">
+    {% for object in site.data.team-order %}
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h3 class="text-center {% unless forloop.first %}mt-5{% endunless %}">Velocity Clinical Research {{ object.name }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {% for item in object.team %}
+        {% assign member = site.team | where: "slug", item | first %}
+        <div class="col-md-6 col-lg-4">
+          <div class="content">
+            <a href="{{ member.url }}">
+              {% if member.image %}
+                <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
+              {% endif %}
+              <p class="mt-3 text-center text-dark mb-0">{% if member.name %}{{ member.name }}{% else %}{{ member.title }}{% endif %}</p>
+              {% if object.name contains 'Executive' %}
+                {% if member.role %}
+                  <p class="mb-0 text-center text-dark"><small>{{ member.role }}</small></p>
+                {% endif %}
+              {% else %}
+                {% if member.company %}
+                  <p class="mb-0 text-center text-dark"><small>{{ member.company }}</small></p>
+                {% endif %}
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

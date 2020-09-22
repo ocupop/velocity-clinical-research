@@ -1,0 +1,46 @@
+---
+layout: default
+title: Capabilities
+---
+
+{% include hero.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <h3 class="subtitle editable">Capabilities</h3>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facere quisquam deleniti molestiae porro, ad provident eveniet doloremque repudiandae amet totam veniam, aut quaerat inventore quasi cum eaque illo quas.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2 class="editable">Velocity At-A-Glance</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for i in (1..4) %}
+        <div class="col-lg-3">
+          <div class="content text-center">
+            <p class="h2">555</p>
+            <p>stat description</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

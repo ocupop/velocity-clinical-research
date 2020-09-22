@@ -1,0 +1,33 @@
+research_sites:
+  - title: Rapid Medical Research
+    location: 'Cleveland, OH'
+    link: 'http://rapidmedicalresearch.com/'
+    image: /uploads/site-cleveland.jpg
+  - title: ACR California
+    location: 'Banning, CA'
+    link: 'https://www.advancedclinicalresearch.com/locations/rancho-paseo-california'
+    image: /uploads/site-banning.jpg
+  - title: ACR Idaho
+    location: 'Boise, ID'
+    link: 'https://www.advancedclinicalresearch.com/locations/meridian-idaho'
+    image: /uploads/site-boise.jpg
+  - title: New Horizons Clinical Research
+    location: 'Cincinnati, OH'
+    link: 'https://www.nhcr.com/'
+    image: /uploads/site-cincinnati.jpg
+  - title: Omega Medical Research
+    location: 'Warwick, RI'
+    link: 'https://www.omegamedicalresearch.com/'
+    image: /uploads/site-warwick.jpg
+  - title: ACR Utah
+    location: 'Salt Lake City, UT'
+    link: 'https://www.advancedclinicalresearch.com/locations/jordan-valley-utah'
+    image: /uploads/site-saltlakecity.jpg
+  - title: CRISOR
+    location: 'Medford, OR'
+    link: 'https://clinicalresearchso.com/'
+    image: /uploads/sites-medford.jpg
+  - title: ACR Texas
+    location: 'Austin, TX'
+    link: 'https://www.advancedclinicalresearch.com/locations/austin-texas'
+    image: /uploads/sites-austin.jpg
