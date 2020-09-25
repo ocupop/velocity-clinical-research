@@ -19,26 +19,22 @@ layout: default
     <div class="row align-items-center">
       {% if page.image %}
       <div class="col-lg-4">
-        <div class="content">
-          <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ page.image }})"></div>
-        </div>
+        <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ page.image }})"></div>
       </div>
       {% endif %}
       <div class="col-lg-8 mx-auto">
-        <div class="content">
-          <h1 class="mb-0">{{ page.name }}</h1>
-          {% if page.role %}
-            <h4>{{ page.role }}</h4>
-          {% else %}
-            <h4>{{ page.company }}</h4>
-          {% endif %}
-          {{ page.content }}
-        </div>
+        <h1 class="mb-0">{{ page.name }}</h1>
+        {% if page.role %}
+          <h4>{{ page.role }}</h4>
+        {% else %}
+          <h4>{{ page.company }}</h4>
+        {% endif %}
+        {{ page.content }}
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="content text-center">
+        <div class="text-center">
           <a href="/#team" class="mt-5">Back to Team</a>
         </div>
       </div>

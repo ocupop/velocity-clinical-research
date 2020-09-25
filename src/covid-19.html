@@ -60,7 +60,7 @@ research_sites:
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto">
-        <div class="content text-center">
+        <div class="text-center">
           <h2 class="text-white editable"><strong>COVID-19 Prevention Research</strong></h2>
           <div class="editable lead">
             <p>"The search for a coronavirus vaccine is unprecedented, not only in terms of how quickly the industry must pull
@@ -75,7 +75,7 @@ research_sites:
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto">
-        <div class="content text-center">
+        <div class="text-center">
           <h3 class="text-cyan editable">Thank you for your interest in our studies.<br class="d-none d-lg-block">Science can't move forward without your help!</h3>
           <div class="editable">
             <p>The purpose of this portal is to create a list of potential volunteers who want to take part in current or future
@@ -93,23 +93,19 @@ research_sites:
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="content">
-          <h4 class="text-lime-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
-          <div class="editable">
-            <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this
-              information at any time.</p>
-          </div>
+        <h4 class="text-lime-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
+        <div class="editable">
+          <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this
+            information at any time.</p>
         </div>
       </div>
       <div class="col-lg-8">
-        <div class="content">
-          <div class="covid-19-form">
-            <div class="cognito ">
-              <script src="https://www.cognitoforms.com/s/B04jtT4dY0C6ZJWIm8hgcQ"></script>
-              <script>Cognito.load("forms", { id: "2" });</script>
-              <div class="preloader">
-                <img src="/img/siteicon.png" alt="loading icon">
-              </div>
+        <div class="covid-19-form">
+          <div class="cognito ">
+            <script src="https://www.cognitoforms.com/s/B04jtT4dY0C6ZJWIm8hgcQ"></script>
+            <script>Cognito.load("forms", { id: "2" });</script>
+            <div class="preloader">
+              <img src="/img/siteicon.png" alt="loading icon">
             </div>
           </div>
         </div>
@@ -121,25 +117,23 @@ research_sites:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="content">
-          <div class="responsive-card-deck location-cards cards-lg-3">
-            {% for site in page.research_sites %}
-              <div class="card card-white mb-4">
-                <div class="image-wrapper">
-                  <div class="bg-image aspect-1x1 rounded-circle"
-                    style="background-image: url({{ site.image }})"></div>
-                </div>
-                
-                <div class="card-body text-center">
-                  <p class="mb-0">{{ site.location }}</p>
-                  <p class="mb-0"><strong>{{ site.title }}</strong></p>
-                </div>
-                <div class="card-footer text-center border-0 bg-transparent">
-                  <a href="{{ site.link }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt=""></a>
-                </div>
+        <div class="responsive-card-deck location-cards cards-lg-3">
+          {% for site in page.research_sites %}
+            <div class="card card-white mb-4">
+              <div class="image-wrapper">
+                <div class="bg-image aspect-1x1 rounded-circle"
+                  style="background-image: url({{ site.image }})"></div>
               </div>
-            {% endfor %}
-          </div>
+              
+              <div class="card-body text-center">
+                <p class="mb-0">{{ site.location }}</p>
+                <p class="mb-0"><strong>{{ site.title }}</strong></p>
+              </div>
+              <div class="card-footer text-center border-0 bg-transparent">
+                <a href="{{ site.link }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt=""></a>
+              </div>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>

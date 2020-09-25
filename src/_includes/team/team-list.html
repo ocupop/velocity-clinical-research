@@ -3,20 +3,16 @@
 <div class="row align-items-center">
   {% if member.image %}
   <div class="col-lg-3">
-    <div class="content">
-      <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
-    </div>
+    <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
   </div>
   {% endif %}
   <div class="col-lg-9 mx-auto">
-    <div class="content">
-      <h4 class="mb-0">{{ member.name }}</h4>
-      {% if member.role %}
-        <p class="lead">{{ member.role }}</p>
-      {% endif %}
-      {{ member.content | truncatewords: 30 }}
-      <p><a href="{{ member.url }}" class="text-link">Read More</a></p>
-    </div>
+    <h4 class="mb-0">{{ member.name }}</h4>
+    {% if member.role %}
+      <p class="lead">{{ member.role }}</p>
+    {% endif %}
+    {{ member.content | truncatewords: 30 }}
+    <p><a href="{{ member.url }}" class="text-link">Read More</a></p>
   </div>
 </div>
 {% endfor %}

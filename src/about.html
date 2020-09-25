@@ -15,7 +15,7 @@ team:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="content editable text-center">
+        <div class="editable text-center">
           <h1>Our Mission</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur reprehenderit distinctio iste neque. Culpa cum ipsum incidunt. Voluptas vitae esse quis? Aperiam facilis dolor, ullam necessitatibus ex recusandae et!</p>
         </div>
@@ -27,42 +27,40 @@ team:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="content text-center editable">
+        <div class="text-center editable">
           <h2>Our Values</h2>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="content">
-          <div class="responsive-card-deck cards-lg-3">
-            {% for i in (1..6) %}
-              <div class="col-lg-4 mb-4">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
-                        <div class="text-overlay">
-                          <div class="overlay-content">
-                            <h3 class="mb-0">Title</h3>
-                          </div>
+        <div class="responsive-card-deck cards-lg-3">
+          {% for i in (1..6) %}
+            <div class="col-lg-4 mb-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
+                      <div class="text-overlay">
+                        <div class="overlay-content">
+                          <h3 class="mb-0">Title</h3>
                         </div>
                       </div>
-                      <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
-                      
                     </div>
-                    <div class="flip-card-back">
-                      <div class="flip-card-back-content">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa nemo autem nam quam, officia adipisci eos necessitatibus magnam quasi.</p>
-                      </div>
+                    <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
+                    
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-back-content">
+                      <h3>Title</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa nemo autem nam quam, officia adipisci eos necessitatibus magnam quasi.</p>
                     </div>
                   </div>
                 </div>
-                
               </div>
-            {% endfor %}
-          </div>
+              
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -72,17 +70,13 @@ team:
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="content">
-          <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
-          <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
-        </div>
+        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
+        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
       </div>
       <div class="col-lg-8">
-        <div class="content">
-          <h2>Our History</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt atque quaerat aspernatur unde. Pariatur nesciunt impedit veritatis maxime, error architecto quod corrupti ipsum voluptatem aperiam, dignissimos quia cum molestias unde!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit sint obcaecati quasi nobis alias quo, modi dolores voluptatum. Hic deleniti molestiae impedit nostrum cum vitae dolorem esse facilis alias?</p>
-        </div>
+        <h2>Our History</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt atque quaerat aspernatur unde. Pariatur nesciunt impedit veritatis maxime, error architecto quod corrupti ipsum voluptatem aperiam, dignissimos quia cum molestias unde!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit sint obcaecati quasi nobis alias quo, modi dolores voluptatum. Hic deleniti molestiae impedit nostrum cum vitae dolorem esse facilis alias?</p>
       </div>
     </div>
   </div>
@@ -91,7 +85,7 @@ team:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="content text-center editable">
+        <div class="text-center editable">
           <h2>Executive Team</h2>
           <p>Experienced Leadership Makes a Difference</p>
         </div>  
@@ -99,9 +93,7 @@ team:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="content">
-          {% include team/team-list.html %}
-        </div>
+        {% include team/team-list.html %}
       </div>
     </div>
   </div>
