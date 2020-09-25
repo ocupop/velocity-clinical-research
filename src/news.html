@@ -1,0 +1,71 @@
+---
+layout: default
+title: Velocity News
+---
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content pb-0">
+          <h2 class="subtitle mb-0 editable">Velocity News</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="content">
+          <h2 class="mb-0 editable">Featured news</h2>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="content">
+          <h2 class="mb-0 editable">Filter</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="content">
+          <div class="bg-white shadow p-5">
+            <div class="bg-image aspect-3x1" style="background-image: url({{ site.placeholder_image}})"></div>
+            <h3 class="mt-4 mb-2">Subject Title</h3>
+            <p>By Blandy Fischer | 09/12/2020 | Trials</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias sed quaerat. Dolor eaque eveniet maiores commodi iste impedit ea atque blanditiis nemo, dolores voluptatem asperiores doloremque, nobis officia enim?</p>
+            <div class="text-right">
+              <a href="/single-post" class="text-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          {% for i in (1..4) %}
+            <div class="bg-white shadow mb-5 p-5">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})"></div>
+                </div>
+                <div class="col-lg-9">
+                  <h4 class="mb-2">Subject Title</h4>
+                  <p>By Blandy Fischer | 09/12/2020 | Trials</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam dolorem maiores inventore assumenda minus perferendis voluptate sequi quia vero commodi.</p>
+                  <div class="text-right">
+                    <a href="/single-post">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="content">
+          <ul class="list-unstyled">
+            {% for i in (1..4) %}
+            <li class="mb-3">Filter name</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

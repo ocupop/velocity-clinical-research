@@ -44,3 +44,75 @@ title: Capabilities
     </div>
   </div>
 </section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h2 class="text-center editable">Velocity Capabilities</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          add card carousel
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2>Proven Experience in Multiple Therapeutic Areas</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit velit odit natus fugiat cumque id, voluptatibus, magni fugit dolorem quo dolorum, totam veniam quasi. Sint quidem quibusdam asperiores repellat illum!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center editable">
+          <h2>Our Therapeutic Areas</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center editable">
+          <h3>Specialties</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="column-list column-3">
+          {% for i in (1..5) %}
+          <li class="text-center">
+            <a href="/single-specialty" class="h3">Specialty Name {{ forloop.index }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center editable">
+          <h4>Also Expertise In:</h4>
+          <ul class="column-list three-column">
+            {% for i in (1..17) %}
+              <li>Expertise Name</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include cta-place-a-study.html %}

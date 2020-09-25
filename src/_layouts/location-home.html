@@ -1,0 +1,90 @@
+---
+layout: location
+---
+
+{% include locations/hero-location.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <div class="content">
+          <div class="card shadow p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ site.placeholder_image }})"></div>
+              </div>
+              <div class="col-lg-8">
+                <h4>Velocity City Name</h4>
+                <h4>City State</h4>
+                <p>1900 Cypress Creek Suite 200 Cedar Park, TX 78613</p>
+                <p><a href="tel:555-555-555">(555) 555-5555</a></p>
+                <p><a href="mailto:"></a>info@velocityclinical.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2 class="mb-0"><strong>Help Make a Difference</strong></h2>
+          <h2>By Participating in Clinical Research</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, saepe beatae modi nulla cum obcaecati, iusto in repellat magni fugit praesentium harum nisi quasi ipsa? Corrupti laudantium quisquam itaque facere?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <div class="bg-image rounded aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>Member of the Velocity Clinical Research Organization</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque inventore est ipsam incidunt labore sint modi possimus libero quaerat optio, ipsa nihil, eos molestias repellendus enim eum quasi architecto voluptatum.</p>
+          <a href="about" class="btn btn-secondary">Learn More About Velocity City Name</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2>Learn About Clinical Research</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <p class="lead"><strong>What is clinical research?</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet alias, dignissimos ab, odit accusamus corporis, quibusdam quis ex quidem nesciunt deleniti expedita sunt sint veritatis unde provident rerum molestias.</p>
+          <p>All clinical research must:</p>
+          <ul>
+            {% for i in (1..4) %}
+              <li>Lorem ipsum dolor sit amet.</li>
+            {% endfor %}
+          </ul>
+          <p class="lead">Why should I participate?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex asperiores, vitae laudantium corrupti, sint, consequatur blanditiis quos aliquid velit cum? Repellendus illo impedit, laudantium saepe rem soluta sunt reiciendis!</p>
+          <!-- where does this button go? -->
+          <a href="" class="btn btn-secondary">Learn More About Participating</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

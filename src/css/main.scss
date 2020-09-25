@@ -7,6 +7,7 @@
 //Global
 @import "global/mixins";
 @import "global/base";
+@import "global/layout";
 @import "global/typography";
 @import "global/utilities";
 
@@ -14,14 +15,22 @@
 //Components
 @import "components/cognito";
 @import "components/curved_border";
+@import "components/flip_card";
 @import "components/hero";
 @import "components/mobile-content-image-overlay";
+@import "components/owl_carousel";
 @import "components/page_footer";
 @import "components/page_header";
 
 //pages
 @import "pages/covid_19";
 @import "pages/homepage";
+
+@import "vendor/theme.default";
+@import "vendor/owl.carousel";
+@import "vendor/bootstrap";
+
+
 
 
 

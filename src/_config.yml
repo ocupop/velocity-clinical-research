@@ -23,6 +23,10 @@ collections:
     output: true
     layout: team
     permalink: /team/:path/
+  locations:
+    output: false
+  specialties:
+    output: true    
 
 # Build settings
 safe: false
@@ -33,10 +37,22 @@ plugins:
   - jekyll-sitemap
 
 placeholder_image: 'https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder'
+placeholder_image_wide: 'https://via.placeholder.com/1900x800/333333/000000?text=Placeholder'
 
 _options:
   layout:
     hidden: true
+
+_array_structures:
+  hero: 
+    - label: Hero
+      icon: panorama
+      value:
+        _type: hero
+        image:
+        title:
+        subtitle:
+        color_overlay: false
 
 _comments:
   layout: 

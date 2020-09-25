@@ -8,7 +8,7 @@ $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-900: #242424;
 $black:    #000000 !default;
 
 $blue:    #294199;
@@ -21,11 +21,11 @@ $yellow:  #f5C938;
 $green:   #87a63e;
 $lime-green: #49a93a;
 $teal:    #20c997 !default;
-$cyan:    #60D0FF;
+$cyan:    #37c0f8;
 
 $primary:       $blue;
 $primary-dark:  #13225a;
-$secondary:     #242424;
+$secondary:     $cyan;
 $success:       $green !default;
 $info:          #EDEDED;;
 $warning:       $yellow !default;
@@ -33,10 +33,46 @@ $danger:        $red !default;
 $light:         $gray-100;
 $dark:          $gray-700;
 
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+  ),
+  $colors
+);
 
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "cyan": $cyan
+  ),
+  $theme-colors
+);
 
 $body-bg:               $white;
-$body-color:            $secondary;
+$body-color:            $gray-900;
 
 
 $font-family-base: 'Avenir LT W01_35 Light1475496', sans-serif;
@@ -53,9 +89,9 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 3.1;
-$h2-font-size:                $font-size-base * 2.4;
-$h3-font-size:                $font-size-base * 2;
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.8;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
@@ -66,7 +102,7 @@ $headings-line-height:        1.2 !default;
 $headings-color:              $primary;
 
 
-$border-radius:           0;
+$border-radius:           8px;
 
 $grid-breakpoints: (
   xs: 0,

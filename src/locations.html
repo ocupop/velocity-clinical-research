@@ -22,20 +22,15 @@ title: Locations
     <div class="row">
       <div class="col-12">
         <div class="content">
-          map section
-          <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
-          
+          {% include map.html %}
         </div>
       </div>
-      
     </div>
-
     <div class="row no-gutters align-items-center bg-white mx-2">
       <div class="col-lg-3">
         <div class="p-5">
           <div class="bg-image rounded-circle aspect-1x1" style="background-image: url({{ site.placeholder_image }})"></div>
         </div>
-        
       </div>
       <div class="col-lg-3">
         <h6>Location</h6>
@@ -64,7 +59,7 @@ title: Locations
     <div class="row">
       <div class="col-12">
         <div class="content">
-          {% include locations-grid.html %}
+          {% include locations/locations-grid.html %}
         </div>
       </div>
     </div>

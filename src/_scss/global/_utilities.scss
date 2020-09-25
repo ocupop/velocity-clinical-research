@@ -117,6 +117,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334a9b', endColorstr='#13225a',GradientType=0 ); /* IE6-9 */
 }
 
+.shadow {
+  box-shadow: 0 10px 30px rgba($black, 0.3);
+}
+
 .text-cyan {
   color: $cyan;
 }
@@ -143,5 +147,21 @@ ul.column-list {
   column-gap: 50px;
   list-style-type: none;
   padding-left: 0;
+  &.column-3 {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  &.column-4 {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+  &.column-5 {
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
 }
 // SVG Fill & Stroke Utilities
