@@ -19,7 +19,7 @@ jobs:
           base: ${{ github.ref }}
           filters: |
             locations:
-              - added: 'src/_locations/**'
+              - added | deleted: 'src/_locations/**'
 
       # run only if 'team' files were changed
       - name: team
