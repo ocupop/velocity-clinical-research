@@ -1,0 +1,98 @@
+---
+layout: location
+---
+
+{% include locations/hero-location.html %}
+
+<section class="bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <div class="text-center">
+          <h1 class="text-white">Our Mission</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloremque fugiat vero, rerum praesentium alias fugit consequuntur placeat quae dignissimos atque dolorum id. Dolorem, totam accusamus necessitatibus placeat incidunt quo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis rem, suscipit, quia quisquam at fugiat quidem eaque quae magni tenetur, illo nihil voluptatibus repellendus commodi veritatis aliquam aliquid laborum placeat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <h2>Our Experienced Research Team</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime facere unde incidunt repellendus explicabo vero consectetur dignissimos? Sunt perspiciatis aperiam quisquam nihil nam consequatur pariatur adipisci officia eos. Dolorem, itaque?</p>
+        </div>
+      </div>
+    </div>
+    {% include team/team-list.html %}
+  </div>
+</section>
+<div class="bg-image aspect-3x1" style="background-image: url({{ site.placeholder_image }})"></div>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <h2>Our Therapeutic Areas</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="column-list column-3">
+          {% for i in (1..50) %}
+            <li>area name</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h2>Our Facility is Designed for Clinical Trials</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for i in (1..4) %}
+        <div class="col-lg-3">
+          <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ site.placeholder_image }})"></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis nam? Aliquam iusto aspernatur sequi nisi eius voluptates nostrum omnis neque, est corporis. Doloribus veniam quisquam, quam officiis cupiditate quos.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto">
+        <ul>
+          {% for i in (1..8) %}
+            <li>Lorem ipsum dolor sit amet.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
