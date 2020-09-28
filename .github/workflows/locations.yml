@@ -24,4 +24,7 @@ jobs:
       # run only if 'team' files were changed
       - name: team
         if: steps.filter.outputs.locations == 'true'
-        run: ./.github/actions/hello-world/index.js
+        uses: ./.github/actions/hello-world
+
+      # - name: test JS
+      #   uses: ./.github/actions/hello-world # Tell it to run out JS Action
