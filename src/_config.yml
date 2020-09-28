@@ -70,7 +70,7 @@ _array_structures:
       icon: view_list
       value:
         title:
-        list_items:
+        list_item:
   list_item:
     - label: List item        
       icon: view_list
