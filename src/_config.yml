@@ -65,8 +65,8 @@ _array_structures:
       value:
         title:
         list_items:
-  capabilities:
-    - label: Capabilities
+  capability:
+    - label: Capability
       icon: view_list
       value:
         title:
