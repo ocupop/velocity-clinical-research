@@ -6,10 +6,12 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Subject Title</h1>
-        <p>By Blandy Fischer | 09/12/2020 | Trials</p>
-        <img src="{{ site.placeholder_image_wide }}" class="img-fluid" alt="">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis suscipit at, recusandae earum enim, laudantium dolor nesciunt ab minima nisi quidem. Velit nulla error neque. Sit dolorem nihil cum!</p>
+        <h1 class="mb-0">{{ page.title }}</h1>
+        <p>By {{ page.author }} | {{ page.post_date | date: "%D/%b/%Y"}} | Trials</p>
+        {% if page.featured_image %}
+          <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image">
+        {% endif %}
+        {{ page.content }}
       </div>
     </div>
   </div>
