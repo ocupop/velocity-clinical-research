@@ -17,7 +17,7 @@ layout: default
     </div>
   </div>
 </section>
-{% for stat_section in page.statistic_sections %}
+{% for stat_section in page.statistic_section %}
 <section>
   <div class="container">
     <div class="row">
@@ -28,7 +28,7 @@ layout: default
       </div>
     </div>
     <div class="row">
-      {% for stat in stat_section.statistics %}
+      {% for stat in stat_section.statistic %}
         <div class="col-lg-4 mb-5">
           <div class="text-center">
             <p class="h2">{{ stat.number }}</p>
@@ -40,7 +40,7 @@ layout: default
   </div>
 </section>
 {% endfor %}
-{% for list_section in page.list_sections %}
+{% for list_section in page.list_section %}
 <section>
   <div class="container">
     <div class="row">
@@ -54,7 +54,7 @@ layout: default
       <div class="col-12">
         <div class="text-center">
           <ul class="column-list column-5">
-            {% for list_item in list_section.list_items %}
+            {% for list_item in list_section.list_item %}
               <li>{{ list_item.title }}</li>
             {% endfor %}
           </ul>
