@@ -81,9 +81,8 @@ layout: default
               <div class="card-body">
                 <h4>{{ capability.title }}</h4>
                 <ul>
-                  {% for i in (1..3) %}
-                  <li>Capability</li>
-    
+                  {% for item in capability.list_items %}
+                    <li>{{ item.title }}</li>
                   {% endfor %}
                 </ul>
               </div>
