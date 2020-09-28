@@ -53,6 +53,30 @@ _array_structures:
         title:
         subtitle:
         color_overlay: false
+  statistic:
+    - label: Statistic
+      icon: insert_chart_outlined
+      value:
+        number:
+        description:
+  list_section:
+    - label: List Section
+      icon: format_list_bulleted
+      value:
+        title:
+        list_items:
+  capabilities:
+    - label: Capabilities
+      icon: view_list
+      value:
+        title:
+        list_items:
+  list_item:
+    - label: List item        
+      icon: view_list
+      value:
+        title:
+
 
 _comments:
   layout: 
