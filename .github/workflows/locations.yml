@@ -18,13 +18,10 @@ jobs:
           list-files: json
           base: ${{ github.ref }}
           filters: |
-            team:
-              - added|deleted: 'src/_team/**'
+            locations:
+              - added: 'src/_locations/**'
 
       # run only if 'team' files were changed
       - name: team
-        if: steps.filter.outputs.team == 'true'
-        run: echo team blah
-
-      - name: test JS
-        uses: ./.github/actions/hello-world # Tell it to run out JS Action
+        if: steps.filter.outputs.locations == 'true'
+        run: ./.github/actions/hello-world
