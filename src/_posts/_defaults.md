@@ -7,5 +7,3 @@ categories:
 author:
 related_location:
 ---
-
-<div class="editable"></div>
