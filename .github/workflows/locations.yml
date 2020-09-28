@@ -1,0 +1,30 @@
+name: Location Manager
+on: push
+
+jobs:
+  sync_locations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 setup
+        uses: actions/checkout@v2
+      - name: filter
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          # Use context to get branch where commits were pushed.
+          # If there is only one long lived branch (e.g. master),
+          # you can specify it directly.
+          # If it's not configured, the repository default branch is used.
+          list-files: json
+          base: ${{ github.ref }}
+          filters: |
+            team:
+              - added|deleted: 'src/_team/**'
+
+      # run only if 'team' files were changed
+      - name: team
+        if: steps.filter.outputs.team == 'true'
+        run: echo team blah
+
+      - name: test JS
+        uses: ./.github/actions/hello-world # Tell it to run out JS Action
