@@ -1,4 +1,4 @@
-.mosaic-images-1 {
+.mosaic-images-overlap {
   position: relative;
   height: 0;
   width: 100%;
@@ -42,7 +42,7 @@
   }
 }
 
-.mosaic-images-2 {
+.mosaic-images-wide {
   position: relative;
   height: 0;
   width: 100%;
@@ -75,6 +75,26 @@
       bottom: 0;
       right: 1%;
       width: 24%;
+    }
+  }
+}
+
+.mosaic-images-stack {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 110%;
+  .image-wrapper {
+    position: absolute;
+    &:nth-of-type(1) {
+      top: 0;
+      right: 0;
+      width: 80%;
+    }
+    &:nth-of-type(2) {
+      bottom: 0;
+      left: 0;
+      width: 80%;
     }
   }
 }

@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Capabilities
+hero:
+_assets:
+  - /img/capabilities/national-cancer-institute-1c8sj2IO2I4-unsplash.webp
+  - /img/capabilities/christina-wocintechchat-com-z5SOVx-y3F4-unsplash.webp
+
 ---
 
 {% include hero.html %}
@@ -14,7 +19,14 @@ title: Capabilities
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facere quisquam deleniti molestiae porro, ad provident eveniet doloremque repudiandae amet totam veniam, aut quaerat inventore quasi cum eaque illo quas.</p>
       </div>
       <div class="col-lg-6">
-        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+        <div class="mosaic-images-stack">
+          <div class="image-wrapper rounded">
+            <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+          </div>
+          <div class="image-wrapper rounded">
+            <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
