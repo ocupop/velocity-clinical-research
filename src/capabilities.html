@@ -6,6 +6,17 @@ hero:
     title:
     subtitle:
     color_overlay: false
+statistic_section:
+  - title: Vaccine Experience
+    statistic:
+      - number: 305
+        description: Vaccine trials since XXXX
+      - number: 30
+        description: Complete Pneumonia Studies
+      - number: 26
+        description: Completed RSV Studies
+      - number: 26
+        description: Completed RSV Studies   
 _assets:
   - /img/capabilities/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg
   - /img/capabilities/christina-wocintechchat-com-z5SOVx-y3F4-unsplash.jpg
@@ -14,12 +25,14 @@ _assets:
 
 {% include hero.html %}
 
-<section>
+<section class="pb-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
         <h3 class="subtitle editable">Capabilities</h3>
         <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facere quisquam deleniti molestiae porro, ad provident eveniet doloremque repudiandae amet totam veniam, aut quaerat inventore quasi cum eaque illo quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facere quisquam deleniti molestiae porro, ad provident eveniet doloremque repudiandae amet totam veniam, aut quaerat inventore quasi cum eaque illo quas.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facere quisquam deleniti molestiae porro, ad provident eveniet doloremque repudiandae amet totam veniam, aut quaerat inventore quasi cum eaque illo quas.</p>
       </div>
       <div class="col-lg-6">
@@ -35,28 +48,30 @@ _assets:
     </div>
   </div>
 </section>
+{% for stat_section in page.statistic_section %}
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <h2 class="editable">Velocity At-A-Glance</h2>
+          <h2 class="mb-5">{{ stat_section.title }}</h2>
         </div>
       </div>
     </div>
     <div class="row">
-      {% for i in (1..4) %}
-        <div class="col-lg-3">
+      {% for stat in stat_section.statistic %}
+        <div class="col-lg-3 mb-5">
           <div class="text-center">
-            <p class="h2">555</p>
-            <p>stat description</p>
+            <p class="h2 font-weight-bold">{{ stat.number }}</p>
+            <p>{{ stat.description }}</p>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
-<section>
+{% endfor %}
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -70,7 +85,7 @@ _assets:
     </div>
   </div>
 </section>
-<section class="bg-light">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -80,35 +95,32 @@ _assets:
         </div>
       </div>
     </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h2 class="font-weight-bolder editable">Our Therapeutic Areas</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3">
+          {% for i in (1..6) %}
+            <div class="card bg-image aspect-auto text-white mb-4" style="background-image: url(/img/capabilities/dermatology.jpg)">
+              <div class="card-body p-4">
+                <h6 class="text-white font-weight-bolder mb-0 mt-5">Specialty Name {{ forloop.index }}</h6>
+                <p><a href="/single-specialty" class="text-white">Learn more</a></p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section>
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h2>Our Therapeutic Areas</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h3>Specialties</h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <ul class="column-list column-3">
-          {% for i in (1..5) %}
-          <li class="text-center">
-            <a href="/single-specialty" class="h3">Specialty Name {{ forloop.index }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+    
     <div class="row">
       <div class="col-12">
         <div class="text-center editable">
