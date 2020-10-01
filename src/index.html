@@ -3,7 +3,8 @@ layout: default
 title: Home
 hero:
   title_html: >-
-    <h1><strong>Trusted</strong> research, <strong>Valued</strong> patients, <strong>Streamlined</strong> approach</h1>
+    <h1><strong>Trusted</strong> research, <strong>Valued</strong> patients,
+    <strong>Streamlined</strong> approach</h1>
   logo_image: /img/Velocity-Clinical-Research-CLR.png
   image: /img/home/header.jpg
 mosaic_images_1:
@@ -12,7 +13,20 @@ mosaic_images_1:
   - image: /img/home/Mask-Group-65.jpg
   - image: /img/home/Mask-Group-66.jpg
   - image: /img/home/Mask-Group-67.jpg
-text_carousel:  
+text_carousel:
+  - text_slide:
+      - title: Now recruiting for COVID-19 Vaccine Trials
+        subtitle: Trials
+        link: /locations/
+        link_label: Learn More
+      - title: 'Lorem, ipsum dolor sit amet consectetur'
+        subtitle: Subtitle
+        link: /about/
+        link_label: Link to a page
+      - title: 'Lorem, ipsum dolor sit amet consectetur'
+        subtitle: Subtitle
+        link: /contact/
+        link_label: Contact
 therapeutic_experience:
   - Allergy and immunology
   - Alzheimer's
@@ -33,10 +47,11 @@ therapeutic_experience:
   - Sleep disorders
   - Vaccine
 ---
+
 {% include home/hero-home.html %}
 <section>
   <div class="container position-relative">
-    <img src="/img/home/dots1.png" class="dots top-left" alt="Dots image">
+    <img src="/img/home/dots1.png" class="dots top-left" alt="Dots image" />
     <div class="row align-items-center">
       <div class="col-lg-6 order-lg-2">
         {% include home/mosaic-image-home-1.html %}
@@ -121,7 +136,7 @@ therapeutic_experience:
         <a href="/about" class="btn btn-secondary editable">Learn More About Us</a>
       </div>
       <div class="col-lg-8">
-        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
       </div>
     </div>
   </div>
