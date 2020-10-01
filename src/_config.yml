@@ -82,7 +82,7 @@ _array_structures:
     - label: Text Carousel
       icon: view_carousel
       value:
-        text_slides:
+        text_slide:
   text_slide:
     - label: Text Slide
       icon: text_snippet
