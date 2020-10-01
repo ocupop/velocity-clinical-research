@@ -51,7 +51,6 @@ _array_structures:
     - label: Hero
       icon: panorama
       value:
-        _type: hero
         image:
         title:
         subtitle:
@@ -79,7 +78,19 @@ _array_structures:
       icon: view_list
       value:
         title:
-
+  text_carousel:
+    - label: Text Carousel
+      icon: view_carousel
+      value:
+        text_slides:
+  text_slide:
+    - label: Text Slide
+      icon: text_snippet
+      value:
+        title:
+        subtitle:
+        link:
+        link_label:
 
 _comments:
   layout: 

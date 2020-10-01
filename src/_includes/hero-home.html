@@ -1,12 +1,14 @@
-<div class="hero hero-home aspect-3x1 bg-image" style="background-image: url({{ site.placeholder_image }})">
+<div class="hero hero-home aspect-3x1 bg-image" style="background-image: url({{ page.hero.image }})">
   <div class="hero-overlay">
     <div class="hero-content">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-lg-8 mx-lg-auto">
             <div class="text-center text-white">
-              <img src="/img/velocity.png" class="img-fluid" alt="Velocity Clinical Research Logo">
-              <h1>High-quality clinical trials with exemplary patient care</h1>
+              {% if page.hero.logo_image %}
+                <img src="{{ page.hero.logo_image }}" class="img-fluid mb-3" alt="Velocity Clinical Research Logo">
+              {% endif %}
+              {{ page.hero.title_html }}
             </div>
           </div>
         </div>

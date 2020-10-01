@@ -1,6 +1,18 @@
 ---
 layout: default
 title: Home
+hero:
+  title_html: >-
+    <h1><strong>Trusted</strong> research, <strong>Valued</strong> patients, <strong>Streamlined</strong> approach</h1>
+  logo_image: /img/Velocity-Clinical-Research-CLR.png
+  image: /img/home/header.jpg
+mosaic_images_1:
+  - image: /img/home/xavier-mouton-photographie-ry_sD0P1ZL0-unsplash.jpg
+  - image: /img/home/Mask-Group-68.jpg
+  - image: /img/home/Mask-Group-65.jpg
+  - image: /img/home/Mask-Group-66.jpg
+  - image: /img/home/Mask-Group-67.jpg
+text_carousel:  
 therapeutic_experience:
   - Allergy and immunology
   - Alzheimer's
@@ -23,15 +35,17 @@ therapeutic_experience:
 ---
 {% include hero-home.html %}
 <section>
-  <div class="container">
+  <div class="container position-relative">
+    <img src="/img/home/dots1.png" class="dots top-left" alt="Dots image">
     <div class="row align-items-center">
       <div class="col-lg-6 order-lg-2">
-        {% include components/mosaic-image.html %}
+        {% include home/mosaic-image-home-1.html %}
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="editable p-lg-5">
           <h3 class="subtitle">About Us</h3>
-          <h2 class="editable"><strong>Trusted</strong> research, <strong>Valued</strong> patients, <strong>Streamlined</strong> Approach</h2>
+          <h2 class="editable">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet dolores autem a est aliquid sapiente? Accusamus, rem? Perferendis suscipit dolor in eveniet harum assumenda ab odio iure atque accusamus.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet dolores autem a est aliquid sapiente? Accusamus, rem? Perferendis suscipit dolor in eveniet harum assumenda ab odio iure atque accusamus.</p>
         </div>
       </div>

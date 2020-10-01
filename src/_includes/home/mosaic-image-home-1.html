@@ -1,11 +1,13 @@
-<div class="mosaic-images">
-  <div class="image-wrapper rounded">
+<div class="mosaic-images-1">
+  {% for image in page.mosaic_images_1 %}
+    <div class="image-wrapper rounded">
+      <div class="bg-image aspect-5x4" style="background-image: url({{ image.image }})"></div>
+    </div>
+  {% endfor %}
+  <!-- <div class="image-wrapper rounded">
     <div class="bg-image aspect-5x4" style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
   </div>
   <div class="image-wrapper rounded">
-    <div class="bg-image aspect-5x4" style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
-  </div>
-  <div class="image-wrapper rounded">
     <div class="bg-image aspect-5x4 " style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
   </div>
   <div class="image-wrapper rounded">
@@ -13,5 +15,5 @@
   </div>
   <div class="image-wrapper rounded">
     <div class="bg-image aspect-5x4 " style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
-  </div>
+  </div> -->
 </div>
