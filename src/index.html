@@ -7,26 +7,31 @@ hero:
     <strong>Streamlined</strong> approach</h1>
   logo_image: /img/Velocity-Clinical-Research-CLR.png
   image: /img/home/header.jpg
-mosaic_images_1:
-  - image: /img/home/xavier-mouton-photographie-ry_sD0P1ZL0-unsplash.jpg
-  - image: /img/home/Mask-Group-68.jpg
-  - image: /img/home/Mask-Group-65.jpg
-  - image: /img/home/Mask-Group-66.jpg
-  - image: /img/home/Mask-Group-67.jpg
-text_carousel:
-  - text_slide:
-      - title: Now recruiting for COVID-19 Vaccine Trials
-        subtitle: Trials
-        link: /locations/
-        link_label: Learn More
-      - title: 'Lorem, ipsum dolor sit amet consectetur'
-        subtitle: Subtitle
-        link: /about/
-        link_label: Link to a page
-      - title: 'Lorem, ipsum dolor sit amet consectetur'
-        subtitle: Subtitle
-        link: /contact/
-        link_label: Contact
+_assets:
+  - /img/home/xavier-mouton-photographie-ry_sD0P1ZL0-unsplash.jpg
+  - /img/home/Mask-Group-68.jpg
+  - /img/home/Mask-Group-65.jpg
+  - /img/home/Mask-Group-66.jpg
+  - /img/home/Mask-Group-67.jpg
+  - /img/home/Mask-Group-12.jpg
+  - /img/home/humberto-chavez-FVh_yqLR9eA-unsplash.jpg
+  - /img/home/WorkshopMedia_VCRoffice_0111-Edit_FINAL.jpg
+  - /img/home/Mask-Group-11.jpg
+  - /img/home/Mask-Group-13.jpg
+
+text_slide:
+  - title: Now recruiting for COVID-19 Vaccine Trials
+    subtitle: Trials
+    link: /locations/
+    link_label: Learn More
+  - title: 'Lorem, ipsum dolor sit amet consectetur'
+    subtitle: Subtitle
+    link: /about/
+    link_label: Link to a page
+  - title: 'Lorem, ipsum dolor sit amet consectetur'
+    subtitle: Subtitle
+    link: /contact/
+    link_label: Contact
 therapeutic_experience:
   - Allergy and immunology
   - Alzheimer's
@@ -65,6 +70,7 @@ therapeutic_experience:
         </div>
       </div>
     </div>
+    <img src="/img/home/dots2.png" class="dots bottom-right" alt="Dots image">
   </div>
 </section>
 <section class="bg-primary">
@@ -80,22 +86,20 @@ therapeutic_experience:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7">
-        <div class="overflow-hidden">
-          <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
-        </div>
+        <img src="/img/home/map.png" class="img-fluid" alt="Map image">
       </div>
       <div class="col-lg-5">
         <div class="text-center editable p-lg-5">
           <h3>Strategically located research sites for patient access and diversity</h3>
           <p>Learn more about our Velocity Clinical Research locations</p>
-          <a href="#" class="btn btn-primary">Explore our Sites</a>
+          <a href="#" class="btn btn-secondary">Explore our Sites</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="container">
+  <div class="container position-relative">
     <div class="row">
       <div class="col-12">
         <div class="text-center">
@@ -106,37 +110,60 @@ therapeutic_experience:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="responsive-card-deck location-cards cards-lg-4">
-          {% for i in (1..4) %}
-            <div class="card card-white mb-4">
-              <div class="card-body text-center">
-                <h3 class="mb-0">Title</h3>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
+        <div class="responsive-card-deck cards-lg-4 mt-4">
+          <div class="card card-white mb-4">
+            <div class="card-body text-center">
+              <h3 class="my-4 text-secondary font-weight-bolder editable">Title</h3>
+              <div class="editable mb-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
               </div>
             </div>
-          {% endfor %}
+          </div>
+          <div class="card card-white mb-4">
+            <div class="card-body text-center">
+              <h3 class="my-4 text-secondary font-weight-bolder editable">Title</h3>
+              <div class="editable mb-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-white mb-4">
+            <div class="card-body text-center">
+              <h3 class="my-4 text-secondary font-weight-bolder editable">Title</h3>
+              <div class="editable mb-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-white mb-4">
+            <div class="card-body text-center">
+              <h3 class="my-4 text-secondary font-weight-bolder editable">Title</h3>
+              <div class="editable mb-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, totam.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <img src="/img/home/dots3.png" class="dots bottom-right overlap-bottom" alt="Dots image">
   </div>
 </section>
-<section>
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
         <h3 class="subtitle editable">Our Team</h3>
         <div class="editable">
-          <h2>Accomplished Physician Investigators and Research Staff</h2>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
+          <h3>Accomplished Physician Investigators and Research Staff</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, necessitatibus.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, necessitatibus.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, necessitatibus.</p>
         </div>
         <a href="/about" class="btn btn-secondary editable">Learn More About Us</a>
       </div>
       <div class="col-lg-8">
-        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
+        {% include home/mosaic-image-home-2.html %}
       </div>
     </div>
   </div>

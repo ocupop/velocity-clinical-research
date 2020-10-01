@@ -6,4 +6,17 @@
     left: 60px;
     width: 25%;
   }
+  &.top-right {
+    top: 0;
+    right: 0;
+    width: 15%;
+  }
+  &.bottom-right {
+    bottom: -50px;
+    right: 0;
+    width: 15%;
+    &.overlap-bottom {
+      bottom: -150px;
+    }
+  }
 }

@@ -11,6 +11,10 @@
     justify-content: center;
   }
 
+  h1 {
+    font-size: 2.8rem;
+  }
+
   &.hero-home {
     .hero-content {
       color: $primary;

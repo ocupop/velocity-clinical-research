@@ -1,19 +1,17 @@
 <div class="mosaic-images-1">
-  {% for image in page.mosaic_images_1 %}
-    <div class="image-wrapper rounded">
-      <div class="bg-image aspect-5x4" style="background-image: url({{ image.image }})"></div>
-    </div>
-  {% endfor %}
-  <!-- <div class="image-wrapper rounded">
-    <div class="bg-image aspect-5x4" style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
+  <div class="image-wrapper rounded">
+    <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
   </div>
   <div class="image-wrapper rounded">
-    <div class="bg-image aspect-5x4 " style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
+    <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
   </div>
   <div class="image-wrapper rounded">
-    <div class="bg-image aspect-5x4 " style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
+    <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[2] }})" data-cms-editor-link="cloudcannon:#_assets[2]" data-cms-editor-link-style="modal"></div>
   </div>
   <div class="image-wrapper rounded">
-    <div class="bg-image aspect-5x4 " style="background-image: url(https://picsum.photos/seed/picsum/500)"></div>
-  </div> -->
+    <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[3] }})" data-cms-editor-link="cloudcannon:#_assets[3]" data-cms-editor-link-style="modal"></div>
+  </div>
+  <div class="image-wrapper rounded">
+    <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[4] }})" data-cms-editor-link="cloudcannon:#_assets[4]" data-cms-editor-link-style="modal"></div>
+  </div>
 </div>
