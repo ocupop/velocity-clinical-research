@@ -18,9 +18,10 @@ layout: default
       </div>
     </div>
   </div>
+  <img src="" alt="">
 </section>
 {% for stat_section in page.statistic_section %}
-<section>
+<section class="{% unless forloop.last %}pb-0{% endunless %}">
   <div class="container">
     <div class="row my-5">
       <div class="col-12">
@@ -74,9 +75,9 @@ layout: default
 {% endfor %}
 <section class="bg-light">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
-        <div class="text-center">
+        <div class="text-center editable">
           <h2>Capabilities</h2>
         </div>
       </div>
@@ -85,12 +86,12 @@ layout: default
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
           {% for capability in page.capability %}
-            <div class="card">
+            <div class="card px-4">
               <div class="card-body">
-                <h4 class="text-center">{{ capability.title }}</h4>
-                <ul>
+                <h3 class="text-center my-5 font-weight-bolder">{{ capability.title }}</h3>
+                <ul class="color-bullets">
                   {% for item in capability.list_item %}
-                    <li>{{ item.title }}</li>
+                    <li class="mb-4">{{ item.title }}</li>
                   {% endfor %}
                 </ul>
               </div>

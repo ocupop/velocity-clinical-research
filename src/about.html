@@ -1,6 +1,10 @@
 ---
 layout: default
 title: About Velocity Clinical Research
+values:
+  - title:
+    image:
+    description:
 team:
   - dr--g-paul-evans
   - jeffrey-jensen
@@ -25,44 +29,65 @@ team:
 </section>
 <section class="bg-light">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <div class="text-center editable">
           <h2>Our Values</h2>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="responsive-card-deck cards-lg-3">
-          {% for i in (1..6) %}
-            <div class="col-lg-4 mb-4">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
-                      <div class="text-overlay">
-                        <div class="overlay-content">
-                          <h3 class="mb-0">Title</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
-                    
-                  </div>
-                  <div class="flip-card-back">
-                    <div class="flip-card-back-content">
-                      <h3>Title</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa nemo autem nam quam, officia adipisci eos necessitatibus magnam quasi.</p>
+    <div class="flip-card-grid">
+      {% assign counter = 0 %}
+      {% assign expandable_counter = 0 %}
+      {% for i in (1..9) %}
+        {% assign counter = counter | plus:1 %}
+        {% assign mod3 = counter | modulo: 3 %}
+        {% if mod3 == 0 %}
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="mb-0 font-weight-bolder">Title</h3>
                     </div>
                   </div>
                 </div>
+                <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
               </div>
-              
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa</p>
+                </div>
+              </div>
             </div>
-          {% endfor %}
-        </div>
-      </div>
+          </div>
+          <div class="w-100"></div>
+          {% assign expandable_counter = expandable_counter | plus:1 %}
+        {% else %}
+          <div class="flip-card ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="mb-0">Title</h3>
+                    </div>
+                  </div>
+                </div>
+                <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
+              </div>
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

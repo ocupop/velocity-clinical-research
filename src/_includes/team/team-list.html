@@ -1,18 +1,18 @@
 {% for object in page.team  %}
 {% assign member = site.team | where: "slug", object | first %}
-<div class="row align-items-center">
+<div class="row align-items-center mb-5">
   {% if member.image %}
   <div class="col-lg-3">
     <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
   </div>
   {% endif %}
-  <div class="col-lg-9 mx-auto">
+  <div class="col-lg-8 ml-lg-auto">
     <h4 class="mb-0">{{ member.name }}</h4>
     {% if member.role %}
       <p class="lead">{{ member.role }}</p>
     {% endif %}
     {{ member.content | truncatewords: 30 }}
-    <p><a href="{{ member.url }}" class="text-link">Read More</a></p>
+    <p><a href="{{ member.url }}" class="text-secondary">Read More</a></p>
   </div>
 </div>
 {% endfor %}
