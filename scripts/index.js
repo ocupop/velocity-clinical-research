@@ -45,12 +45,13 @@ $(document).ready(function() {
 
   $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 30,
     nav: true,
     navText: [
       '<i class="ri-arrow-left-s-line"></i>',
       '<i class="ri-arrow-right-s-line"></i>'
     ],
+    stagePadding: 10,
     autoplay: true,
     autoplayHoverPause: true,
     responsive: {

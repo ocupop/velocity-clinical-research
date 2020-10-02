@@ -78,6 +78,24 @@
   }
 }
 
+//add inside of section for pinned images
+.image-pin-left {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 33%;
+  left: 0;
+  top: 0;
+  margin-bottom: 30px;
+  @include media-breakpoint-up(lg) {
+    width: 43vw;
+    height: 100%;
+    padding-top: 0;
+    position: absolute;  
+    
+  }
+}
+
 // Sticky behavior
 .sticky {
   position: sticky;
@@ -169,5 +187,7 @@ ul.column-list {
     column-count: 5;
   }
 }
+
+
 
 // SVG Fill & Stroke Utilities
