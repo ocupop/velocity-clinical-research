@@ -98,6 +98,15 @@ _array_structures:
         subtitle:
         link:
         link_label:
+  location_team:
+    label: Location Team
+    icon: face
+    value:
+      name:
+      role:
+      image:
+      bio_html:
+
 
 _comments:
   layout: 

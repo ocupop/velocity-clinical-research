@@ -19,4 +19,12 @@
       bottom: -150px;
     }
   }
+  &.bottom-left {
+    bottom: -50px;
+    left: 0;
+    width: 20%;
+    &.overflow-left {
+      left: -7%;
+    }
+  }
 }
