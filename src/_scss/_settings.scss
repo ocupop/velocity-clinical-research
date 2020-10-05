@@ -21,13 +21,13 @@ $yellow:  #f5C938;
 $green:   #87a63e;
 $lime-green: #49a93a;
 $teal:    #20c997 !default;
-$cyan:    #37c0f8;
+$cyan:    #36c0f8;
 
 $primary:       $blue;
 $primary-dark:  #13225a;
 $secondary:     $cyan;
 $success:       $green !default;
-$info:          #EDEDED;;
+$info:          #EDEDED;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100;
@@ -75,11 +75,10 @@ $theme-colors: map-merge(
 $body-bg:               $white;
 $body-color:            $gray-900;
 
+$font-family-base: 'Avenir W01', sans-serif;
+$font-family-book: 'Avenir W01', sans-serif;
 
-$font-family-base: 'Avenir LT W01_35 Light1475496', sans-serif;
-$font-family-book: 'Avenir LT W01_45 Book1475508', sans-serif;
-
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem;
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -90,9 +89,9 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.2;
-$h2-font-size:                $font-size-base * 2;
-$h3-font-size:                $font-size-base * 1.8;
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.8;
+$h3-font-size:                $font-size-base * 1.6;
 $h4-font-size:                $font-size-base * 1.4;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
