@@ -47,6 +47,13 @@ _options:
     hidden: true
 
 _array_structures:
+  meta:
+    label: Meta Data
+    icon: share
+    value:
+      title:
+      description:
+      image:
   hero: 
     - label: Hero
       icon: panorama

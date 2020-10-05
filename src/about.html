@@ -16,6 +16,9 @@ team:
   - melissa-holbrook-msn-np
   - jamie-wilkerson-cpa-cgma
   - craig-m-koch
+_assets:
+  - /img/about/Mask-Group-4.jpg
+  - /img/about/WorkshopMedia_VCRoffice_0371-Edit_FINAL.jpg
 ---
 
 {% include hero.html %}
@@ -100,8 +103,8 @@ team:
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="" />
-        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="" />
+        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-8">
         <h2>Our History</h2>
