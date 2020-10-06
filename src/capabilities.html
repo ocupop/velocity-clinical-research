@@ -175,11 +175,11 @@ _assets:
     <div class="row">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-          {% for i in (1..6) %}
-            <div class="card bg-image aspect-auto text-white mb-4" style="background-image: url(/img/capabilities/dermatology.jpg)">
+          {% for specialty in site.specialties %}
+            <div class="card bg-image aspect-auto text-white mb-4" style="background-image: url({{ specialty.tile_bg_image}})">
               <div class="card-body p-4">
-                <h6 class="text-white font-weight-bolder mb-0 mt-5">Specialty Name {{ forloop.index }}</h6>
-                <p><a href="/single-specialty" class="text-white">Learn more</a></p>
+                <h6 class="text-white font-weight-bolder mb-0 mt-5 mb-2">{{ specialty.title }}</h6>
+                <p><a href="{{ specialty.url }}" class="text-white d-flex align-items-center">Learn more <i class="ri-arrow-right-s-line"></i></a></p>
               </div>
             </div>
           {% endfor %}
