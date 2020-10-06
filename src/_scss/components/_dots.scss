@@ -14,16 +14,19 @@
     bottom: -50px;
     right: 0;
     width: 15%;
-    &.overlap-bottom {
-      bottom: -150px;
-    }
+    
   }
   &.bottom-left {
     bottom: -50px;
     left: 0;
     width: 20%;
-    &.overflow-left {
-      left: -7%;
-    }
+    max-width: 200px;
+    
+  }
+  &.overflow-left {
+    left: -7%;
+  }
+  &.overlap-bottom {
+    bottom: -150px;
   }
 }
