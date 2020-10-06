@@ -18,7 +18,7 @@ layout: default
       </div>
     </div>
   </div>
-  <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image">
+  <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image" />
 </section>
 {% for stat_section in page.statistic_section %}
 <section class="{% unless forloop.last %}pb-0{% endunless %}">
@@ -36,7 +36,7 @@ layout: default
           <div class="text-center">
             {% if stat.icon_image %}
               <div class="icon-wrapper">
-                <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon">
+                <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon" />
               </div>
             {% endif %}
             <p class="h1 font-weight-bold">{{ stat.number }}</p>
