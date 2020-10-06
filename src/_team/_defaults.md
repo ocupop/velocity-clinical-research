@@ -4,5 +4,6 @@ name:
 image:
 role:
 company:
-phone: 
+phone:
+linkedin_url:
 ---

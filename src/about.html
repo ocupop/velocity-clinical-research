@@ -73,26 +73,26 @@ _assets:
     <div class="flip-card-grid">
       {% assign counter = 0 %}
       {% assign expandable_counter = 0 %}
-      {% for i in (1..9) %}
+      {% for value in page.values %}
         {% assign counter = counter | plus:1 %}
         {% assign mod3 = counter | modulo: 3 %}
         {% if mod3 == 0 %}
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front rounded">
-                <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
                   <div class="text-overlay">
                     <div class="overlay-content">
-                      <h3 class="mb-0 font-weight-bolder">Title</h3>
+                      <h3 class="mb-0 font-weight-bold text-white">{{ value.title }}</h3>
                     </div>
                   </div>
                 </div>
-                <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
+                <img src="{{ value.image | site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
               </div>
               <div class="flip-card-back rounded">
                 <div class="flip-card-back-content">
-                  <h3>Title</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa</p>
+                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <p>{{ value.description }}</p>
                 </div>
               </div>
             </div>
@@ -103,19 +103,19 @@ _assets:
           <div class="flip-card ">
             <div class="flip-card-inner">
               <div class="flip-card-front rounded">
-                <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
                   <div class="text-overlay">
                     <div class="overlay-content">
-                      <h3 class="mb-0">Title</h3>
+                      <h3 class="text-white font-weight-bold mb-0">{{ value.title }}</h3>
                     </div>
                   </div>
                 </div>
-                <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
+                <img src="{{ value.image | default: site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
               </div>
               <div class="flip-card-back rounded">
                 <div class="flip-card-back-content">
-                  <h3>Title</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa</p>
+                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <p class="text-center">{{ value.description }}</p>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ _assets:
     </div>
   </div>
 </section>
-<section>
+<section >
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
@@ -133,14 +133,24 @@ _assets:
         <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-8">
-        <h2>Our History</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt atque quaerat aspernatur unde. Pariatur nesciunt impedit veritatis maxime, error architecto quod corrupti ipsum voluptatem aperiam, dignissimos quia cum molestias unde!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit sint obcaecati quasi nobis alias quo, modi dolores voluptatum. Hic deleniti molestiae impedit nostrum cum vitae dolorem esse facilis alias?</p>
+        <div class="editable">
+          <h2>Our History</h2>
+          <p>Velocity Clinical Research, headquartered in Durham, NC, is a wholly owned research site organization focused on patient engagement, quality, scalability and therapeutic breadth. Founded in 2017, Velocity now comprises 12 research sites, geographically dispersed across the United States. Collectively, our sites have been focusing on clinical study trials for over 225 years with more than 4600 successfully completed studies.</p>
+          <p>The Velocity model represents a new approach to site management. By owning and operating all sites directly, we offer consistent and highly efficient patient recruitment and engagement, and integrated study processes and systems.</p>
+          <p>Our entire organization focuses on several key principles:</p>
+          <ul>
+            <li>Volume and breadth of therapeutic capability</li>
+            <li>Quality experience for both sponsor and patients</li>
+            <li>Consistency and scalability</li>
+            <li>Expedited start-up and rapid patient enrollment</li>
+            <li>Single point of contact for study finances and issue resolution</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section>
+<section class="pt-0">
   <div class="container">
     <div class="row">
       <div class="col-12">

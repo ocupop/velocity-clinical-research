@@ -9,9 +9,14 @@
   <div class="col-lg-8 ml-lg-auto">
     <h4 class="mb-0">{{ member.name }}</h4>
     {% if member.role %}
-      <p class="lead">{{ member.role }}</p>
+      <h5 class="text-dark mb-0">{{ member.role }}</h5>
     {% endif %}
-    {{ member.content | truncatewords: 30 }}
+    {% if member.linkedin_url %}
+      <p class="mb-0"><a href="{{ member.linkedin_url }}" class="text-mid"><i class="ri-linkedin-box-fill"></i></a></p>
+    {% endif %}
+    <div class="mt-3">
+      {{ member.content | truncatewords: 30 }}
+    </div>
     <p><a href="{{ member.url }}" class="text-secondary">Read More</a></p>
   </div>
 </div>

@@ -5,5 +5,6 @@ image:
 role: Junior Accountant
 company: Velocity Clinical Research
 phone: +1 919.601.2697
+linkedin_url:
 ---
 

@@ -5,6 +5,7 @@ image: /uploads/ed-cropped-for-web-site-2.jpg
 role:
 company: Clinical Research Institute of Southern Oregon
 phone:
+linkedin_url:
 ---
 
 Dr. Kerwin founded the Clinical Research Institute of Southern Oregon in 1997. He is a board certified Respiratory, Allergy and Clinical Immunology specialist. Dr. Kerwin has been Principal Investigator on over 700 protocols and has helped many pharmaceutical companies as a consultant, author for papers, and as a reviewer of clinical study reports and draft protocols.
