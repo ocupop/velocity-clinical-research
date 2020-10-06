@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="position-relative my-lg-5">
-  <div class="bg-image image-pin-left" style="background-image: url({{ site.placeholder_image }})"></div>
+  <div class="bg-image image-pin-left" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})"></div>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 ml-lg-auto">
