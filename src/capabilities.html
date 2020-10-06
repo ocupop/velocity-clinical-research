@@ -166,7 +166,7 @@ _assets:
   </div>
   <img src="/img/dots3.png" class="dots bottom-left overlap-bottom" alt="Dot image" />
 </section>
-<section>
+<section class="pb-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
@@ -203,28 +203,16 @@ _assets:
     </div>
   </div>
 </section>
-<section class="pt-0">
+{% for list_section in page.list_section %}
+<section class="{% if forloop.first %}pt-0{% endif %}">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto">
-        <div class="text-center editable">
+      <div class="col-12">
+        <div class="text-center">
           <p><img class="img-fluid my-5" alt="Dots image" src="/img/capabilities/dots.png" /></p>
-          <ul class="column-list column-3">
-            <li>Allergy /Immunology<br />Cardiology<br />Infectious Disease<br />Medical Devices</li>
-         
-            <li>Men&rsquo;s Health<br />Nephrology<br />Psychiatry<br />Pain</li>
-            <li>Rheumatology / Musculoskeletal<br />Sleep Medicine<br />Urology<br />Women&rsquo;s Health</li>
-       
-       
-          </ul>
         </div>
       </div>
     </div>
-  </div>
-</section>
-{% for list_section in page.list_section %}
-<section>
-  <div class="container">
     {% if page.list_section.title %}
     <div class="row">
       <div class="col-12">
@@ -235,9 +223,9 @@ _assets:
     </div>
     {% endif %}
     <div class="row">
-      <div class="col-12">
+      <div class="col-lg-10 mx-lg-auto">
         <div class="text-center">
-          {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
+          {% assign num_columns = list_section.list_item | size | divided_by: 4  %}
           <ul class="column-list column-{{ num_columns }}">
             {% for list_item in list_section.list_item %}
               <li>{{ list_item.title }}</li>
