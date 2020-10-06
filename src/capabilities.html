@@ -76,6 +76,7 @@ capabilities:
           support results in high volume, rapid enrollment
       - title: 48 hour data entry goals
       - title: Data query resolution within 48 hours of query generation
+list_section:      
 _assets:
   - /img/capabilities/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg
   - /img/capabilities/christina-wocintechchat-com-z5SOVx-y3F4-unsplash.jpg
@@ -176,12 +177,12 @@ _assets:
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
           {% for specialty in site.specialties %}
-            <div class="card bg-image aspect-auto text-white mb-4" style="background-image: url({{ specialty.tile_bg_image}})">
+            <a href="{{ specialty.url }}" class="card bg-image aspect-auto text-white mb-4" style="background-image: url({{ specialty.tile_bg_image}})">
               <div class="card-body p-4">
                 <h6 class="text-white font-weight-bolder mb-0 mt-5 mb-2">{{ specialty.title }}</h6>
-                <p><a href="{{ specialty.url }}" class="text-white d-flex align-items-center">Learn more <i class="ri-arrow-right-s-line"></i></a></p>
+                <p class="text-white d-flex align-items-center">Learn more <i class="ri-arrow-right-s-line"></i></p>
               </div>
-            </div>
+            </a>
           {% endfor %}
         </div>
       </div>
@@ -196,12 +197,11 @@ _assets:
           <p><img class="img-fluid my-5" alt="Dots image" src="/img/capabilities/dots.png" /></p>
           <ul class="column-list column-3">
             <li>Allergy /Immunology<br />Cardiology<br />Infectious Disease<br />Medical Devices</li>
-            <li>&nbsp;</li>
+         
             <li>Men&rsquo;s Health<br />Nephrology<br />Psychiatry<br />Pain</li>
-            <li>&nbsp;</li>
             <li>Rheumatology / Musculoskeletal<br />Sleep Medicine<br />Urology<br />Women&rsquo;s Health</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
+       
+       
           </ul>
         </div>
       </div>

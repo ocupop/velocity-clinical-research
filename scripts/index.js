@@ -59,10 +59,10 @@ $(document).ready(function() {
         items: 1
       },
       500: {
-        items: 2
+        items: 1
       },
       666: {
-        items: 3
+        items: 1
       },
       991: {
         items: 2
