@@ -73,7 +73,7 @@ _array_structures:
       icon: format_list_bulleted
       value:
         title:
-        list_items:
+        list_item:
   capability:
     - label: Capability
       icon: view_list
