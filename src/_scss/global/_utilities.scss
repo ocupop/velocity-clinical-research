@@ -91,6 +91,7 @@
   left: 0;
   top: 0;
   margin-bottom: 30px;
+  z-index: 100;
   @include media-breakpoint-up(lg) {
     width: 43vw;
     height: 100%;
