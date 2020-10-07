@@ -54,8 +54,10 @@
 
 #what {
   .bg-image {
-    margin-left: -50%;
-    padding-top: 65%;
+    @include media-breakpoint-up(lg) {
+      margin-left: -50%;
+      padding-top: 65%;
+    }
   }
 }
 
