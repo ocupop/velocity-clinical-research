@@ -1,0 +1,52 @@
+// location home page
+#make-a-difference {
+  .dots {
+    width: 21%;
+    max-width: 300px;
+  }
+  .mosaic-images-overlap {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+    }
+  }
+}
+
+#member {
+  .mosaic-images-overlap {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+      margin-left: -20%;
+    }
+  }
+}
+
+#story {
+  @include media-breakpoint-up(lg) {
+    .bg-image {
+      padding-top: 100%;
+      margin-left: -50%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#location-team {
+  .dots {
+    bottom: 0;
+    left: 30px;
+  }
+  .bg-image {
+    z-index: 100;
+    position: relative;
+  }
+}
+
+
+//location contact page
+.google-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+}  

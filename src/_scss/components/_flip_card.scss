@@ -3,8 +3,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
   .flip-card {
-    width: 27%;
+    width: 100%;
     margin-bottom: 8%;
+    @include media-breakpoint-up(sm) {
+      width: 47%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 27%;
+    }
     .text-overlay {
       position: absolute;
       top: 0;

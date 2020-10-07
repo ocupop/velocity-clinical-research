@@ -97,7 +97,7 @@ _assets:
               </div>
             </div>
           </div>
-          <div class="w-100"></div>
+          <div class="w-100 d-none d-lg-block"></div>
           {% assign expandable_counter = expandable_counter | plus:1 %}
         {% else %}
           <div class="flip-card ">
@@ -125,14 +125,14 @@ _assets:
     </div>
   </div>
 </section>
-<section >
+<section id="history">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-lg-4">
         <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
         <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-7 ml-lg-auto">
         <div class="editable">
           <h2>Our History</h2>
           <p>Velocity Clinical Research, headquartered in Durham, NC, is a wholly owned research site organization focused on patient engagement, quality, scalability and therapeutic breadth. Founded in 2017, Velocity now comprises 12 research sites, geographically dispersed across the United States. Collectively, our sites have been focusing on clinical study trials for over 225 years with more than 4600 successfully completed studies.</p>

@@ -1,5 +1,5 @@
 //main js
-$(document).ready(function() {
+$(function() {
   console.log('hellow')
 
   if($('#us-map').length) {
@@ -39,6 +39,7 @@ $(document).ready(function() {
 
     var locationMarker = d3.selectAll('circle').on('click', function(){
       console.log('clicked map marker')
+      
       $('#exampleModal').modal('toggle')
     });
   }
