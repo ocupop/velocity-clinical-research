@@ -61,7 +61,39 @@
   }
 }
 
+#faqs {
+  .bg-white {
+    z-index: 10;
+    position: relative;
+  }
+  .dots {
+    bottom: 100px;
+    left: -25px;
+  }
+}
+
+
+
 //location contact page
+#location-contact {
+  overflow: hidden;
+  .bg-white {
+    position: relative;
+    z-index: 10;
+  }
+  .dots {
+    bottom: -50px;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overlap-image {
+    margin-top: -25%;
+    margin-left: 6%;
+    max-width: 45%;
+  }
+}
+
 .google-map {
   position: absolute;
   top: 0;

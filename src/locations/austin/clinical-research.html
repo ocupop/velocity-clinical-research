@@ -87,7 +87,7 @@ _assets:
     </div>
   </div>
 </section>
-<section id="faqs" class="bg-light">
+<section id="faqs" class="bg-light position-relative">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
@@ -96,14 +96,14 @@ _assets:
     </div>
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
-        {% for i in (1..4) %}
+        {% for faq in page.faqs %}
           <div class="bg-white p-5 mb-4">
             <a class="d-flex justify-content-between align-items-center h2 mb-0 collapsed" data-toggle="collapse" href="#collapse-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
-              Question Lorem ipsum dolor sit amet. <i class="ri-arrow-down-s-line"></i>
+              {{ faq.question }} <i class="ri-arrow-down-s-line"></i>
             </a>
             <div class="collapse" id="collapse-{{ forloop.index }}">
               <div class="pt-5">
-                Question answer Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                {{ faq.answer_text }}
               </div>
             </div>
           </div>
@@ -111,4 +111,5 @@ _assets:
       </div>
     </div>
   </div>
+  <img src="/img/dots3.png" class="dots bottom-left" alt="Dots image">
 </section>
