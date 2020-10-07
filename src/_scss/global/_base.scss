@@ -11,6 +11,9 @@ section {
 }
 
 a {
+  &:hover {
+    text-decoration: none;
+  }
   &.text-link {
     position: relative;
     overflow: hidden;
