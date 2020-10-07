@@ -42,6 +42,23 @@
 }
 
 
+#participating {
+  .mosaic-images-stack {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+      padding-top: 130%;
+    }
+    
+  }
+}
+
+#what {
+  .bg-image {
+    margin-left: -50%;
+    padding-top: 65%;
+  }
+}
+
 //location contact page
 .google-map {
   position: absolute;
