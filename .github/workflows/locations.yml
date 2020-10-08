@@ -24,10 +24,7 @@ jobs:
             locations:
               - added|deleted: 'src/_locations/**'
 
-      # run only if 'location' files were changed
+      # run only if 'location' files were added or deleted
       - name: team
         if: steps.filter.outputs.locations == 'true'
-        run: echo blah
-
-      # - name: test JS
-      #   uses: ./.github/actions/hello-world # Tell it to run out JS Action
+        run: echo ${{ github.ref }}
