@@ -27,4 +27,4 @@ jobs:
       # run only if 'location' files were added or deleted
       - name: team
         if: steps.filter.outputs.locations == 'true'
-        run: cp -Rb ${{ github.ref }}/src/locations/_default ${{ github.ref }}/src/locations/test
+        run: cp -Rb /src/locations/_default /src/locations/test
