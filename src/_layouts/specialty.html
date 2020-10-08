@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="position-relative my-lg-5">
+<div class="split-intro position-relative">
   <div class="bg-image image-pin-left" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})"></div>
   <div class="container">
     <div class="row align-items-center">
@@ -19,7 +19,7 @@ layout: default
     </div>
   </div>
   <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image" />
-</section>
+</div>
 {% for stat_section in page.statistic_section %}
 <section class="{% unless forloop.last %}pb-0{% endunless %}">
   <div class="container">
@@ -32,7 +32,7 @@ layout: default
     </div>
     <div class="row">
       {% for stat in stat_section.statistic %}
-        <div class="col-lg-4 mb-5">
+        <div class="col-6 col-lg-4 mb-5">
           <div class="text-center">
             {% if stat.icon_image %}
               <div class="icon-wrapper">
@@ -86,7 +86,7 @@ layout: default
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
           {% for capability in page.capability %}
-            <div class="card px-4">
+            <div class="card px-4 mb-3 mb-lg-3">
               <div class="card-body">
                 <h3 class="text-center my-5 font-weight-bold">{{ capability.title }}</h3>
                 <ul class="color-bullets">

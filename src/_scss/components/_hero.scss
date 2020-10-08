@@ -13,20 +13,9 @@
   }
 
   h1 {
-    font-size: 2.4rem;
-  }
-
-  &.hero-home {
-    .hero-content {
-      color: $primary;
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: $primary;
-      }
+    font-size: 1.9rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 2.4rem;
     }
   }
   
