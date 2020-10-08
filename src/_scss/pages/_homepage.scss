@@ -10,17 +10,7 @@
       color: $primary;
     }
   }
-  img {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-    @include media-breakpoint-up(lg) {
-      width: 300px;
-    }
-  }
 }
-
-.homepage {}
 
 .icons-row {
   img {

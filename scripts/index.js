@@ -17,14 +17,14 @@ $(function() {
       }
     });
     var locations = [{
-      name: 'Seattle',
+      name: 'Austin',
       radius: 15,
-      city: 'Seattle',
-      state: 'WA',
+      city: 'Austin',
+      state: 'TX',
       fillKey: 'locationPin',
       website: 'www.velocityclinical.com',
-      latitude: 47.6062,
-      longitude: -122.3321
+      latitude: 30.4748321,
+      longitude: -97.8428763
     }
     ];
 
@@ -40,7 +40,7 @@ $(function() {
     var locationMarker = d3.selectAll('circle').on('click', function(){
       console.log('clicked map marker')
       
-      $('#exampleModal').modal('toggle')
+      $('#map-modal').modal('toggle')
     });
   }
 
