@@ -1,0 +1,6 @@
+#us-map {
+  height: 350px;
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+  }
+}
