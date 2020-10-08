@@ -30,7 +30,7 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: src/locations/_default/**.*
+          src_path: src/locations/_default
           dst_path: src/locations/test
           dst_owner: VelocityClinical
           dst_repo_name: velocity-clinical-research
