@@ -1,5 +1,8 @@
 name: Location Manager
-on: push
+on:
+  push:
+    branches: ['develop']
+    paths: ['src/_locations/**']
 
 jobs:
   sync_locations:
