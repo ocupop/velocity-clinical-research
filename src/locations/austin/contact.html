@@ -5,9 +5,8 @@ hero:
     title:
     subtitle:
     color_overlay: false
-google_map_embed:
 ---
-
+{% include locations/location-logic.html %}
 {% include hero.html %}
 
 <section class="bg-light">
@@ -17,22 +16,24 @@ google_map_embed:
         <div class="shadow p-5 bg-white rounded position-relative">
           <div class="row align-items-center">
             <div class="col-lg-3">
-              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ site.placeholder_image }})"></div>
+              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ location.featured_image }})"></div>
             </div>
             <div class="col-lg-5">
-              <h4 class="font-weight-bold editable mb-0">Velocity Clinical Research, Austin</h4>
-              <h4 class="font-weight-bold editable">Cedar Park, TX</h4>
+              <h4 class="font-weight-bold editable mb-0">Velocity Clinical Research, {{ location.city }}</h4>
+              <h4 class="font-weight-bold editable">{{ location.location_name }}, {{ location.state }}</h4>
               <div class="editable">
-                <p>1900 Cypress Creek Suite 200 Cedar Park, TX 78613</p>
+                <p>{{ location.location_details.address }}</p>
               </div>
               <div class="editable">
-                <p class="mb-0"><a href="tel:555-555-555">(737) 204-1904</a></p>
-                <p><a href="mailto:info@velocityclinical.com">info@velocityclinical.com</a></p>
+                <p class="mb-0"><a href="tel:{{ location.location_details.phone }}">{{ location.location_details.phone }}</a></p>
+                <p><a href="mailto:{{ location.location_details.email }}">{{ location.location_details.email }}</a></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="google-map bg-dark"></div>
+        <div class="google-map bg-dark overflow-hidden">
+          {{ location.location_details.google_map_embed }}
+        </div>
       </div>
     </div>
   </div>

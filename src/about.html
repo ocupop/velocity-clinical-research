@@ -87,7 +87,7 @@ _assets:
                     </div>
                   </div>
                 </div>
-                <img src="{{ value.image | site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
+                <img src="{{ value.image | default: site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
               </div>
               <div class="flip-card-back rounded">
                 <div class="flip-card-back-content">

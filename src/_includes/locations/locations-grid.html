@@ -1,17 +1,17 @@
 <div class="responsive-card-deck location-cards cards-lg-4">
-  {% for site in site.data.locations.research_sites %}
+  {% for location in site.locations %}
     <div class="card card-white mb-4">
       <div class="image-wrapper">
         <div class="bg-image aspect-1x1 rounded-circle"
-          style="background-image: url({{ site.image }})"></div>
+          style="background-image: url({{ location.featured_image }})"></div>
       </div>
       
       <div class="card-body text-center">
-        <p class="mb-0">{{ site.location }}</p>
-        <p class="mb-0"><strong>{{ site.title }}</strong></p>
+        <p class="mb-0">{{ location.city }}, {{ location.state }}</p>
+        <p class="mb-0"><strong>Velocity {{ location.city }}</strong></p>
       </div>
       <div class="card-footer text-center border-0 bg-transparent">
-        <a href="{{ site.link }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt=""></a>
+        <a href="/locations/{{ location.title | slugify }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt="Arrow icon"></a>
       </div>
     </div>
   {% endfor %}

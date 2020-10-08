@@ -1,3 +1,4 @@
+{% assign page_url = page.url | split:'/'  %}
 <header id="pageHeader">
   <div class="container">
     <nav id="mainnav" class="navbar navbar-expand-lg">
@@ -9,27 +10,27 @@
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="/{{ page_url[1] }}/{{ page_url[2] }}">
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="specialties-facilities">
+            <a class="nav-link" href="/{{ page_url[1] }}/{{ page_url[2] }}/specialties-facilities">
               Specialties &amp; Facilities
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="clinical-research">
+            <a class="nav-link" href="/{{ page_url[1] }}/{{ page_url[2] }}/clinical-research">
               About Clinical Research
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news">
+            <a class="nav-link" href="/{{ page_url[1] }}/{{ page_url[2] }}/news">
               News
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact">
+            <a class="nav-link" href="/{{ page_url[1] }}/{{ page_url[2] }}/contact">
               Contact
             </a>
           </li>
@@ -38,3 +39,4 @@
     </nav>
   </div>
 </header>
+
