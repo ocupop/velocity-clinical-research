@@ -19,12 +19,12 @@ jobs:
           base: ${{ github.ref }}
           filters: |
             locations:
-              - added | deleted: 'src/_locations/**'
+              - added|deleted: 'src/_locations/**'
 
-      # run only if 'team' files were changed
+      # run only if 'location' files were changed
       - name: team
         if: steps.filter.outputs.locations == 'true'
-        uses: ./.github/actions/hello-world
+        run: echo blah
 
       # - name: test JS
       #   uses: ./.github/actions/hello-world # Tell it to run out JS Action
