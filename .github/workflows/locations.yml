@@ -25,6 +25,14 @@ jobs:
               - added|deleted: 'src/_locations/**'
 
       # run only if 'location' files were added or deleted
-      - name: team
+      - name: copy
         if: steps.filter.outputs.locations == 'true'
-        run: cp -Rb /src/locations/_default /src/locations/test
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /src/locations/_default/**.*
+          dst_path: /src/locations/test
+          dst_owner: VelocityClinical
+          dst_repo_name: velocity-clinical-research
+          commit_message: added location files
+
