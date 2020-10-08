@@ -3,9 +3,13 @@
   .navbar-brand {
     width: 150px;
   }
+  .navbar-nav {
+    align-items: center;
+  }
   .nav-item {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
   }
   .nav-link {
     text-transform: uppercase;

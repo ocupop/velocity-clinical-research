@@ -79,7 +79,9 @@
 }
 
 .overlap-top {
-  margin-top: -175px;
+  @include media-breakpoint-up(lg) {
+    margin-top: -175px;
+  }
 }
 
 //add inside of section for pinned images

@@ -2,6 +2,14 @@
   font-size: 20px;
 }
 
+#values {
+  .dots {
+    bottom: -175px;
+    transform: rotate(90deg);
+    width: 16%;
+  }
+}
+
 #history {
   @include media-breakpoint-up(lg) {
     .bg-image {

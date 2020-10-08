@@ -7,8 +7,16 @@
     &:hover {
       opacity: 1;
     }
+  }  
+}
+
+.overlap-image {
+  visibility: hidden;
+  height: 0;
+  @include media-breakpoint-up(lg) {
+    visibility: visible;
+    height: auto;
   }
-  
 }
 
 #contact-header {
@@ -32,13 +40,13 @@
     transform: translateX(-50%);
   }
   .overlap-image {
-    margin-top: -25%;
-    margin-left: 6%;
-    max-width: 45%;
+    @include media-breakpoint-up(lg) {
+      margin-top: -25%;
+      margin-left: 6%;
+      max-width: 45%;
+    }
   }
 }
-
-
 
 #find-a-clinic {
   overflow: hidden;
@@ -59,17 +67,22 @@
   overflow: hidden;
   position: relative;
   .contact-form {
-    min-height: 1000px;
+    @include media-breakpoint-up(lg) {
+      min-height: 1000px;
+    }
   }
   .overlap-image {
-    margin-top: -65%;
-    margin-left: 6%;
-    max-width: 45%;
+    @include media-breakpoint-up(lg) {
+      margin-top: -65%;
+      margin-left: 6%;
+      max-width: 45%;
+    }
   }
   .dots {
-    bottom: 182px;
+    bottom: 130px;
     width: 29%;
-    left: 30%;
+    left: 26%;
+    max-width: 300px;
   }
 }
 
@@ -84,5 +97,12 @@
     width: 20%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .overlap-image {
+    @include media-breakpoint-up(lg) {
+      margin-top: -85%;
+      margin-left: -8%;
+      max-width: 45%;
+    }
   }
 }
