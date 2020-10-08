@@ -83,6 +83,13 @@
 }
 
 //add inside of section for pinned images
+.split-intro {
+  padding: 0;
+  @include media-breakpoint-up(lg) {
+    padding: 100px 0;
+  }
+}
+
 .image-pin-left {
   position: relative;
   width: 100%;
@@ -206,28 +213,38 @@ ul.color-bullets {
 
 
 ul.column-list {
-  -moz-column-count: 2;
-  -moz-column-gap: 50px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 50px;
-  column-count: 2;
-  column-gap: 50px;
   list-style-type: none;
   padding-left: 0;
+  @include media-breakpoint-up(sm) {
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+    column-count: 2;
+    column-gap: 50px;
+  }
+
   &.column-3 {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
+    @include media-breakpoint-up(lg) {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+    }
   }
   &.column-4 {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
-    column-count: 4;
+    @include media-breakpoint-up(lg) {
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
+      column-count: 4;
+    }
+    
   }
   &.column-5 {
-    -moz-column-count: 5;
-    -webkit-column-count: 5;
-    column-count: 5;
+    @include media-breakpoint-up(lg) {
+      -moz-column-count: 5;
+      -webkit-column-count: 5;
+      column-count: 5;
+    }
   }
 }
 
