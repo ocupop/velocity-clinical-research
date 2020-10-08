@@ -45,13 +45,15 @@
     position: absolute;
     background-color: $white;
     box-shadow: 0 5px 10px rgba($black, 0.2);
-    right: -25px;
+    right: -7px;
     top: -25px;
     opacity: 1;
     color: $secondary;
     font-size: 35px;
     text-shadow: 0;
-
+    @include media-breakpoint-up(lg) {
+      right: -25px;
+    }
   }
 }
 

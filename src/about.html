@@ -25,7 +25,7 @@ values:
     image: /img/about/value-integrity.jpg
     description:
   - title: Progressive
-    image:
+    image: /img/about/value-progressive.jpg
     description:
   - title: Quality
     image: /img/about/value-quality.jpg
@@ -61,16 +61,17 @@ _assets:
     </div>
   </div>
 </section>
-<section class="bg-light">
+<section id="values" class="bg-light">
   <div class="container">
-    <div class="row mb-5">
+    <div class="row mb-5 position-relative">
       <div class="col-12">
         <div class="text-center editable">
           <h2>Our Values</h2>
         </div>
       </div>
+      <img src="/img/dots2.png" class="dots bottom-right" alt="Dots image">
     </div>
-    <div class="flip-card-grid">
+    <div class="flip-card-grid position-relative">
       {% assign counter = 0 %}
       {% assign expandable_counter = 0 %}
       {% for value in page.values %}
@@ -114,7 +115,7 @@ _assets:
               </div>
               <div class="flip-card-back rounded">
                 <div class="flip-card-back-content">
-                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <h3 class="font-weight-bold mb-2 mb-lg-4">{{ value.title }}</h3>
                   <p class="text-center">{{ value.description }}</p>
                 </div>
               </div>
@@ -124,13 +125,14 @@ _assets:
       {% endfor %}
     </div>
   </div>
+  
 </section>
 <section id="history">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4">
-        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
-        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-7 ml-lg-auto">
         <div class="editable">

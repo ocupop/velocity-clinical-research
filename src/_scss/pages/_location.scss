@@ -1,3 +1,7 @@
+.overlap-image {
+  
+}
+
 // location home page
 #make-a-difference {
   .dots {
@@ -95,9 +99,11 @@
 }
 
 .google-map {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 35%;
-  height: 100%;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+  }
 }  

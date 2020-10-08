@@ -15,7 +15,7 @@ hero:
       <div class="col-12">
         <div class="shadow p-5 bg-white rounded position-relative">
           <div class="row align-items-center">
-            <div class="col-lg-3">
+            <div class="col-6 col-lg-3 mx-auto mx-lg-0 mb-3 mb-lg-0">
               <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ location.featured_image }})"></div>
             </div>
             <div class="col-lg-5">
@@ -30,9 +30,9 @@ hero:
               </div>
             </div>
           </div>
-        </div>
-        <div class="google-map bg-dark overflow-hidden">
-          {{ location.location_details.google_map_embed }}
+          <div class="google-map bg-dark overflow-hidden">
+            {{ location.location_details.google_map_embed }}
+          </div>
         </div>
       </div>
     </div>
