@@ -1,3 +1,4 @@
+{% include locations/location-logic.html %}
 <footer class="bg-primary text-white py-5">
   <div class="container">
     <div class="row">
@@ -36,7 +37,7 @@
     </div>
     <div class="row mt-4">
       <div class="col-lg-3">
-        <p class="mb-0 editable">(737) 204-1904</p>
+        <p class="mb-0 editable">{{ location.location_details.phone }}</p>
         <p><a href="mailto:info@velocityclinical.com" class="text-white editable">info@velocityclinical.com</a></p>
       </div>
       <div class="col-lg-6 text-center">

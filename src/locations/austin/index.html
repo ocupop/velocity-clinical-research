@@ -3,7 +3,6 @@ layout: location
 hero:
   image: /uploads/locations/austin/Austin-header.jpg
   logo_image: /uploads/locations/austin/Velocity-Austin-CLR-WHT.png
-location_image: /uploads/locations/austin/sites-austin.png
 location_team:
   - name: 'Mark Carlson, MD'
     role: Lead Principal Investigator
@@ -44,7 +43,7 @@ _assets:
   - /uploads/locations/austin/Mask-Group-4.jpg
   - /uploads/locations/austin/Mask-Group-4.jpg
 ---
-
+{% include locations/location-logic.html %}
 {% include locations/hero-location.html %}
 
 <section>
@@ -54,17 +53,17 @@ _assets:
         <div class="shadow p-5 bg-white rounded">
           <div class="row align-items-center">
             <div class="col-lg-4">
-              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ page.location_image }})"></div>
+              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ location.featured_image }})"></div>
             </div>
             <div class="col-lg-8">
-              <h4 class="font-weight-bold editable mb-0">Velocity Clinical Research, Austin</h4>
-              <h4 class="font-weight-bold editable">Cedar Park, TX</h4>
+              <h4 class="font-weight-bold editable mb-0">Velocity Clinical Research, {{ location.city }}</h4>
+              <h4 class="font-weight-bold editable">{{ location.location_name }}</h4>
               <div class="editable">
-                <p>1900 Cypress Creek Suite 200 Cedar Park, TX 78613</p>
+                <p>{{ location.location_details.address }}</p>
               </div>
               <div class="editable">
-                <p class="mb-0"><a href="tel:555-555-555">(555) 555-5555</a></p>
-                <p><a href="mailto:info@velocityclinical.com">info@velocityclinical.com</a></p>
+                <p class="mb-0"><a href="tel:{{ location.location_details.phone }}">{{ location.location_details.phone }}</a></p>
+                <p><a href="mailto:{{ location.location_details.email }}">{{ location.location_details.email }}</a></p>
               </div>
             </div>
           </div>
