@@ -5,6 +5,7 @@ image: /uploads/cropped-v3-craig-20190226-dsc9402-final.jpg
 role: 'Vice President, Business Development'
 company:
 phone: +1 410.490.0676
+linkedin_url:
 ---
 
 Craig joined Velocity Clinical Research early in 2019 as the Vice President of Business Development.&nbsp; Craig believes that the value patients bring to developing new medicines needs to be celebrated. New medicines are not possible without clinical trial volunteers, yet too few are aware of opportunities or how they can be involved. In his role, Craig will identify new opportunities for Velocity to partner with pharmaceutical sponsors and clinical research organizations to bring new clinical trial opportunities to the patients who otherwise may go without treatment options.&nbsp;

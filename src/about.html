@@ -1,12 +1,50 @@
 ---
 layout: default
 title: About Velocity Clinical Research
+hero:
+  - image: /img/about/about-header.jpg
+    title:
+    subtitle:
+    color_overlay: false
+values:
+  - title: Doing the right thing
+    image:
+    description:
+  - title: Efficiency
+    image:
+    description: >-
+      We seek to accomplish more by doing less, improving our productivity by
+      working smarter.
+  - title: Passion
+    image:
+    description:
+  - title: Innovative
+    image:
+    description:
+  - title: Integrity
+    image:
+    description:
+  - title: Progressive
+    image:
+    description:
+  - title: Quality
+    image:
+    description:
+  - title: Reliability
+    image:
+    description:
+  - title: Trust
+    image:
+    description:
 team:
   - dr--g-paul-evans
   - jeffrey-jensen
   - melissa-holbrook-msn-np
   - jamie-wilkerson-cpa-cgma
   - craig-m-koch
+_assets:
+  - /img/about/Mask-Group-4.jpg
+  - /img/about/WorkshopMedia_VCRoffice_0371-Edit_FINAL.jpg
 ---
 
 {% include hero.html %}
@@ -14,10 +52,10 @@ team:
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-lg-10 mx-lg-auto">
         <div class="editable text-center">
           <h1>Our Mission</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur reprehenderit distinctio iste neque. Culpa cum ipsum incidunt. Voluptas vitae esse quis? Aperiam facilis dolor, ullam necessitatibus ex recusandae et!</p>
+          <p>Velocity’s mission is to bring innovative medical treatments to patients. We are committed to making clinical trials succeed by generating high quality data from as many patients as possible, as quickly as possible while providing exemplary patient care at every step.</p>
         </div>
       </div>
     </div>
@@ -25,63 +63,94 @@ team:
 </section>
 <section class="bg-light">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <div class="text-center editable">
           <h2>Our Values</h2>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="responsive-card-deck cards-lg-3">
-          {% for i in (1..6) %}
-            <div class="col-lg-4 mb-4">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <div class="bg-image aspect-1x1" style="background-image: url({{ site.placeholder_image }})">
-                      <div class="text-overlay">
-                        <div class="overlay-content">
-                          <h3 class="mb-0">Title</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <img src="{{ site.placeholder_image }}" class="img-fluid" alt=" image" />
-                    
-                  </div>
-                  <div class="flip-card-back">
-                    <div class="flip-card-back-content">
-                      <h3>Title</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad error unde cupiditate provident, laboriosam asperiores sapiente magni iste culpa nemo autem nam quam, officia adipisci eos necessitatibus magnam quasi.</p>
+    <div class="flip-card-grid">
+      {% assign counter = 0 %}
+      {% assign expandable_counter = 0 %}
+      {% for value in page.values %}
+        {% assign counter = counter | plus:1 %}
+        {% assign mod3 = counter | modulo: 3 %}
+        {% if mod3 == 0 %}
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="mb-0 font-weight-bold text-white">{{ value.title }}</h3>
                     </div>
                   </div>
                 </div>
+                <img src="{{ value.image | site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
               </div>
-              
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <p>{{ value.description }}</p>
+                </div>
+              </div>
             </div>
-          {% endfor %}
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          {% assign expandable_counter = expandable_counter | plus:1 %}
+        {% else %}
+          <div class="flip-card ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="text-white font-weight-bold mb-0">{{ value.title }}</h3>
+                    </div>
+                  </div>
+                </div>
+                <img src="{{ value.image | default: site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
+              </div>
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <p class="text-center">{{ value.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="history">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+      </div>
+      <div class="col-lg-7 ml-lg-auto">
+        <div class="editable">
+          <h2>Our History</h2>
+          <p>Velocity Clinical Research, headquartered in Durham, NC, is a wholly owned research site organization focused on patient engagement, quality, scalability and therapeutic breadth. Founded in 2017, Velocity now comprises 12 research sites, geographically dispersed across the United States. Collectively, our sites have been focusing on clinical study trials for over 225 years with more than 4600 successfully completed studies.</p>
+          <p>The Velocity model represents a new approach to site management. By owning and operating all sites directly, we offer consistent and highly efficient patient recruitment and engagement, and integrated study processes and systems.</p>
+          <p>Our entire organization focuses on several key principles:</p>
+          <ul>
+            <li>Volume and breadth of therapeutic capability</li>
+            <li>Quality experience for both sponsor and patients</li>
+            <li>Consistency and scalability</li>
+            <li>Expedited start-up and rapid patient enrollment</li>
+            <li>Single point of contact for study finances and issue resolution</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
-        <img src="{{ site.placeholder_image }}" class="img-fluid mb-4" alt="">
-      </div>
-      <div class="col-lg-8">
-        <h2>Our History</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt atque quaerat aspernatur unde. Pariatur nesciunt impedit veritatis maxime, error architecto quod corrupti ipsum voluptatem aperiam, dignissimos quia cum molestias unde!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit sint obcaecati quasi nobis alias quo, modi dolores voluptatum. Hic deleniti molestiae impedit nostrum cum vitae dolorem esse facilis alias?</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
+<section class="pt-0">
   <div class="container">
     <div class="row">
       <div class="col-12">

@@ -15,6 +15,7 @@
 //Components
 @import "components/cognito";
 @import "components/curved_border";
+@import "components/dots";
 @import "components/flip_card";
 @import "components/hero";
 @import "components/mosaic_images";
@@ -24,9 +25,14 @@
 @import "components/page_header";
 
 //pages
+@import "pages/about";
+@import "pages/capabilities";
+@import "pages/contact";
 @import "pages/covid_19";
 @import "pages/homepage";
 @import "pages/clinical_research";
+@import "pages/post";
+@import "pages/location";
 
 @import "vendor/theme.default";
 @import "vendor/owl.carousel";

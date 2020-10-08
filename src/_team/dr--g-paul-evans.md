@@ -5,6 +5,7 @@ image: /uploads/velocity-paul.jpg
 role: President and Chief Executive Officer
 company:
 phone: +1 919.949.9182
+linkedin_url: https://www.linkedin.com/
 ---
 
 Paul joined Velocity Clinical Research as President and CEO in 2018 after 26 years of “perfect symmetry” in the site business: 13 years running sites and 13 years managing them on the sponsor / CRO side. He has served as Corporate VP, Global Site Solutions at PAREXEL; Vice President, Global Site Management at IQVIA; and was a founder and Managing Director of Synexus. He holds a PhD in Biomedical Engineering from the University of London. Paul joined Velocity Clinical Research to take on what he sees as one of the fundamental industry challenges: “Patient recruitment is still the biggest problem in clinical trials. I want Velocity to set a new industry standard for delivering high-quality study data as quickly and efficiently as possible.” He has served on the Board of Trustees for the Association of Clinical Research Professionals (ACRP) since 2017 and will be Chairman in 2020.

@@ -1,0 +1,13 @@
+.ri-linkedin-box-fill {
+  font-size: 20px;
+}
+
+#history {
+  @include media-breakpoint-up(lg) {
+    .bg-image {
+      padding-top: 100%;
+      margin-left: -50%;
+      margin-bottom: 20px;
+    }
+  }
+}

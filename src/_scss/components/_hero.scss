@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  padding-top: 30%;
   .hero-overlay {
     position: absolute;
     top: 0;
@@ -9,6 +10,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.4rem;
   }
 
   &.hero-home {
@@ -35,6 +40,9 @@
     h6 {
       color: $white;
     }
+  }
+  .subtitle {
+    color: $cyan-light;
   }
 }
 

@@ -1,0 +1,103 @@
+// location home page
+#make-a-difference {
+  .dots {
+    width: 21%;
+    max-width: 300px;
+  }
+  .mosaic-images-overlap {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+    }
+  }
+}
+
+#member {
+  .mosaic-images-overlap {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+      margin-left: -20%;
+    }
+  }
+}
+
+#story {
+  @include media-breakpoint-up(lg) {
+    .bg-image {
+      padding-top: 100%;
+      margin-left: -50%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#location-team {
+  .dots {
+    bottom: 0;
+    left: 30px;
+  }
+  .bg-image {
+    z-index: 100;
+    position: relative;
+  }
+}
+
+
+#participating {
+  .mosaic-images-stack {
+    @include media-breakpoint-up(lg) {
+      width: 120%;
+      padding-top: 130%;
+    }
+    
+  }
+}
+
+#what {
+  .bg-image {
+    @include media-breakpoint-up(lg) {
+      margin-left: -50%;
+      padding-top: 65%;
+    }
+  }
+}
+
+#faqs {
+  .bg-white {
+    z-index: 10;
+    position: relative;
+  }
+  .dots {
+    bottom: 100px;
+    left: -25px;
+  }
+}
+
+
+
+//location contact page
+#location-contact {
+  overflow: hidden;
+  .bg-white {
+    position: relative;
+    z-index: 10;
+  }
+  .dots {
+    bottom: -50px;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overlap-image {
+    margin-top: -25%;
+    margin-left: 6%;
+    max-width: 45%;
+  }
+}
+
+.google-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+}  

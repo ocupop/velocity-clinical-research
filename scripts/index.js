@@ -1,5 +1,5 @@
 //main js
-$(document).ready(function() {
+$(function() {
   console.log('hellow')
 
   if($('#us-map').length) {
@@ -39,18 +39,20 @@ $(document).ready(function() {
 
     var locationMarker = d3.selectAll('circle').on('click', function(){
       console.log('clicked map marker')
+      
       $('#exampleModal').modal('toggle')
     });
   }
 
   $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 30,
     nav: true,
     navText: [
       '<i class="ri-arrow-left-s-line"></i>',
       '<i class="ri-arrow-right-s-line"></i>'
     ],
+    stagePadding: 10,
     autoplay: true,
     autoplayHoverPause: true,
     responsive: {
@@ -58,10 +60,10 @@ $(document).ready(function() {
         items: 1
       },
       500: {
-        items: 2
+        items: 1
       },
       666: {
-        items: 3
+        items: 1
       },
       991: {
         items: 2

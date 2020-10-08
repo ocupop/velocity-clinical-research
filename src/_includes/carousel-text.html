@@ -1,29 +1,32 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carousel-text" class="carousel slide" data-ride="carousel" data-interval="5000">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    {% for slide in page.text_slide %}
+      <li data-target="#carousel-text" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item text-center active">
-      <h3 class="text-white">Lorem, ipsum dolor sit amet consectetur</h3>
-      <a href="#" class="btn btn-cyan">Learn More</a>
+    {% for slide in page.text_slide %}
+    <div class="carousel-item text-center {% if forloop.first %}active{% endif %}">
+      {% if slide.subtitle %}
+        <h5 class="text-white">{{ slide.subtitle }}</h5>
+      {% endif %}
+      <h4 class="text-white font-weight-bold">{{ slide.title }}</h4>
+      {% if slide.link %}
+        <a href="{{ slide.link }}" class="btn btn-cyan">{{ slide.link_label | default: 'Learn More' }}</a>
+      {% endif %}
     </div>
-    <div class="carousel-item text-center">
-      <h3 class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-      <a href="#" class="btn btn-cyan">Learn More</a>
-    </div>
-    <div class="carousel-item text-center">
-      <h3 class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,</h3>
-      <a href="#" class="btn btn-cyan">Learn More</a>
-    </div>
+    {% endfor %}
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <a class="carousel-control-prev" href="#carousel-text" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true">
+      <i class="ri-arrow-left-s-line"></i>
+    </span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="carousel-control-next" href="#carousel-text" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true">
+      <i class="ri-arrow-right-s-line"></i>
+    </span>
     <span class="sr-only">Next</span>
   </a>
 </div>

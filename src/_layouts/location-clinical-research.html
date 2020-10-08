@@ -2,17 +2,41 @@
 layout: location
 ---
 
-<section>
+<section class="position-relative">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h1>Frequently Asked Questions</h1>
-          <h2>About Participating in a Clinical Research Trial</h2>
+      <div class="col-lg-6">
+        <h1 class="editable">Participating in a Clinical Research Trial</h1>
+        <h5 class="font-weight-bolder text-dark editable">What is clinical research?</h5>
+        <div class="editable">
+          <p>Clinical research is the study of health and illness in humans, in both sick and healthy people. It focuses on improving knowledge of diseases, developing diagnostic methods and new treatments or medical devices to ensure better patient care. Clinical research trials are carefully designed, reviewed and completed, and must be approved before they can start.</p>
+          <p>All clinical research must:</p>
+          <ul>
+            <li>have the goal of increasing medical knowledge</li>
+            <li>be carried out by competent persons take all necessary measures to protect those who lend themselves to research</li>
+            <li>obtain regulatory approvals and take all the necessary legal and ethical steps</li>
+            <li>collect the consent of those involved in research</li>
+                
+          </ul>
+        </div>
+        <h5 class="font-weight-bolder text-dark editable">Why should I participate?</h5>
+        <div class="editable">
+          <p>Clinical Trials are a crucial part of finding new medicines and treatments for diseases. There are many reasons why people volunteer to participate in clinical trials. You may have the opportunity to play a role in the development of new treatments, devices or preventions for certain diseases or medical conditions. You may have access to investigational treatments before they are available. You may have access to free diagnostic procedures or medical tests related to the clinical trial and be compensated for your time and travel related to the trial.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 ml-lg-auto">
+        <div class="mosaic-images-stack left-to-right">
+          <div class="image-wrapper rounded">
+            <div class="bg-image aspect-5x4" style="background-image: url({{ site.placeholder_image }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+          </div>
+          <div class="image-wrapper rounded">
+            <div class="bg-image aspect-5x4" style="background-image: url({{ site.placeholder_image }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <img src="/img/dots3.png" class="dots bottom-right" alt="Dots image">
 </section>
 <section class="bg-primary text-white">
   <div class="container">
@@ -22,13 +46,20 @@ layout: location
       </div>
       <div class="col-lg-7">
         <h2 class="text-white">What is a clinical trial?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint accusantium, libero commodi aliquam, nam inventore voluptas, provident quibusdam ipsum consequatur temporibus modi soluta porro quas ratione odit aut ut.</p>
+        <div class="editable">
+          <p>A clinical research trial is a scientific study that helps determine how a new medicine or treatment works in humans. Clinical research trials are conducted to obtain information used to determine the safety and effectiveness of a new drug, device, or treatment. The US FDA must review information from these clinical trials and then decide if the drug, device, or treatment should be approved and made available to patients on the market. The FDA has strict rules that govern how clinical trials are conducted. These rules are designed to ensure the safety of those who participate.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section id="faqs" class="bg-light">
   <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="text-center font-weight-bolder editable">Frequently Asked Questions</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
         {% for i in (1..4) %}

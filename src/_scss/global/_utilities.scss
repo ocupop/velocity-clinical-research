@@ -61,6 +61,9 @@
   &.aspect-5x4 {
     padding-top: 75%;
   }
+  &.aspect-5x7 {
+    padding-top: 120%;
+  }
   &.aspect-16x9 {
     padding-top: 56.25%;
   }
@@ -72,6 +75,67 @@
   }
   &.aspect-auto {
     height: auto;
+  }
+}
+
+.overlap-top {
+  margin-top: -175px;
+}
+
+//add inside of section for pinned images
+.image-pin-left {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 33%;
+  left: 0;
+  top: 0;
+  margin-bottom: 30px;
+  z-index: 100;
+  @include media-breakpoint-up(lg) {
+    width: 43vw;
+    height: 100%;
+    padding-top: 0;
+    position: absolute;  
+
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  img {
+    width: 60px;
+  }
+}
+
+ul.color-bullets {
+  li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+    &::before {
+      top: 6px;
+      content:'';
+      background: $secondary;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius:50%;
+      left: -15px;
+    }
+    &:nth-child(3n+2) {
+      &::before {
+        background: $green;
+      }
+    }
+    &:nth-child(3n+3) {
+      &::before {
+        background: $red;
+      }
+    }
   }
 }
 
@@ -133,7 +197,7 @@
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 15px;
   color: $cyan;
   text-transform: uppercase;
   font-weight: 600;
@@ -165,6 +229,8 @@ ul.column-list {
     -webkit-column-count: 5;
     column-count: 5;
   }
-
 }
+
+
+
 // SVG Fill & Stroke Utilities

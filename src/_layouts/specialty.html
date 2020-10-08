@@ -2,75 +2,69 @@
 layout: default
 ---
 
-<section>
+<section class="position-relative my-lg-5">
+  <div class="bg-image image-pin-left" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})"></div>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-8">
+    <div class="row align-items-center">
+      <div class="col-lg-6 ml-lg-auto">
         <h3 class="subtitle">Specialties</h3>
-        <h2>Specialty Name</h2>
-        <p class="lead">Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui alias consequatur, fugiat placeat perferendis illum minus deserunt modi aperiam ipsum voluptate nihil, autem similique, quis impedit reprehenderit porro eaque! Iste.</p>
+        <h2 class="mb-2 font-weight-bold">{{ page.title }}</h2>
+        {% if page.subtitle %}
+          <p class="lead text-primary">{{ page.subtitle }}</p>
+        {% endif %}
+        {% if page.description_html %}
+          {{ page.description_html }}
+        {% endif %}
       </div>
     </div>
   </div>
+  <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image" />
 </section>
-<section>
+{% for stat_section in page.statistic_section %}
+<section class="{% unless forloop.last %}pb-0{% endunless %}">
   <div class="container">
-    <div class="row">
+    <div class="row my-5">
       <div class="col-12">
         <div class="text-center">
-          <h2 class="editable">Specialty Name Experience</h2>
+          <h2>{{ stat_section.title }}</h2>
         </div>
       </div>
     </div>
     <div class="row">
-      {% for i in (1..6) %}
+      {% for stat in stat_section.statistic %}
         <div class="col-lg-4 mb-5">
           <div class="text-center">
-            <p class="h2">555</p>
-            <p>stat description</p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h2 class="editable">Specialty Name Experience</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      {% for i in (1..3) %}
-        <div class="col-lg-4 mb-5">
-          <div class="text-center">
-            <p class="h2">555</p>
-            <p>stat description</p>
+            {% if stat.icon_image %}
+              <div class="icon-wrapper">
+                <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon" />
+              </div>
+            {% endif %}
+            <p class="h1 font-weight-bold">{{ stat.number }}</p>
+            <p>{{ stat.description }}</p>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
+{% endfor %}
+{% for list_section in page.list_section %}
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="text-center editable">
-          <h3>Specialty Name Experience</h3>
+        <div class="text-center">
+          <h3>{{ list_section.title }}</h3>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <h4>Specialty Name Experience</h4>
-          <ul class="column-list column-5">
-            {% for i in (1..17) %}
-              <li>Expertise Name</li>
+          {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
+          <ul class="column-list column-{{ num_columns }}">
+            {% for list_item in list_section.list_item %}
+              <li>{{ list_item.title }}</li>
             {% endfor %}
           </ul>
         </div>
@@ -78,9 +72,10 @@ layout: default
     </div>
   </div>
 </section>
+{% endfor %}
 <section class="bg-light">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <div class="text-center editable">
           <h2>Capabilities</h2>
@@ -90,14 +85,13 @@ layout: default
     <div class="row">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-          {% for i in (1..3) %}
-            <div class="card">
+          {% for capability in page.capability %}
+            <div class="card px-4">
               <div class="card-body">
-                <h4>Title</h4>
-                <ul>
-                  {% for i in (1..3) %}
-                  <li>Capability</li>
-    
+                <h3 class="text-center my-5 font-weight-bold">{{ capability.title }}</h3>
+                <ul class="color-bullets">
+                  {% for item in capability.list_item %}
+                    <li class="mb-4">{{ item.title }}</li>
                   {% endfor %}
                 </ul>
               </div>

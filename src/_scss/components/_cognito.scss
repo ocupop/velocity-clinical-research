@@ -130,11 +130,15 @@
   }
 }
 
-.covid-19-form {
+.covid-19-form,
+.contact-form {
   padding: 30px;
   background-color: $white;
   border-radius: 10px;
   box-shadow: 10px 20px 30px rgba($black, 0.1);
+  position: relative;
+  z-index: 10;
+  min-height: 630px;
   .cognito {
     .c-forms-form {
       .c-label {

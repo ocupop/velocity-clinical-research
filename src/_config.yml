@@ -26,7 +26,10 @@ collections:
   locations:
     output: false
   specialties:
-    output: true    
+    output: true
+  posts:
+    output: true
+    permalink: /posts/:title/  
 
 # Build settings
 safe: false
@@ -44,15 +47,66 @@ _options:
     hidden: true
 
 _array_structures:
+  meta:
+    label: Meta Data
+    icon: share
+    value:
+      title:
+      description:
+      image:
   hero: 
     - label: Hero
       icon: panorama
       value:
-        _type: hero
         image:
         title:
         subtitle:
         color_overlay: false
+  statistic:
+    - label: Statistic
+      icon: insert_chart_outlined
+      value:
+        number:
+        description:
+  list_section:
+    - label: List Section
+      icon: format_list_bulleted
+      value:
+        title:
+        list_item:
+  capability:
+    - label: Capability
+      icon: view_list
+      value:
+        title:
+        list_item:
+  list_item:
+    - label: List item        
+      icon: view_list
+      value:
+        title:
+  text_carousel:
+    - label: Text Carousel
+      icon: view_carousel
+      value:
+        text_slide:
+  text_slide:
+    - label: Text Slide
+      icon: text_snippet
+      value:
+        title:
+        subtitle:
+        link:
+        link_label:
+  location_team:
+    label: Location Team
+    icon: face
+    value:
+      name:
+      role:
+      image:
+      bio_html:
+
 
 _comments:
   layout: 

@@ -1,0 +1,16 @@
+{% for team in page.location_team  %}
+<div class="row align-items-center mb-5">
+  
+  <div class="col-lg-3">
+    <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ team.image | default: site.placeholder_image }})"></div>
+  </div>
+  <div class="col-lg-8 ml-lg-auto">
+    <h4 class="mb-0 font-weight-bold">{{ team.name }}</h4>
+    {% if team.role %}
+      <h5 class="text-dark">{{ team.role }}</h5>
+    {% endif %}
+    {{ team.bio_html | truncatewords: 30 }}
+    <p><a href="{{ member.url }}" class="text-secondary">Read More</a></p>
+  </div>
+</div>
+{% endfor %}
