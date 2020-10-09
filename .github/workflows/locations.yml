@@ -27,7 +27,7 @@ jobs:
         id: parse
         if: steps.filter.outputs.new_location == 'true'
         run: |
-          input = ${{ steps.filter.outputs.new_location_files }}
+          input=${{ steps.filter.outputs.new_location_files }}
           file_name="${input##*/}"
           location="${file_name%.*}"
           echo "New Location: ${location}"
