@@ -41,7 +41,7 @@ jobs:
           src_branch: develop
           dst_branch: develop
           src_path: src/locations/_default/.
-          dst_path: src/locations/test/
+          dst_path: src/locations/${{ steps.parse.outputs.location }}/
           dst_owner: VelocityClinical
           dst_repo_name: velocity-clinical-research
           commit_message: added location files
