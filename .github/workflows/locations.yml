@@ -23,10 +23,10 @@ jobs:
           filters: |
             locations:
               - added|deleted: 'src/_locations/**'
-
       # run only if 'location' files were added or deleted
       - name: copy
         if: steps.filter.outputs.locations == 'true'
+        run: echo ${{ steps.filter.changed_files }}
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
