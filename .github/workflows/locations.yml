@@ -32,7 +32,7 @@ jobs:
           location="${file_name%.*}"
           echo "New Location: ${location}"
       - name: test
-        run: echo "Location ${{ steps.filter.outputs.new_location_files }}"
+        run: echo "Location ${{ steps.parse.outputs.location }}"
       - name: copy
         if: steps.filter.outputs.new_location == 'true'
         uses: andstor/copycat-action@v3
