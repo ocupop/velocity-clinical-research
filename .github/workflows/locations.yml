@@ -31,8 +31,6 @@ jobs:
           file_name="${input##*/}"
           location="${file_name%.*}"
           echo ::set-output name=location::${location}
-      - name: test
-        run: echo "Location ${{ steps.parse.outputs.location }}"
       - name: copy
         if: steps.filter.outputs.new_location == 'true'
         uses: andstor/copycat-action@v3
