@@ -23,6 +23,10 @@ jobs:
           filters: |
             new_location:
               - added: 'src/_locations/**'
+      - name: Extract branch name
+        id: extract_branch
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       - name: Parse location name
         id: parse
         if: steps.filter.outputs.new_location == 'true'
@@ -36,8 +40,8 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_branch: develop
-          dst_branch: develop
+          src_branch: ${{ steps.extract_branch.outputs.branch }}
+          dst_branch: ${{ steps.extract_branch.outputs.branch }}
           src_path: src/locations/_default/.
           dst_path: src/locations/${{ steps.parse.outputs.location }}/
           dst_owner: VelocityClinical
