@@ -21,14 +21,14 @@ jobs:
           list-files: json
           base: ${{ github.ref }}
           filters: |
-            location:
-              - added|deleted: 'src/_locations/**'
-      - name: WHat files
-        if: steps.filter.outputs.location == 'true'
-        run: echo ${{ steps.filter.location_files }}
-      # run only if 'location' files were added or deleted
+            new_location:
+              - added: 'src/_locations/**'
+      - name: What files
+        if: steps.filter.outputs.new_location == 'true'
+        run: echo ${{ steps.filter.outputs.new_location_files }}
+
       - name: copy
-        if: steps.filter.outputs.location == 'true'
+        if: steps.filter.outputs.new_location == 'true'
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
