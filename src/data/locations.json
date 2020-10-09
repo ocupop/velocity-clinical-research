@@ -1,0 +1,22 @@
+---
+layout: null
+---
+[
+  {% for location in site.locations %}
+  {
+    "title": "{{ location.title | xml_escape }}",
+    "location_name": "{{ location.location_name | xml_escape }}",
+    "city": "{{ location.city | xml_escape }}",
+    "state": "{{ location.state | xml_escape }}",
+    "radius": 15,
+    "fillKey": "locationPin",
+    "phone": "{{ location.location_details.phone | xml_escape }}",
+    "email": "{{ location.location_details.email | xml_escape }}",
+    "latitude": "{{ location.location_details.latitude }}",
+    "longitude": "{{ location.location_details.longitude | xml_escape }}",
+    "address": "{{ location.location_details.address | xml_escape }}",
+    "image": "{{ location.featured_image | xml_escape }}",
+    "url": "/locations/{{ location.title | slugify | xml_escape }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
