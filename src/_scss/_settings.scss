@@ -15,10 +15,10 @@ $blue:    #294199;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #e54142;
 $orange:  #fd7e14 !default;
 $yellow:  #f5C938;
-$green:   #87a63e;
+$green:   #3Dc64f;
 $lime-green: #49a93a;
 $teal:    #20c997 !default;
 $cyan:    #36c0f8;
@@ -68,7 +68,8 @@ $theme-colors: map-merge(
     "light": $light,
     "mid": $gray-500,
     "dark": $dark,
-    "cyan": $cyan
+    "cyan": $cyan,
+    "green": $green
   ),
   $theme-colors
 );
