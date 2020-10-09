@@ -30,9 +30,12 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
+          src_branch: develop
+          dst_branch: develop
           src_path: src/locations/austin/.
           dst_path: src/locations/test/
           dst_owner: VelocityClinical
           dst_repo_name: velocity-clinical-research
           commit_message: added location files
+
 
