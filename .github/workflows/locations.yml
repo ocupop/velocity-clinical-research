@@ -23,10 +23,16 @@ jobs:
           filters: |
             new_location:
               - added: 'src/_locations/**'
-      - name: What files
+      - name: Parse location name
+        id: parse
         if: steps.filter.outputs.new_location == 'true'
-        run: echo ${{ steps.filter.outputs.new_location_files }}
-
+        run: |
+          input = ${{ steps.filter.outputs.new_location_files }}
+          file_name="${input##*/}"
+          location="${file_name%.*}"
+          echo "New Location: $location"
+      - name: test
+        run: echo "Location ${{ steps.parse.outputs.location }}"
       - name: copy
         if: steps.filter.outputs.new_location == 'true'
         uses: andstor/copycat-action@v3
