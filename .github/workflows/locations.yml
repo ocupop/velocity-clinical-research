@@ -35,6 +35,4 @@ jobs:
           dst_owner: VelocityClinical
           dst_repo_name: velocity-clinical-research
           commit_message: added location files
-          username: ocupopdev
-          email: dev@ocupop.com
 
