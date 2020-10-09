@@ -18,7 +18,7 @@ jobs:
           # If there is only one long lived branch (e.g. master),
           # you can specify it directly.
           # If it's not configured, the repository default branch is used.
-          list-files: json
+          list-files: shell
           base: ${{ github.ref }}
           filters: |
             new_location:
@@ -26,13 +26,13 @@ jobs:
       - name: Parse location name
         id: parse
         if: steps.filter.outputs.new_location == 'true'
-        run: basename -s .html ${{ steps.filter.outputs.new_location_files }}
-          # input = ${{ steps.filter.outputs.new_location_files }}
-          # file_name="${input##*/}"
-          # location="${file_name%.*}"
-          # echo "New Location: $location"
+        run: |
+          input = ${{ steps.filter.outputs.new_location_files }}
+          file_name="${input##*/}"
+          location="${file_name%.*}"
+          echo "New Location: ${location}"
       - name: test
-        run: echo "Location ${{ steps.filter.outputs.new_location_files[0] }}"
+        run: echo "Location ${{ steps.filter.outputs.new_location_files }}"
       - name: copy
         if: steps.filter.outputs.new_location == 'true'
         uses: andstor/copycat-action@v3
