@@ -3,10 +3,10 @@
 <div class="row align-items-center mb-5">
   {% if member.image %}
   <div class="col-6 mx-auto col-lg-3">
-    <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0" style="background-image: url({{ member.image }})"></div>
+    <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0 animate blur" style="background-image: url({{ member.image }})"></div>
   </div>
   {% endif %}
-  <div class="col-lg-8 ml-lg-auto">
+  <div class="col-lg-8 ml-lg-auto animate fade-up">
     <h4 class="mb-0">{{ member.name }}</h4>
     {% if member.role %}
       <h5 class="text-dark mb-0">{{ member.role }}</h5>

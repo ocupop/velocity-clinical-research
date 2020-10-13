@@ -101,10 +101,10 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <h3 class="subtitle editable">
+        <h3 class="subtitle editable animate fade-up">
           Capabilities
         </h3>
-        <div class="editable">
+        <div class="editable animate fade-up">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p>Achieving timely study start-up and patient recruitment and retaining patients to obtain all study data remain key challenges for Sponsors and CROs. Velocity Clinical Research provides a consistent, scalable approach to tackling these challenges. By offering access to our wholly-owned research sites and providing central support and contacts for many operational activities, we make your job easier.</p>
           <p>We are committed to rapid responsiveness from initial feasibility and contracting to patient enrollment and study close-out. Our uniform cross-site processes are designed to deliver patients and data as quickly as possible without sacrificing exemplary data quality and patient care.</p>
@@ -114,11 +114,23 @@ _assets:
       </div>
       <div class="col-lg-6">
         <div class="mosaic-images-stack right-to-left">
-          <div class="image-wrapper rounded">
-            <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+          <div class="image-wrapper">
+            <div 
+              class="bg-image aspect-5x4 rounded rellax"
+              style="background-image: url({{ page._assets[0] }})"
+              data-cms-editor-link="cloudcannon:#_assets[0]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="0.5"
+              ></div>
           </div>
           <div class="image-wrapper rounded">
-            <div class="bg-image aspect-5x4" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+            <div
+              class="bg-image aspect-5x4 rounded rellax"
+              style="background-image: url({{ page._assets[1] }})"
+              data-cms-editor-link="cloudcannon:#_assets[1]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="-0.5"
+              ></div>
           </div>
         </div>
       </div>
@@ -131,13 +143,13 @@ _assets:
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <h2 class="mb-5">{{ stat_section.title }}</h2>
+          <h2 class="mb-5 animate fade-up">{{ stat_section.title }}</h2>
         </div>
       </div>
     </div>
     <div class="row">
       {% for stat in stat_section.statistic %}
-        <div class="col-6 col-lg-3 mb-5">
+        <div class="col-6 col-lg-3 mb-5 animate fade-up">
           <div class="text-center">
             <p class="h2 font-weight-bold">{{ stat.number }}</p>
             <p>{{ stat.description }}</p>
@@ -152,14 +164,16 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="text-center editable">
+        <h2 class="text-center editable animate fade-up">
           Velocity Capabilities
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        {% include components/capabilities-carousel.html %}
+        <div class="animate blur">
+          {% include components/capabilities-carousel.html %}
+        </div>
       </div>
     </div>
   </div>
@@ -170,10 +184,10 @@ _assets:
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
         <div class="text-center">
-          <h2 class="text-secondary editable">
+          <h2 class="text-secondary editable animate fade-up">
             Proven Experience in Multiple Therapeutic Areas
           </h2>
-          <div class="editable">
+          <div class="editable animate fade-up">
             <p>Velocity research sites and physician investigators have successfully completed studies in most major therapeutic areas. Our investigators’ expertise covers a wide range of subspecialties and understands local differences in patient populations. Broad categories of therapeutic area expertise are shown below with additional information on areas where we have extensive experience. The Velocity team is eager to provide more detail on our experience for your specific study.</p>
           </div>
         </div>
@@ -182,7 +196,7 @@ _assets:
     <div class="row my-5">
       <div class="col-12">
         <div class="text-center editable">
-          <h2 class="font-weight-bold">Our Therapeutic Areas</h2>
+          <h2 class="font-weight-bold animate fade-up editable">Our Therapeutic Areas</h2>
         </div>
       </div>
     </div>
@@ -190,7 +204,7 @@ _assets:
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
           {% for specialty in site.specialties %}
-            <a href="{{ specialty.url }}" class="card bg-image aspect-auto text-white mb-4" style="background-image: url({{ specialty.tile_bg_image}})">
+            <a href="{{ specialty.url }}" class="card bg-image aspect-auto text-white mb-4 animate fade-up" style="background-image: url({{ specialty.tile_bg_image}})">
               <div class="card-body p-4">
                 <h6 class="text-white font-weight-bolder mb-0 mt-5 mb-2">{{ specialty.title }}</h6>
                 <p class="text-white d-flex align-items-center">Learn more <i class="ri-arrow-right-s-line"></i></p>
@@ -216,7 +230,7 @@ _assets:
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <h3>{{ list_section.title }}</h3>
+          <h3 class="animate fade-up">{{ list_section.title }}</h3>
         </div>
       </div>
     </div>
@@ -225,7 +239,7 @@ _assets:
       <div class="col-lg-10 mx-lg-auto">
         <div class="text-center">
           {% assign num_columns = list_section.list_item | size | divided_by: 4  %}
-          <ul class="column-list column-{{ num_columns }}">
+          <ul class="column-list column-{{ num_columns }} animate fade-up">
             {% for list_item in list_section.list_item %}
               <li>{{ list_item.title }}</li>
             {% endfor %}

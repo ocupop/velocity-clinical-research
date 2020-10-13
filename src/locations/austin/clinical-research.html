@@ -40,9 +40,9 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <h1 class="editable">Participating in a Clinical Research Trial</h1>
-        <h5 class="font-weight-bolder text-dark editable">What is clinical research?</h5>
-        <div class="editable">
+        <h1 class="editable animate fade-up">Participating in a Clinical Research Trial</h1>
+        <h5 class="font-weight-bolder text-dark editable animate fade-up">What is clinical research?</h5>
+        <div class="editable animate fade-up">
           <p>Clinical research is the study of health and illness in humans, in both sick and healthy people. It focuses on improving knowledge of diseases, developing diagnostic methods and new treatments or medical devices to ensure better patient care. Clinical research trials are carefully designed, reviewed and completed, and must be approved before they can start.</p>
           <p>All clinical research must:</p>
           <ul>
@@ -53,18 +53,30 @@ _assets:
                 
           </ul>
         </div>
-        <h5 class="font-weight-bolder text-dark editable">Why should I participate?</h5>
-        <div class="editable">
+        <h5 class="font-weight-bolder text-dark editable animate fade-up">Why should I participate?</h5>
+        <div class="editable animate fade-up">
           <p>Clinical Trials are a crucial part of finding new medicines and treatments for diseases. There are many reasons why people volunteer to participate in clinical trials. You may have the opportunity to play a role in the development of new treatments, devices or preventions for certain diseases or medical conditions. You may have access to investigational treatments before they are available. You may have access to free diagnostic procedures or medical tests related to the clinical trial and be compensated for your time and travel related to the trial.</p>
         </div>
       </div>
       <div class="col-lg-5 ml-lg-auto">
-        <div class="mosaic-images-stack left-to-right">
+        <div class="mosaic-images-stack left-to-right animate blur">
           <div class="image-wrapper">
-            <div class="bg-image aspect-5x4 rounded" style="background-image: url({{ page._assets[0] }})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
+            <div
+              class="bg-image aspect-5x4 rounded rellax"
+              style="background-image: url({{ page._assets[0] }})"
+              data-cms-editor-link="cloudcannon:#_assets[0]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="0.5"
+              ></div>
           </div>
           <div class="image-wrapper">
-            <div class="bg-image aspect-5x4 rounded" style="background-image: url({{ page._assets[1] }})" data-cms-editor-link="cloudcannon:#_assets[1]" data-cms-editor-link-style="modal"></div>
+            <div
+              class="bg-image aspect-5x4 rounded"
+              style="background-image: url({{ page._assets[1] }})"
+              data-cms-editor-link="cloudcannon:#_assets[1]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="-0.5"
+              ></div>
           </div>
         </div>
       </div>
@@ -76,11 +88,11 @@ _assets:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5">
-        <div class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ page._assets[2] }})" data-cms-editor-link="cloudcannon:#_assets[2]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3 mb-lg-0 animate blur" style="background-image: url({{ page._assets[2] }})" data-cms-editor-link="cloudcannon:#_assets[2]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-7">
-        <h2 class="text-white">What is a clinical trial?</h2>
-        <div class="editable">
+        <h2 class="text-white animate fade-up editable">What is a clinical trial?</h2>
+        <div class="animate fade-up editable">
           <p>A clinical research trial is a scientific study that helps determine how a new medicine or treatment works in humans. Clinical research trials are conducted to obtain information used to determine the safety and effectiveness of a new drug, device, or treatment. The US FDA must review information from these clinical trials and then decide if the drug, device, or treatment should be approved and made available to patients on the market. The FDA has strict rules that govern how clinical trials are conducted. These rules are designed to ensure the safety of those who participate.</p>
         </div>
       </div>
@@ -91,13 +103,13 @@ _assets:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2 class="text-center font-weight-bold editable">Frequently Asked Questions</h2>
+        <h2 class="text-center font-weight-bold animate fade-up editable">Frequently Asked Questions</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
         {% for faq in page.faqs %}
-          <div class="bg-white p-3 p-lg-5 mb-4">
+          <div class="bg-white p-3 p-lg-5 mb-4 animate fade-up">
             <a class="d-flex justify-content-between align-items-center h2 mb-0 collapsed" data-toggle="collapse" href="#collapse-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
               {{ faq.question }} <i class="ri-arrow-down-s-line"></i>
             </a>

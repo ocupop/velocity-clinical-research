@@ -82,11 +82,11 @@
 
 @keyframes blur {
   from {
-    -webkit-filter: blur(50px);
-    -moz-filter: blur(50px);
-    -o-filter: blur(50px);
-    -ms-filter: blur(50px);
-    filter: blur(50px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
     opacity: 0.5;
   }
   to {

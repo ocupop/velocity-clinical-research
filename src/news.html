@@ -7,14 +7,14 @@ title: Velocity News
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h3 class="subtitle editable mb-4">Velocity News</h3>
-        <h2 class="mb-0 editable">Featured news</h2>
+        <h3 class="subtitle editable mb-4 animate fade-up">Velocity News</h3>
+        <h2 class="mb-0 editable animate fade-up">Featured news</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 mx-lg-auto">
+      <div class="col-lg-8 mx-lg-auto animate blur">
         {% assign featured = site.posts.first %}
-        <div class="bg-white shadow p-3 p-lg-5">
+        <div class="bg-white shadow p-3 p-lg-5 animate fade-up">
           <div class="bg-image aspect-3x1" style="background-image: url({{ featured.featured_image | default: site.placeholder_image }})"></div>
           <h3 class="mt-4 mb-2 font-weight-bold">{{ featured.title }}</h3>
           <p class="text-mid">By {{ featured.author }} | {{ featured.post_date | date: "%-d/%m/%Y "}} {% if featured.categories %}| {{ featured.categories }}{% endif %}</p>
@@ -29,7 +29,7 @@ title: Velocity News
           </div>
         </div>
         {% for post in site.posts offset: 1 %}
-          <div class="bg-white shadow mb-5 p-3 p-lg-5">
+          <div class="bg-white shadow mb-5 p-3 p-lg-5 animate fade-up">
             <div class="row align-items-center">
               <div class="col-lg-4">
                 <div class="bg-image aspect-1x1" style="background-image: url({{ featured.featured_image | default: site.placeholder_image }})"></div>

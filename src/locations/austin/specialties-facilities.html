@@ -41,8 +41,8 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
-        <h1 class="text-center text-secondary editable">Proven Experience in Multiple Therapeutic Areas</h1>
-        <div class="editable text-center">
+        <h1 class="text-center text-secondary editable animate fade-up">Proven Experience in Multiple Therapeutic Areas</h1>
+        <div class="editable text-center animate fade-up">
           <p>Velocity research sites and physician investigators have successfully completed studies in most major therapeutic areas. Our investigators’ expertise covers a wide range of subspecialties and understands local differences in patient populations. Broad categories of therapeutic area expertise are shown below with additional information on areas where we have extensive experience. The Velocity team is eager to provide more detail on our experience for your specific study.</p>
         </div>
       </div>
@@ -55,7 +55,7 @@ _assets:
     <div class="row">
       <div class="col-12">
         <div class="text-center">
-          <h3>{{ list_section.title }}</h3>
+          <h3 class="animate fade-up">{{ list_section.title }}</h3>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@ _assets:
       <div class="col-lg-10 mx-lg-auto">
         <div class="text-center">
           {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
-          <ul class="column-list column-{{ num_columns }}">
+          <ul class="column-list column-{{ num_columns }} animate fade-up">
             {% for list_item in list_section.list_item %}
               <li>{{ list_item.title }}</li>
             {% endfor %}
@@ -74,34 +74,33 @@ _assets:
   </div>
 </section>
 {% endfor %}
-<div class="bg-image aspect-3x1" style="background-image: url({{ page._assets[0]}})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
-
+<div class="bg-image aspect-3x1 animate blur" style="background-image: url({{ page._assets[0]}})" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal"></div>
 <section>
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <div class="text-center editable">
+        <div class="text-center editable animate fade-up">
           <h2>Our Facility is Designed for Clinical Trials</h2>
         </div>
       </div>
     </div>
     <div class="row mb-5">
       {% for image in page.facility_images %}
-        <div class="col-lg-3">
+        <div class="col-lg-3 animate fade-up">
           <div class="bg-image aspect-5x4 rounded mb-3" style="background-image: url({{ image }})"></div>
         </div>
       {% endfor %}
     </div>
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
-        <div class="editable">
+        <div class="editable animate fade-up">
           <p>The Austin facility is designed for the ease and comfort of study participants and to allow optimal efficiencies in performing clinical trials. All Velocity sites include:</p>
         </div>
       </div>
     </div>
     <div class="row mt-3">
       <div class="col-lg-8 mx-lg-auto">
-        <div class="editable">
+        <div class="editable animate fade-up">
           <ul>
             <li>Private Examination/Consultation Rooms</li>
             <li>Comfortable Patient Reception Areas</li>

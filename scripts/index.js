@@ -5,12 +5,13 @@ $(function() {
 
   //instantiate parallax
   var rellax = new Rellax('.rellax', {
-    speed: -2,
+    speed: -1,
     center: true,
     wrapper: null,
     round: true,
     vertical: true,
-    horizontal: false
+    horizontal: false,
+    breakpoints: [576, 768, 992]
   });
 
   if($('#us-map').length) {

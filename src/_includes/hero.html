@@ -1,5 +1,5 @@
 {% assign hero = page.hero.first %}
-<div class="hero bg-image {% unless hero.title or hero.subtitle %}no-overlay{% endunless %}" style="background-image: url({{ hero.image }})">
+<div class="hero bg-image {% unless hero.title or hero.subtitle %}no-overlay{% endunless %} animate blur" style="background-image: url({{ hero.image }})">
   {% if hero.title or hero.subtitle %}
   <div class="hero-overlay">
     <div class="hero-content">
@@ -8,9 +8,9 @@
           <div class="col-lg-8 mx-lg-auto">
             <div class="text-center text-white">
               {% if hero.subtitle %}
-                <p class="subtitle">{{ hero.subtitle }}</p>
+                <p class="subtitle animate fade-up">{{ hero.subtitle }}</p>
               {% endif %}
-              <h1 class="mb-0">{{ hero.title }}</h1>
+              <h1 class="mb-0 animate fade-up">{{ hero.title }}</h1>
             </div>
           </div>
         </div>

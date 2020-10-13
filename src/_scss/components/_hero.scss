@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   height: auto;
+  overflow: hidden;
   @include media-breakpoint-up(lg) {
     padding-top: 30%;
     height: 0;
