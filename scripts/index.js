@@ -1,6 +1,17 @@
 //main js
 $(function() {
-  console.log('hellow')
+  console.log('hello')
+
+
+  //instantiate parallax
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
 
   if($('#us-map').length) {
     $.ajax({
@@ -8,7 +19,7 @@ $(function() {
       dataType : 'json',
       url: '/data/locations.json',
       success : function(data) {
-        //d3 map prototype example
+        //load d3 map
         var map = new Datamap({
           element: document.getElementById('us-map'),
           scope: 'usa',
@@ -24,6 +35,7 @@ $(function() {
 
         var locations = data;
 
+        //base fields for setting up map pin and data
         // var locations = [{
         //   name: 'Austin',
         //   radius: 15,
@@ -68,35 +80,49 @@ $(function() {
       }
     });
   }
+  if($('.owl-carousel').length){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      navText: [
+        '<i class="ri-arrow-left-s-line"></i>',
+        '<i class="ri-arrow-right-s-line"></i>'
+      ],
+      stagePadding: 10,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        500: {
+          items: 1
+        },
+        666: {
+          items: 1
+        },
+        991: {
+          items: 2
+        },
+        1156: {
+          items: 3
+        },
+      }
+    })
+  }
 
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: true,
-    navText: [
-      '<i class="ri-arrow-left-s-line"></i>',
-      '<i class="ri-arrow-right-s-line"></i>'
-    ],
-    stagePadding: 10,
-    autoplay: true,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 1
-      },
-      666: {
-        items: 1
-      },
-      991: {
-        items: 2
-      },
-      1156: {
-        items: 3
-      },
-    }
-  })
-  
+  var controller = new ScrollMagic.Controller();
+
+  $(".animate").each(function () {
+    var currentAnimation = this;
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: currentAnimation,
+      offset: -275,
+      reverse: false
+    })
+      .setClassToggle(currentAnimation, "active")
+      .addTo(controller);
+  });
 })
