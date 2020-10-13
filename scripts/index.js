@@ -91,8 +91,9 @@ $(function() {
         '<i class="ri-arrow-right-s-line"></i>'
       ],
       stagePadding: 10,
-      autoplay: true,
+      autoplay: false,
       autoplayHoverPause: true,
+      center: true,
       responsive: {
         0: {
           items: 1
@@ -126,4 +127,34 @@ $(function() {
       .setClassToggle(currentAnimation, "active")
       .addTo(controller);
   });
+
+  
 })
+
+function countUp(el, count){
+    var div_by = 100,
+        speed = Math.round(count / div_by),
+        $display = $(el),
+        run_count = 1,
+        int_speed = 24;
+    
+    var int = setInterval(function() {
+      if(run_count < div_by){
+        $display.text(speed * run_count);
+        run_count++;
+      } else if(parseInt($display.text()) < count) {
+        var curr_count = parseInt($display.text()) + 1;
+        $display.text(curr_count);
+      } else {
+        clearInterval(int);
+      }
+    }, int_speed);
+}
+
+  $('[data-count]').each(function(){
+    var count_number = $(this).data('count');
+    console.log(count_number)
+    countUp($(this), count_number)
+  })
+
+  

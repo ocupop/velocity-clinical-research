@@ -3,17 +3,19 @@ layout: default
 ---
 
 <div class="split-intro position-relative">
-  <div class="bg-image image-pin-left" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})"></div>
+  <div class="bg-image image-pin-left animate blur" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})"></div>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 ml-lg-auto">
-        <h3 class="subtitle">Specialties</h3>
-        <h2 class="mb-2 font-weight-bold">{{ page.title }}</h2>
+        <h3 class="subtitle animate fade-up">Specialties</h3>
+        <h2 class="mb-2 font-weight-bold animate fade-up">{{ page.title }}</h2>
         {% if page.subtitle %}
-          <p class="lead text-primary">{{ page.subtitle }}</p>
+          <p class="lead text-primary animate fade-up">{{ page.subtitle }}</p>
         {% endif %}
         {% if page.description_html %}
-          {{ page.description_html }}
+          <div class="animate fade-up">
+            {{ page.description_html }}
+          </div>
         {% endif %}
       </div>
     </div>
@@ -25,21 +27,21 @@ layout: default
   <div class="container">
     <div class="row my-5">
       <div class="col-12">
-        <div class="text-center">
+        <div class="text-center animate fade-up">
           <h2>{{ stat_section.title }}</h2>
         </div>
       </div>
     </div>
     <div class="row">
       {% for stat in stat_section.statistic %}
-        <div class="col-6 col-lg-4 mb-5">
+        <div class="col-6 col-lg-4 mb-5 animate fade-up">
           <div class="text-center">
             {% if stat.icon_image %}
               <div class="icon-wrapper">
                 <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon" />
               </div>
             {% endif %}
-            <p class="h1 font-weight-bold">{{ stat.number }}</p>
+            <p class="h1 font-weight-bold"><span class="stat-number" data-number="{{stat.number}}">{{ stat.number }}</span> </p>
             <p>{{ stat.description }}</p>
           </div>
         </div>
@@ -53,14 +55,14 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="text-center">
+        <div class="text-center animate fade-up">
           <h3>{{ list_section.title }}</h3>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="text-center">
+        <div class="text-center animate fade-up">
           {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
           <ul class="column-list column-{{ num_columns }}">
             {% for list_item in list_section.list_item %}

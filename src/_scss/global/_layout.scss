@@ -16,8 +16,15 @@
     text-transform: uppercase;
     color: $body-color;
     font-size: 15px;
+    letter-spacing: 1px;
+    @include transition(font-weight, 0.5s);
+    &.active,
+    &:hover {
+      color: $primary;
+    }
     &.active {
       color: $primary;
+      font-weight: bold;
     }
   }
 }
