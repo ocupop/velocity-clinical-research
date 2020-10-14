@@ -1,44 +1,121 @@
 ---
 layout: location
+faqs:
+  - question: Should you volunteer for clinical studies?
+    answer_text:
+  - question: Who can participate in a clinical trial?
+    answer_text: >-
+      Clinical Trials are a crucial part of finding new medicines and treatments
+      for diseases. There are many reasons why people volunteer to participate
+      in clinical trials. You may have the opportunity to play a role in the
+      development of new treatments, devices or preventions for certain diseases
+      or medical conditions. You may have access to investigational treatments
+      before they are available. You may have access to free diagnostic
+      procedures or medical tests related to the clinical trial and be
+      compensated for your time and travel related to the trial. Participation
+      is always voluntary.
+  - question: What is protocol?
+    answer_text:
+  - question: What is informed consent?
+    answer_text:
+  - question: How are participants protected?
+    answer_text:
+  - question: What should I consider before participating?
+    answer_text:
+  - question: Can a participant leave a clinical trial after it has begun?
+    answer_text:
+  - question: What is a placebo?
+    answer_text:
+  - question: >-
+      What are the phases in the clinical development of a new medicine or
+      treatment?
+    answer_text:
+_assets:
+  - /uploads/locations/austin/Mask-Group-43.jpg
+  - /uploads/locations/austin/Mask-Group-114.jpg
+  - /uploads/locations/austin/Mask-Group-81.jpg
 ---
 
-<section>
+<section id="participating" class="position-relative">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h1>Frequently Asked Questions</h1>
-          <h2>About Participating in a Clinical Research Trial</h2>
+      <div class="col-lg-6">
+        <h1 class="editable animate fade-up">Participating in a Clinical Research Trial</h1>
+        <h5 class="font-weight-bolder text-dark editable animate fade-up">What is clinical research?</h5>
+        <div class="editable animate fade-up">
+          <p>Clinical research is the study of health and illness in humans, in both sick and healthy people. It focuses on improving knowledge of diseases, developing diagnostic methods and new treatments or medical devices to ensure better patient care. Clinical research trials are carefully designed, reviewed and completed, and must be approved before they can start.</p>
+          <p>All clinical research must:</p>
+          <ul>
+            <li>have the goal of increasing medical knowledge</li>
+            <li>be carried out by competent persons take all necessary measures to protect those who lend themselves to research</li>
+            <li>obtain regulatory approvals and take all the necessary legal and ethical steps</li>
+            <li>collect the consent of those involved in research</li>
+                
+          </ul>
+        </div>
+        <h5 class="font-weight-bolder text-dark editable animate fade-up">Why should I participate?</h5>
+        <div class="editable animate fade-up">
+          <p>Clinical Trials are a crucial part of finding new medicines and treatments for diseases. There are many reasons why people volunteer to participate in clinical trials. You may have the opportunity to play a role in the development of new treatments, devices or preventions for certain diseases or medical conditions. You may have access to investigational treatments before they are available. You may have access to free diagnostic procedures or medical tests related to the clinical trial and be compensated for your time and travel related to the trial.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 ml-lg-auto">
+        <div class="mosaic-images-stack left-to-right animate blur">
+          <div class="image-wrapper">
+            <div
+              class="bg-image aspect-5x4 rounded rellax"
+              style="background-image: url({{ page._assets[0] }})"
+              data-cms-editor-link="cloudcannon:#_assets[0]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="0.5"
+              ></div>
+          </div>
+          <div class="image-wrapper">
+            <div
+              class="bg-image aspect-5x4 rounded"
+              style="background-image: url({{ page._assets[1] }})"
+              data-cms-editor-link="cloudcannon:#_assets[1]"
+              data-cms-editor-link-style="modal"
+              data-rellax-speed="-0.5"
+              ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/img/dots3.png" class="dots bottom-right" alt="Dots image" />
+</section>
+<section id="what" class="bg-primary text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="bg-image aspect-4x3 mb-3 mb-lg-0 animate blur" style="background-image: url({{ page._assets[2] }})" data-cms-editor-link="cloudcannon:#_assets[2]" data-cms-editor-link-style="modal"></div>
+      </div>
+      <div class="col-lg-7">
+        <h2 class="text-white animate fade-up editable">What is a clinical trial?</h2>
+        <div class="animate fade-up editable">
+          <p>A clinical research trial is a scientific study that helps determine how a new medicine or treatment works in humans. Clinical research trials are conducted to obtain information used to determine the safety and effectiveness of a new drug, device, or treatment. The US FDA must review information from these clinical trials and then decide if the drug, device, or treatment should be approved and made available to patients on the market. The FDA has strict rules that govern how clinical trials are conducted. These rules are designed to ensure the safety of those who participate.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-primary text-white">
+<section id="faqs" class="bg-light position-relative">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-5">
-        <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
-      </div>
-      <div class="col-lg-7">
-        <h2 class="text-white">What is a clinical trial?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint accusantium, libero commodi aliquam, nam inventore voluptas, provident quibusdam ipsum consequatur temporibus modi soluta porro quas ratione odit aut ut.</p>
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="text-center font-weight-bold animate fade-up editable">Frequently Asked Questions</h2>
       </div>
     </div>
-  </div>
-</section>
-<section id="faqs" class="bg-light">
-  <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
-        {% for i in (1..4) %}
-          <div class="bg-white p-5 mb-4">
+        {% for faq in page.faqs %}
+          <div class="bg-white p-3 p-lg-5 mb-4 animate fade-up">
             <a class="d-flex justify-content-between align-items-center h2 mb-0 collapsed" data-toggle="collapse" href="#collapse-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
-              Question Lorem ipsum dolor sit amet. <i class="ri-arrow-down-s-line"></i>
+              {{ faq.question }} <i class="ri-arrow-down-s-line"></i>
             </a>
             <div class="collapse" id="collapse-{{ forloop.index }}">
               <div class="pt-5">
-                Question answer Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                {{ faq.answer_text }}
               </div>
             </div>
           </div>
@@ -46,4 +123,5 @@ layout: location
       </div>
     </div>
   </div>
+  <img src="/img/dots3.png" class="dots bottom-left" alt="Dots image">
 </section>
