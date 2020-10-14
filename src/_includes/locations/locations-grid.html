@@ -1,5 +1,6 @@
 <div class="responsive-card-deck location-cards cards-lg-4">
-  {% for location in site.locations %}
+  {% assign locations = site.locations | where: 'active', true %}
+  {% for location in locations %}
     <div class="card card-white mb-4 animate fade-up">
       <div class="image-wrapper">
         <div class="bg-image aspect-1x1 rounded-circle"
@@ -11,7 +12,7 @@
         <p class="mb-0"><strong>{{ location.title }}</strong></p>
       </div>
       <div class="card-footer text-center border-0 bg-transparent">
-        <a href="/locations/{{ location.title | slugify }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt="Arrow icon"></a>
+        <a href="/locations/{{ location.slug }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt="Arrow icon"></a>
       </div>
     </div>
   {% endfor %}

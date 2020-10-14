@@ -47,8 +47,7 @@ _hero: /uploads/locations/austin/Group-379.jpg
         <div class="bg-white contact-form shadow p-3 p-lg-5">
           <div class="cognito">
             <script src="https://www.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
-            <script>Cognito.load("forms", { id: "86" });</script>
-            <script>Cognito.load("forms", { id: "86", entry: { "Location": "location name" }});</script>
+            <script>Cognito.load("forms", { id: "86", entry: { "Location": "{{ location.title }}"} });</script>
             <div class="preloader">
               <img src="/img/siteicon.png" alt="Velocity Clinical Logo" />
             </div>

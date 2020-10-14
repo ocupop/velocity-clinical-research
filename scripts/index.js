@@ -120,7 +120,7 @@ $(function() {
 
     var scene = new ScrollMagic.Scene({
       triggerElement: currentAnimation,
-      offset: -275,
+      offset: -300,
       reverse: false
     })
       .setClassToggle(currentAnimation, "active")

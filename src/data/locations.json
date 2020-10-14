@@ -2,19 +2,20 @@
 layout: null
 ---
 [
-  {% for location in site.locations %}
+  {% assign locations = site.locations | where: 'active', true %}
+  {% for location in locations %}
   {
-    "title": "{{ location.title | xml_escape }}",
-    "label": "{{ location.label | xml_escape }}",
+    "title": {{ location.title | jsonify }},
+    "label": {{ location.label | jsonify }},
     "radius": 15,
     "fillKey": "locationPin",
-    "phone": "{{ location.phone | xml_escape }}",
-    "email": "{{ location.email | xml_escape }}",
-    "latitude": "{{ location.latitude }}",
-    "longitude": "{{ location.longitude | xml_escape }}",
-    "address": "{{ location.address | xml_escape }}",
-    "image": "{{ location.featured_image | xml_escape }}",
-    "url": "/locations/{{ location.title | slugify | xml_escape }}"
+    "phone": {{ location.phone | jsonify }},
+    "email": {{ location.email | jsonify }},
+    "latitude": {{ location.latitude }},
+    "longitude": {{ location.longitude }},
+    "address": {{ location.address | jsonify }},
+    "image": {{ location.featured_image | jsonify }},
+    "url": {{ location.slug | prepend: '/locations/' | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

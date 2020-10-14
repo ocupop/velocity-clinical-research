@@ -176,6 +176,15 @@
       visibility: hidden !important;
       height: 0 !important;
     }
+    .c-forms-confirmation-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary;
+      color: $white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
   #c-submit-button {
     border: 1px solid $lime-green;

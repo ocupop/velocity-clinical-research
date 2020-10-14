@@ -58,7 +58,7 @@
 .fade-up {
   &.active {
     transform: translateY(0px);
-    animation: fadeUp 1.2s;
+    animation: fadeUp 1s;
     animation-fill-mode: forwards;
     @for $i from 1 through 20 {
       &:nth-child(#{$i}) {
