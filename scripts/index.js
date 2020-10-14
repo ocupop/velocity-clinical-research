@@ -126,34 +126,49 @@ $(function() {
       .setClassToggle(currentAnimation, "active")
       .addTo(controller);
   });
-
-  
 })
 
-function countUp(el, count){
-  var div_by = 100,
-      speed = Math.round(count / div_by),
-      $display = $(el),
-      run_count = 1,
-      int_speed = 24;
-  
-  var int = setInterval(function() {
-    if(run_count < div_by){
-      $display.text(speed * run_count);
-      run_count++;
-    } else if(parseInt($display.text()) < count) {
-      var curr_count = parseInt($display.text()) + 1;
-      $display.text(curr_count);
-    } else {
-      clearInterval(int);
-    }
-  }, int_speed);
+function countup(el, val) {
+  var count = new CountUp(el, 0, val, 0, 4, {
+    useEasing: true
+  });
+  if (!count.error) {
+    count.start();
+  } else {
+    console.error(count.error);
+  }
 }
 
-  $('[data-count]').each(function(){
-    var count_number = $(this).data('count');
-    console.log(count_number)
-    countUp($(this), count_number)
-  })
+$('[data-count]').each(function(){
+  var count_number = $(this).data('count');
+  var el_id = $(this).attr('id')
+
+  console.log(el_id, count_number)
+  countup(el_id, count_number);
+})
+
+
+
+// function countUp(el, count){
+//   var div_by = 100,
+//       speed = Math.round(count / div_by),
+//       $display = $(el),
+//       run_count = 1,
+//       int_speed = 24;
+  
+//   var int = setInterval(function() {
+//     if(run_count < div_by){
+//       $display.text(speed * run_count);
+//       run_count++;
+//     } else if(parseInt($display.text()) < count) {
+//       var curr_count = parseInt($display.text()) + 1;
+//       $display.text(curr_count);
+//     } else {
+//       clearInterval(int);
+//     }
+//   }, int_speed);
+// }
+
+
 
   
