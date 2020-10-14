@@ -251,6 +251,12 @@ ul.column-list {
   }
 }
 
+.editor-mode {
+  [data-cms-editor-link] {
+    border: 3px solid $yellow;
+  }
+}
+
 
 
 // SVG Fill & Stroke Utilities
