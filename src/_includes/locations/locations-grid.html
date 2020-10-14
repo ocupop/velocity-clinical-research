@@ -7,8 +7,8 @@
       </div>
       
       <div class="card-body text-center">
-        <p class="mb-0">{{ location.city }}, {{ location.state }}</p>
-        <p class="mb-0"><strong>Velocity {{ location.city }}</strong></p>
+        <p class="mb-0">{{ location.label }}</p>
+        <p class="mb-0"><strong>{{ location.title }}</strong></p>
       </div>
       <div class="card-footer text-center border-0 bg-transparent">
         <a href="/locations/{{ location.title | slugify }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt="Arrow icon"></a>

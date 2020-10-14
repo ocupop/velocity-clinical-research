@@ -1,8 +1,6 @@
 ---
 layout: location
-hero:
-  image: /uploads/locations/austin/Austin-header.jpg
-  logo_image: /uploads/locations/austin/Velocity-Austin-CLR-WHT.png
+_hero: /uploads/locations/austin/Austin-header.jpg
 location_team:
   - name: 'Mark Carlson, MD'
     role: Lead Principal Investigator
@@ -56,14 +54,14 @@ _assets:
               <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0" style="background-image: url({{ location.featured_image }})"></div>
             </div>
             <div class="col-lg-8">
-              <h4 class="font-weight-bold editable mb-0">Velocity Clinical Research, {{ location.city }}</h4>
-              <h4 class="font-weight-bold editable">{{ location.location_name }}</h4>
+              <h4 class="font-weight-bold editable mb-0">{{ location.title }}</h4>
+              <h4 class="font-weight-bold editable">{{ location.label }}</h4>
               <div class="editable">
-                <p>{{ location.location_details.address }}</p>
+                <p>{{ location.address }}</p>
               </div>
               <div class="editable">
-                <p class="mb-0"><a href="tel:{{ location.location_details.phone }}">{{ location.location_details.phone }}</a></p>
-                <p><a href="mailto:{{ location.location_details.email }}">{{ location.location_details.email }}</a></p>
+                <p class="mb-0"><a href="tel:{{ location.phone }}">{{ location.phone }}</a></p>
+                <p><a href="mailto:{{ location.email }}">{{ location.email }}</a></p>
               </div>
             </div>
           </div>
@@ -119,8 +117,8 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-4 animate blur">
-        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[5] }})" data-cms-editor-link="cloudcannon:#_assets[6]" data-cms-editor-link-style="modal"></div>
-        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[6] }})" data-cms-editor-link="cloudcannon:#_assets[7]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[5] }})" data-cms-editor-link="cloudcannon:#_assets[5]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[6] }})" data-cms-editor-link="cloudcannon:#_assets[6]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-7 ml-lg-auto">
         <h2 class="animate fade-up editable">Our Story</h2>

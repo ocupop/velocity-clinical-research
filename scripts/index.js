@@ -54,7 +54,7 @@ $(function() {
         map.bubbles(locations, {
           popupTemplate: function (geo, data) { 
             return ['<div class="hoverinfo">' +  data.title,
-            '<br/>Location: ' +  data.city + data.state,
+            '<br/>Location: ' +  data.label,
             '<br/>Website: ' +  data.url + '',
             '</div>'].join('');
           }
@@ -69,8 +69,7 @@ $(function() {
 
           //build modal info
           $('.location-title').text(selected_location.title)
-          $('.location-name').text(selected_location.location_name)
-          $('.location-state').text(selected_location.state)
+          $('.location-label').text(selected_location.label)
           $('.location-address').text(selected_location.address)
           $('.location-phone').text(selected_location.phone)
           $('.location-email').text(selected_location.email)
@@ -132,23 +131,23 @@ $(function() {
 })
 
 function countUp(el, count){
-    var div_by = 100,
-        speed = Math.round(count / div_by),
-        $display = $(el),
-        run_count = 1,
-        int_speed = 24;
-    
-    var int = setInterval(function() {
-      if(run_count < div_by){
-        $display.text(speed * run_count);
-        run_count++;
-      } else if(parseInt($display.text()) < count) {
-        var curr_count = parseInt($display.text()) + 1;
-        $display.text(curr_count);
-      } else {
-        clearInterval(int);
-      }
-    }, int_speed);
+  var div_by = 100,
+      speed = Math.round(count / div_by),
+      $display = $(el),
+      run_count = 1,
+      int_speed = 24;
+  
+  var int = setInterval(function() {
+    if(run_count < div_by){
+      $display.text(speed * run_count);
+      run_count++;
+    } else if(parseInt($display.text()) < count) {
+      var curr_count = parseInt($display.text()) + 1;
+      $display.text(curr_count);
+    } else {
+      clearInterval(int);
+    }
+  }, int_speed);
 }
 
   $('[data-count]').each(function(){
