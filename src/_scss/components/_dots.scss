@@ -1,9 +1,13 @@
 .dots {
   position: absolute;
   &.top-left {
-    top: -175px;
-    left: 60px;
+    top: -75px;
+    left: 0;
     width: 25%;
+    @include media-breakpoint-up(lg) {
+      top: -175px;
+      left: 60px;
+    }
   }
   &.top-right {
     top: 0;
