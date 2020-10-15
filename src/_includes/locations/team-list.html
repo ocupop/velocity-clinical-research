@@ -9,8 +9,13 @@
     {% if team.role %}
       <h5 class="text-dark">{{ team.role }}</h5>
     {% endif %}
-    {{ team.bio_html | truncatewords: 30 }}
-    <p><a href="{{ member.url }}" class="text-secondary">Read More</a></p>
+    <div class="read-more-wrapper">
+      <div class="expand-text">
+        {{ team.bio_html }}
+      </div>
+      
+      <p class="read-more text-secondary">Read More</p>
+    </div>
   </div>
 </div>
 {% endfor %}

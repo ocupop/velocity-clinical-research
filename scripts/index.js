@@ -1,7 +1,5 @@
 //main js
 $(function() {
-  console.log('hello')
-
 
   //instantiate parallax
   var rellax = new Rellax('.rellax', {
@@ -152,9 +150,18 @@ $(function() {
     .setClassToggle(currentAnimation, "active")
     .addTo(controller);
   })
+
+  $('.read-more-wrapper').on('click', function(){
+    $(this).toggleClass('open')
+  })
 })
 
-
+// const read_more_wrapper = document.querySelector('.read-more-wrapper');
+// let isOpen = false;
+// document.querySelector('.read-more').addEventListener('click', () => {
+//   isOpen = !isOpen;
+//   isOpen ? read_more_wrapper.classList.add('open') : read_more_wrapper.classList.remove('open')   
+// });
 
 // $('[data-count]').each(function(){
 //   var count_number = $(this).data('count');
