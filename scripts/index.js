@@ -126,26 +126,43 @@ $(function() {
       .setClassToggle(currentAnimation, "active")
       .addTo(controller);
   });
-})
 
-function countup(el, val) {
-  var count = new CountUp(el, 0, val, 0, 4, {
-    useEasing: true
-  });
-  if (!count.error) {
-    count.start();
-  } else {
-    console.error(count.error);
+  function countup(el, val) {
+    var count = new CountUp(el, 0, val, 0, 3, {
+      useEasing: true
+    });
+    if (!count.error) {
+      count.start();
+    } else {
+      console.error(count.error);
+    }
   }
-}
 
-$('[data-count]').each(function(){
-  var count_number = $(this).data('count');
-  var el_id = $(this).attr('id')
-
-  console.log(el_id, count_number)
-  countup(el_id, count_number);
+  $(".stat-number").each(function(){
+    var currentAnimation = this;
+    var count_number = $(this).data('count');
+    var el_id = $(this).attr('id')
+    var scene = new ScrollMagic.Scene({
+      triggerElement: currentAnimation,
+      offset: -250,
+      reverse: false
+    }).on('start', function(){
+      countup(el_id, count_number);
+    })
+    .setClassToggle(currentAnimation, "active")
+    .addTo(controller);
+  })
 })
+
+
+
+// $('[data-count]').each(function(){
+//   var count_number = $(this).data('count');
+//   var el_id = $(this).attr('id')
+
+//   console.log(el_id, count_number)
+//   countup(el_id, count_number);
+// })
 
 
 

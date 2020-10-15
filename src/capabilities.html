@@ -152,7 +152,7 @@ _assets:
       {% for stat in stat_section.statistic %}
         <div class="col-6 col-lg-3 mb-5 animate fade-up">
           <div class="text-center">
-            <p class="h2 font-weight-bold"><span id="counter-{{ forloop.index }}" data-count="{{stat.number}}"></span></p>
+            <p class="h2 font-weight-bold"><span class="stat-number animate fade-up" id="counter-{{ forloop.index }}" data-count="{{stat.number}}">{{stat.number}}</span></p>
             <p>{{ stat.description }}</p>
           </div>
         </div>

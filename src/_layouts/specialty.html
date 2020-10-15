@@ -41,7 +41,7 @@ layout: default
                 <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon" />
               </div>
             {% endif %}
-            <p class="h1 font-weight-bold"><span class="stat-number" data-number="{{stat.number}}">{{ stat.number }}</span> </p>
+            <p class="h1 font-weight-bold"><span class="stat-number animate fade-up" id="counter-{{ stat_section.title | slugify }}-{{ forloop.index }}" data-count="{{stat.number}}">{{stat.number}}</span> </p>
             <p>{{ stat.description }}</p>
           </div>
         </div>

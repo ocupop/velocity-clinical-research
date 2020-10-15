@@ -5,6 +5,14 @@
   .flip-card {
     width: 100%;
     margin-bottom: 8%;
+    &.active {
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          animation-delay: 0.09s * $i;
+        }
+      }
+    }
+    
     @include media-breakpoint-up(sm) {
       width: 47%;
     }
