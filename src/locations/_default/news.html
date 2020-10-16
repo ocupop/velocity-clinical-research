@@ -3,6 +3,7 @@ layout: location
 title: Velocity News
 meta:
 ---
+
 {% include locations/location-logic.html %}
 <section class="bg-light">
   <div class="container">
@@ -14,6 +15,7 @@ meta:
     </div>
     <div class="row">
       <div class="col-lg-8 mx-lg-auto">
+        <!-- location will show posts that have posts that have this location selected as related_posts, defaults to show site posts -->
         {% assign location_news = "" | split: ','  %}
         {% for post in site.posts %}
           {% if post.related_locations contains slug  %}
