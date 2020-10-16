@@ -34,13 +34,13 @@ location_team:
       dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
       sed diam nonumy</p>
 _assets:
-  - /uploads/locations/austin/cdc-UC9_itYaafM-unsplash.jpg
-  - /uploads/locations/austin/Mask-Group-68.jpg
-  - /uploads/locations/austin/Mask-Group-65.jpg
-  - /uploads/locations/austin/Mask-Group-66.jpg
-  - /uploads/locations/austin/Mask-Group-67.jpg
-  - /uploads/locations/austin/Mask-Group-4.jpg
-  - /uploads/locations/austin/Austin.jpg
+  - image: /uploads/locations/austin/cdc-UC9_itYaafM-unsplash.jpg
+  - image: /uploads/locations/austin/Mask-Group-68.jpg
+  - image: /uploads/locations/austin/Mask-Group-65.jpg
+  - image: /uploads/locations/austin/Mask-Group-66.jpg
+  - image: /uploads/locations/austin/Mask-Group-67.jpg
+  - image: /uploads/locations/austin/Mask-Group-4.jpg
+  - image: /uploads/locations/austin/Austin.jpg
 ---
 
 {% include locations/location-logic.html %}
@@ -114,8 +114,8 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-4 animate blur">
-        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[5] }})" data-cms-editor-link="cloudcannon:#_assets[5]" data-cms-editor-link-style="modal"></div>
-        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[6] }})" data-cms-editor-link="cloudcannon:#_assets[6]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[5].image }})" data-cms-editor-link="cloudcannon:#_assets[5]" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3" style="background-image: url({{ page._assets[6].image }})" data-cms-editor-link="cloudcannon:#_assets[6]" data-cms-editor-link-style="modal"></div>
       </div>
       <div class="col-lg-7 ml-lg-auto">
         <h2 class="animate fade-up editable">Our Story</h2>
