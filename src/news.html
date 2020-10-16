@@ -15,48 +15,16 @@ meta:
     <div class="row">
       <div class="col-lg-8 mx-lg-auto animate blur">
         {% assign featured = site.posts.first %}
-        <div class="bg-white shadow p-3 p-lg-5 animate fade-up">
-          <div class="bg-image aspect-3x1" style="background-image: url({{ featured.featured_image | default: site.placeholder_image }})"></div>
-          <h3 class="mt-4 mb-2 font-weight-bold">{{ featured.title }}</h3>
-          <p class="text-mid">{% if featured.author %} By {{ featured.author }} |{% endif %} {{ featured.post_date | date: "%-d/%m/%Y "}} {% if featured.categories %}| {{ featured.categories }}{% endif %}</p>
-          {% if featured.summary %}
-            {{ featured.summary }}
-          {% else %}
-            {{ featured.content | truncatewords: 30 }}
-          {% endif %}
-          <div class="text-right">
-            {% if featured.source_url %}
-              <a href="{{ featured.source_url }}" class="text-secondary" target="_blank">View Article</a>
-            {% else %}
-              <a href="{{ featured.url }}" class="text-secondary">Read More</a>
-            {% endif %}
-          </div>
-        </div>
+        {% include news/featured-post.html %}
+        
         <div class="row mt-5 mb-3">
           <div class="col-12">
             <h2 class="editable">Latest Posts</h2>
           </div>
         </div>
         {% for post in site.posts offset: 1 %}
-          <div class="bg-white shadow mb-5 p-3 p-lg-5 animate fade-up">
-            <div class="row align-items-center">
-              <div class="col-lg-4">
-                <div class="bg-image aspect-1x1" style="background-image: url({{ featured.featured_image | default: site.placeholder_image }})"></div>
-              </div>
-              <div class="col-lg-8">
-                <h3 class="mt-4 mb-2 font-weight-bold">{{ post.title }}</h3>
-                <p class="text-mid">By {{ post.author }} | {{ post.post_date | date: "%-d/%m/%Y"}} {% if post.categories %}| {{ post.categories }}{% endif %}</p>
-                {{ post.content | truncatewords: 20 }}
-                <div class="text-right">
-                  {% if post.source_url %}
-                    <a href="{{ post.source_url }}" class="text-secondary" target="_blank">View Article</a>
-                  {% else %}
-                    <a href="{{ post.url }}" class="text-secondary">Read More</a>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          </div>
+          {% include news/post-list-item.html %}
+          
         {% endfor %}
       </div>
     </div>
