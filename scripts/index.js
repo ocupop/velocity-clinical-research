@@ -33,6 +33,7 @@ $(function() {
             borderWidth: 2
           },
           bubblesConfig: {
+            fillOpacity: 1,
             animate: true,
             borderWidth: 0,
             popupOnHover: false,
