@@ -33,11 +33,16 @@ $(function() {
             borderWidth: 2
           },
           bubblesConfig: {
+            animate: true,
             borderWidth: 0,
             popupOnHover: false,
             highlightOnHover: true,
-            highlightFillColor: '#13225a',
-            highlightBorderWidth: 0,
+            highlightBorderColor: '#103CBE',
+            highlightFillColor: '#103CBE',
+            highlightBorderWidth: 3,
+            highlightBorderOpacity: 1,
+            highlightFillOpacity: 1,
+            exitDelay: 100
           }
         });
 
