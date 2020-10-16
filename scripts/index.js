@@ -36,7 +36,7 @@ $(function() {
             fillOpacity: 1,
             animate: true,
             borderWidth: 0,
-            popupOnHover: false,
+            popupOnHover: true,
             highlightOnHover: true,
             highlightBorderColor: '#103CBE',
             highlightFillColor: '#103CBE',
@@ -66,9 +66,8 @@ $(function() {
     
         map.bubbles(locations, {
           popupTemplate: function (geo, data) { 
-            return ['<div class="hoverinfo">' +  data.title,
-            '<br/>Location: ' +  data.label,
-            '<br/>Website: ' +  data.url + '',
+            return ['<div class="hover-info shadow"><p>' + data.label  + '</p>' +
+            '<h5>' + data.title + '</h5>' +
             '</div>'].join('');
           }
         });

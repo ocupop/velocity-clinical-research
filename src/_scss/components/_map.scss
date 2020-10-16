@@ -12,3 +12,20 @@
     color: $primary-dark;
   }
 }
+
+.hover-info {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: $white;
+  color: $primary;
+  p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+}
