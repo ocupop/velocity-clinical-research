@@ -7,7 +7,7 @@ post_date: 2020-06-08 00:00:00
 featured_image:
 categories:
 author:
-summary:
+summary_text:
 source:
 source_url: >-
   https://www.trialsitenews.com/velocity-clinical-research-acquires-omega-clinical-research-expanding-its-reach-to-all-four-continental-u-s-time-zones/
