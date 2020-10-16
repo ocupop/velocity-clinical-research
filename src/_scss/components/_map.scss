@@ -3,4 +3,12 @@
   @include media-breakpoint-up(lg) {
     height: 600px;
   }
+  
+}
+
+.bubbles {
+  stroke-width: 2px;
+  &:hover {
+    color: $primary-dark;
+  }
 }

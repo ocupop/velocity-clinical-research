@@ -24,7 +24,7 @@ $(function() {
           scope: 'usa',
           fills: {
             defaultFill: '#36c0f8', // Any hex, color name or rgb/rgba value,
-            'locationPin': '#9467bd',
+            'locationPin': '#284497',
           },
           geographyConfig: {
             highlightOnHover: false,
