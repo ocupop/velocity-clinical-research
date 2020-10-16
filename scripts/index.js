@@ -28,7 +28,16 @@ $(function() {
           },
           geographyConfig: {
             highlightOnHover: false,
-            popupOnHover: false
+            popupOnHover: false,
+            borderColor: '#ffffff',
+            borderWidth: 2
+          },
+          bubblesConfig: {
+            borderWidth: 0,
+            popupOnHover: false,
+            highlightOnHover: true,
+            highlightFillColor: '#13225a',
+            highlightBorderWidth: 0,
           }
         });
 

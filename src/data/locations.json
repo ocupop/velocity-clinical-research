@@ -7,7 +7,7 @@ layout: null
   {
     "title": {{ location.title | jsonify }},
     "label": {{ location.label | jsonify }},
-    "radius": 8,
+    "radius": 7,
     "fillKey": "locationPin",
     "phone": {{ location.phone | jsonify }},
     "email": {{ location.email | jsonify }},
