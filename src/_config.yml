@@ -43,6 +43,15 @@ placeholder_image_wide: 'https://via.placeholder.com/1900x800/333333/000000?text
 _options:
   layout:
     hidden: true
+  header_image:
+    uploads_dir: "uploads/:title"
+  white_logo_image:
+    uploads_dir: "uploads/:title"
+  color_logo_image:
+    uploads_dir: "uploads/:title"
+  featured_image:
+    uploads_dir: "uploads/:title"    
+
 
 _array_structures:
   meta:
