@@ -20,9 +20,7 @@ analytics_code: UA-140308205-1
 # Collections
 collections:
   team:
-    output: true
-    layout: team
-    permalink: /team/:path/
+    output: false
   locations:
     output: false
   specialties:
