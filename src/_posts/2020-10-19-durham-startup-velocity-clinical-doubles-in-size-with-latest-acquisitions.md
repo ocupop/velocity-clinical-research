@@ -14,5 +14,6 @@ source: WRAL TechWire
 source_url: >-
   https://www.wraltechwire.com/2019/11/06/durham-startup-velocity-clinical-doubles-in-size-with-latest-acquisitions/
 related_locations:
+  - velocity-austin
 ---
 

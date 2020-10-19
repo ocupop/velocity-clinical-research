@@ -9,5 +9,6 @@ summary_text:
 source:
 source_url: /uploads/8a45ff64cb70897c940945632ea04423.pdf
 related_locations:
+  - velocity-austin
 ---
 

@@ -16,5 +16,6 @@ source: TrialSite News
 source_url: >-
   https://www.trialsitenews.com/velocity-clinical-research-snags-industry-expert-melissa-holbrook-for-new-vp-operations-position/
 related_locations:
+  - velocity-austin
 ---
 

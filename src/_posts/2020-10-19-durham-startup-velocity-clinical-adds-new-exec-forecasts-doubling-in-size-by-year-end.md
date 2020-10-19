@@ -14,5 +14,6 @@ source: WRAL TechWire
 source_url: >-
   https://www.wraltechwire.com/2019/09/04/durham-startup-velocity-clinical-adds-new-exec-forecasts-doubling-in-size-by-year-end/
 related_locations:
+  - velocity-austin
 ---
 
