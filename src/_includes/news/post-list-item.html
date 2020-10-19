@@ -1,11 +1,11 @@
-<div class="bg-white shadow mb-5 p-3 p-lg-5 animate fade-up">
+<div class="bg-white shadow mb-5 p-3 p-lg-5 animate fade-up-fast">
   <div class="row align-items-center">
     {% if post.featured_image%}
       <div class="col-lg-4">
         <div class="bg-image aspect-1x1" style="background-image: url({{ post.featured_image }})"></div>
       </div>
     {% endif %}
-    <div class="col-lg-8">
+    <div class="{% if post.featured_image %}col-lg-8{% else %}col-12{% endif %}">
       {% assign num_categories = post.categories | size %}
       <h3 class="mt-4 mb-2 font-weight-bold">{{ post.title }}</h3>
       <p class="text-mid">{% if post.author %}By {{ post.author }} |{% endif %} {{ post.post_date | date: "%-d/%m/%Y"}} {% if num_categories > 0 %}| {{ post.categories }}{% endif %}</p>

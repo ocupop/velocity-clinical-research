@@ -15,9 +15,9 @@ meta:
     </div>
     <div class="row">
       <div class="col-lg-8 mx-lg-auto">
-        <!-- location will show posts that have posts that have this location selected as related_posts, defaults to show site posts -->
         {% assign location_news = "" | split: ','  %}
-        {% for post in site.posts %}
+        {% assign news = site.posts | sort: 'post_date' | reverse %}
+        {% for post in news %}
           {% if post.related_locations contains slug  %}
             {% assign location_news = location_news | push: post %}
           {% endif %}
@@ -27,8 +27,8 @@ meta:
         {% if location_news_size > 0 %}
           {% assign featured = location_news.first %}
         {% else %}
-          {% assign featured = site.posts.first %}
-          {% assign location_news = site.posts %}
+          {% assign featured = news.first %}
+          {% assign location_news = news %}
         {% endif %}
 
         {% include news/featured-post.html %}

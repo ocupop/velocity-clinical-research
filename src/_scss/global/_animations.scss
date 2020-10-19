@@ -68,6 +68,14 @@
   }
 }
 
+.fade-up-fast {
+  &.active {
+    transform: translateY(0px);
+    animation: fadeUp 1s;
+    animation-fill-mode: forwards;
+  }  
+}
+
 .fade-up-delay {
   &.active {
     animation: textFadeUp 0.8s;

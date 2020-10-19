@@ -14,7 +14,8 @@ meta:
     </div>
     <div class="row">
       <div class="col-lg-8 mx-lg-auto animate blur">
-        {% assign featured = site.posts.first %}
+        {% assign news = site.posts | sort: 'post_date' | reverse %}
+        {% assign featured = news.first %}
         {% include news/featured-post.html %}
         
         <div class="row mt-5 mb-3">
@@ -22,7 +23,7 @@ meta:
             <h2 class="editable">Latest Posts</h2>
           </div>
         </div>
-        {% for post in site.posts offset: 1 %}
+        {% for post in news offset: 1 %}
           {% include news/post-list-item.html %}
           
         {% endfor %}
