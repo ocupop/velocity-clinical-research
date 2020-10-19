@@ -13,5 +13,6 @@ source: The Association of Clinical Research Professionals
 source_url: >-
   https://acrpnet.org/2019/08/30/sponsors-want-to-hear-from-sites-with-evidence/?utm_campaign=News&utm_medium=social&utm_source=linkedin&utm_content=sitecrorelations-blog-08302019&utm_term=text-link
 related_locations:
+  - velocity-austin
 ---
 
