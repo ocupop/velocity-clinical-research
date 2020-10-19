@@ -20,5 +20,6 @@ source: TrialSiteNews
 source_url: >-
   https://www.trialsitenews.com/velocity-clinical-doubles-its-size-with-new-acquisitions-including-advanced-clinical-research-and-rapid-medical-research-and-evidences-commitment-to-vision/
 related_locations:
+  - velocity-austin
 ---
 
