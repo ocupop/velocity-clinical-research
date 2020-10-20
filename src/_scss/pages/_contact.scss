@@ -41,9 +41,9 @@
   }
   .overlap-image {
     @include media-breakpoint-up(lg) {
-      margin-top: -25%;
+      margin-top: -300px;
       margin-left: 6%;
-      max-width: 45%;
+      max-width: 800px;
     }
   }
 }
