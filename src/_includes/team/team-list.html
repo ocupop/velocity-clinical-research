@@ -3,7 +3,11 @@
 <div class="row mb-5">
   {% if member.image %}
   <div class="col-6 mx-auto col-lg-3">
-    <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0 animate blur" style="background-image: url({{ member.image }})"></div>
+    <div
+      class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0 blur"
+      data-lazy-type="bg-image"
+      data-lazy-src="{{ member.image }}"
+      ></div>
   </div>
   {% endif %}
   <div class="col-lg-8 ml-lg-auto mt-4 animate fade-up">

@@ -71,7 +71,13 @@ _assets:
   </div>
 </section>
 {% endfor %}
-<div class="bg-image aspect-3x1 animate blur" style="background-image: url({{ page._assets[0].image}})" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
+<div 
+  class="bg-image aspect-3x1 animate blur"
+  data-lazy-type="bg-image"
+  data-lazy-src="{{ page._assets[0].image}}"
+  data-cms-editor-link="cloudcannon:#_assets[0].image"
+  data-cms-editor-link-style="modal">
+</div>
 <section>
   <div class="container">
     <div class="row mb-5">
@@ -84,7 +90,12 @@ _assets:
     <div class="row mb-5">
       {% for image in page.facility_images %}
         <div class="col-lg-3 animate fade-up">
-          <div class="bg-image aspect-5x4 rounded mb-3" style="background-image: url({{ image }})"></div>
+          <div 
+            class="bg-image aspect-5x4 rounded mb-3"
+            data-lazy-type="bg-image"
+            data-lazy-src="{{ image }}"
+            >
+          </div>
         </div>
       {% endfor %}
     </div>

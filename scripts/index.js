@@ -168,45 +168,35 @@ $(function() {
   $('.read-more-wrapper').on('click', function(){
     $(this).toggleClass('open')
   })
+
+  var controllerLazyLoad = new ScrollMagic.Controller();
+
+  $('[data-lazy-type]').each(function () {
+    var currentElement = this;
+    var $this = $(this);
+    var type = $this.data('lazy-type');
+    var lazySrc = $this.data('lazy-src');
+    var scene = new ScrollMagic.Scene({
+      triggerElement: currentElement,
+      reverse: false,
+      offset: -350
+    })
+      .on('enter', function () {
+        if (type == 'image') {
+          $this.attr('src', lazySrc);
+        }
+        if (type == 'bg-image') {
+          $this.css('background-image', 'url(' + lazySrc + ')')
+        }
+      })
+      .on('exit', function () {
+        if (type == 'bg-video') {
+          // test to confirm this is working
+          currentElement.pause();
+        }
+      })
+      .setClassToggle(currentElement, "active")
+      .addTo(controllerLazyLoad);
+  })
 })
-
-// const read_more_wrapper = document.querySelector('.read-more-wrapper');
-// let isOpen = false;
-// document.querySelector('.read-more').addEventListener('click', () => {
-//   isOpen = !isOpen;
-//   isOpen ? read_more_wrapper.classList.add('open') : read_more_wrapper.classList.remove('open')   
-// });
-
-// $('[data-count]').each(function(){
-//   var count_number = $(this).data('count');
-//   var el_id = $(this).attr('id')
-
-//   console.log(el_id, count_number)
-//   countup(el_id, count_number);
-// })
-
-
-
-// function countUp(el, count){
-//   var div_by = 100,
-//       speed = Math.round(count / div_by),
-//       $display = $(el),
-//       run_count = 1,
-//       int_speed = 24;
-  
-//   var int = setInterval(function() {
-//     if(run_count < div_by){
-//       $display.text(speed * run_count);
-//       run_count++;
-//     } else if(parseInt($display.text()) < count) {
-//       var curr_count = parseInt($display.text()) + 1;
-//       $display.text(curr_count);
-//     } else {
-//       clearInterval(int);
-//     }
-//   }, int_speed);
-// }
-
-
-
   

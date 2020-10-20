@@ -1,6 +1,10 @@
 <div class="bg-white shadow p-3 p-lg-5 animate fade-up">
   {% if featured.featured_image %}
-    <div class="bg-image aspect-3x1" style="background-image: url({{ featured.featured_image }})"></div>
+    <div 
+      class="bg-image aspect-3x1"
+      data-lazy-type="bg-image"
+      data-lazy-src="{{ featured.featured_image }}"
+      ></div>
   {% endif %}
   <h3 class="mt-4 mb-2 font-weight-bold">{{ featured.title }}</h3>
   {% assign num_categories = featured.categories | size %}
