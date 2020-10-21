@@ -9,8 +9,16 @@ hero:
     color_overlay: false
 ---
 
-{% include hero.html %}
-
+{% include locations/hero-corporate-locations.html %}
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include components/map.html %}
+      </div>
+    </div>
+  </div>
+</section>
 <section>
   <div class="container">
     <div class="row">
@@ -19,15 +27,6 @@ hero:
           <p>Velocity’s commitment to provide enhanced efficiencies, scalability and productivity while ensuring quality data begins with our carefully vetted research sites. We continually seek dedicated research clinics with highly experienced physician investigators supported by well-trained research staff. Geographical dispersion across the United States ensures patient diversity and access to critical subpopulations.</p>
           <p>Our sites have been successfully conducting clinical trials for over 30 years with over 225 years of collective clinical research site operations. All Investigators and site personnel are fully trained and certified in GCP, HIPAA, uniform SOPs and other relevant topics.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include components/map.html %}
       </div>
     </div>
   </div>
