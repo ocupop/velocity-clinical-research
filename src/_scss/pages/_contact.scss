@@ -73,9 +73,9 @@
   }
   .overlap-image {
     @include media-breakpoint-up(lg) {
-      margin-top: -65%;
+      margin-top: -40%;
       margin-left: 6%;
-      max-width: 45%;
+      max-width: 650px;
     }
   }
   .dots {
