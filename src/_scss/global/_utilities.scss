@@ -149,6 +149,11 @@ ul.color-bullets {
         background: $red;
       }
     }
+    &:nth-child(3n+4) {
+      &::before {
+        background: $primary;
+      }
+    }
   }
 }
 
