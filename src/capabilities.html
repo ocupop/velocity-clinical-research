@@ -140,7 +140,25 @@ _assets:
     </div>
   </div>
 </section>
-<!-- <div id="counter">1000</div> -->
+<section id="capabilities" class="bg-light position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center editable animate fade-up">
+          Velocity Capabilities
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="animate blur">
+          {% include components/capabilities-carousel.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/img/dots3.png" class="dots bottom-left overlap-bottom" alt="Dot image" />
+</section>
 {% for stat_section in page.statistic_section %}
 <section>
   <div class="container">
@@ -164,26 +182,7 @@ _assets:
   </div>
 </section>
 {% endfor %}
-<section id="capabilities" class="bg-light position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center editable animate fade-up">
-          Velocity Capabilities
-        </h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="animate blur">
-          {% include components/capabilities-carousel.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-  <img src="/img/dots3.png" class="dots bottom-left overlap-bottom" alt="Dot image" />
-</section>
-<section class="pb-0">
+<section class="pb-0 bg-light">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
@@ -221,7 +220,7 @@ _assets:
   </div>
 </section>
 {% for list_section in page.list_section %}
-<section class="{% if forloop.first %}pt-0{% endif %}">
+<section class="bg-light {% if forloop.first %}pt-0{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-12">
