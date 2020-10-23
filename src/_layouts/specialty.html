@@ -25,7 +25,7 @@ layout: default
   <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image" />
 </section>
 {% for stat_section in page.statistic_section %}
-<section class="{% if forloop.first %}pt-0 {% endif %}{% unless forloop.last %}pb-0{% endunless %}">
+<section class="{% if forloop.first %}pt-0 {% endif %}{% unless forloop.last %}pb-0{% endunless %} {% cycle '', 'bg-light' %}">
   <div class="container">
     <div class="row my-5">
       <div class="col-12">
