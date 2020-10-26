@@ -51,8 +51,12 @@
     color: $secondary;
     font-size: 35px;
     text-shadow: 0;
+    z-index: 100;
     @include media-breakpoint-up(lg) {
       right: -25px;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }

@@ -86,11 +86,14 @@ list_section:
       - title: Medical Devices
       - title: Men’s Health
       - title: Nephrology
+      - title: Neurology
       - title: Psychiatry
       - title: Pain
+      - title: Respiratory
       - title: Rheumatology / Musculoskeletal
       - title: Sleep Medicine
       - title: Urology
+      - title: Vaccine
       - title: Women’s Health
 _assets:
   - image: /img/capabilities/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg
@@ -98,7 +101,7 @@ _assets:
 ---
 {% include cta-bar.html %}
 {% include hero.html %}
-<section class="pb-0">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -196,10 +199,17 @@ _assets:
         </div>
       </div>
     </div>
-    <div class="row my-5">
+    <div class="row mt-5">
       <div class="col-12">
         <div class="text-center editable">
           <h2 class="font-weight-bold animate fade-up editable">Our Therapeutic Areas</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <p><img class="img-fluid my-5" alt="Dots image" src="/img/capabilities/dots.png" /></p>
         </div>
       </div>
     </div>
@@ -220,15 +230,9 @@ _assets:
   </div>
 </section>
 {% for list_section in page.list_section %}
-<section class="bg-light {% if forloop.first %}pt-0{% endif %}">
+<section class="bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <p><img class="img-fluid my-5" alt="Dots image" src="/img/capabilities/dots.png" /></p>
-        </div>
-      </div>
-    </div>
+    
     {% if page.list_section.title %}
     <div class="row">
       <div class="col-12">
