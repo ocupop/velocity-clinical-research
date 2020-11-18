@@ -64,7 +64,16 @@
     @include media-breakpoint-up(lg) {
       width: 300px;
     }
+
+    .cls-5, .cls-1 {
+      fill: $white !important;
+    }
+
   }
+
+  
+
+
 }
 
 .bg-overlay {
