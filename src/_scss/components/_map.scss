@@ -11,6 +11,11 @@
   &:hover {
     color: $primary-dark;
   }
+
+  [data-info*="Medford"] {
+    cx: 195.206 !important;
+  }
+
 }
 
 .hover-info {
