@@ -28,9 +28,26 @@
   <link class="cms-no-rewrite" rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
   
   <style class="cms-no-rewrite">
-    .bubbles [data-info*="Medford"] {
-    cx: 195.206 !important;
+
+    @media only screen and (max-width: 576px) {
+      .bubbles [data-info*="Medford"] {
+        cx: 92 !important;
+      }
     }
+
+    @media only screen and (min-width: 768px) {
+      .bubbles [data-info*="Medford"] {
+        cx: 129 !important;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .bubbles [data-info*="Medford"] {
+        cx: 195.206 !important;
+      }
+    }
+
+
   </style>
 
   <!-- Analytics -->
