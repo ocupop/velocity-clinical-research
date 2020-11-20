@@ -73,6 +73,11 @@ $(function() {
           }
         });
 
+        // Responsive Map Resize
+        d3.select(window).on('resize', function() {
+            map.resize();
+        });
+
         var locationMarker = d3.selectAll('circle').on('click', function(){
           var selected = $(this);
           console.log('selected', selected)
@@ -93,6 +98,7 @@ $(function() {
       }
     });
   }
+
   if($('.owl-carousel').length){
     $('.owl-carousel').owlCarousel({
       loop: true,
