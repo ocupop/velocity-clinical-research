@@ -22,6 +22,7 @@ $(function() {
         var map = new Datamap({
           element: document.getElementById('us-map'),
           scope: 'usa',
+          responsive: true,
           fills: {
             defaultFill: '#36c0f8', // Any hex, color name or rgb/rgba value,
             'locationPin': '#284497',
