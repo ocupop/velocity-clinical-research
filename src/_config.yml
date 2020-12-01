@@ -39,6 +39,7 @@ plugins:
 
 placeholder_image: 'https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder'
 placeholder_image_wide: 'https://via.placeholder.com/1900x800/333333/000000?text=Placeholder'
+placeholder_team_image: '/img/locations/team-placheholder.svg'
 
 _options:
   layout:
