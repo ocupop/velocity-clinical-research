@@ -4,7 +4,11 @@
     <div class="row">
       <div class="col-lg-10 mx-lg-auto">
         <div class="text-center">
+          {% if location.url contains 'hallandale' %}
+          <img src="/img/locations/HallendaleBeach-White.svg" class="hero-logo img-fluid" alt="{{ location.title}} Logo">>
+          {% else %}
           {% include locations/location-nav-logo.svg %}
+          {% endif %}
         </div>
       </div>
     </div>
