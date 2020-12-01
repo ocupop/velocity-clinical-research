@@ -1,6 +1,33 @@
 ---
 layout: default
 title: Home
+meta:
+hero:
+  title_html: >-
+    <h1><strong>Trusted</strong> research, <strong>Valued</strong> patients,
+    <strong>Streamlined</strong> approach</h1>
+  logo_image: /img/Velocity-Clinical-Research-CLR.png
+  image: /img/home/header.jpg
+_assets:
+  - image: /img/home/xavier-mouton-photographie-ry_sD0P1ZL0-unsplash.jpg
+  - image: /img/home/Mask-Group-68.jpg
+  - image: /img/home/Mask-Group-65.jpg
+  - image: /uploads/locations/austin/Mask-Group-66.jpg
+  - image: /img/home/collageimage@2x.jpg
+  - image: /uploads/durham-baseball-2.jpg
+  - image: /uploads/workshopmedia-vcr-20200817-0517-final2x.jpg
+  - image: /uploads/GettyImages-97863301@2x.jpg
+  - image: /img/home/Mask-Group-11.jpg
+  - image: /img/home/Mask-Group-13@2x.jpg
+text_slide:
+  - title: Now recruiting for COVID-19 Vaccine Trials
+    subtitle: Trials
+    link: /locations/
+    link_label: Learn More
+  - title: A Note from Our CEO
+    subtitle: COVID-19 Precautions
+    link: /uploads/8a45ff64cb70897c940945632ea04423.pdf
+    link_label: Read More
 therapeutic_experience:
   - Allergy and immunology
   - Alzheimer's
@@ -22,164 +49,150 @@ therapeutic_experience:
   - Vaccine
 ---
 
+{% include home/hero-home.html %}
 <section>
-  <div class="container">
+  <div class="container position-relative">
+    <img src="/img/dots1.png" class="dots top-left rellax" data-rellax-speed="0.6" alt="Dots image" />
     <div class="row align-items-center">
-      <div class="col-lg-7 order-lg-2">
-        <div class="overflow-hidden">
-          <div class="bg-image aspect-4x3" style="background-image: url(/img/Velocity-US.jpg)"></div>
+      <div class="col-lg-6">
+        <div class="p-lg-5">
+          <h3 class="subtitle animate fade-up editable">
+            About Us
+          </h3>
+          <h2 class="editable font-weight-bold animate fade-up">
+            An Integrated Approach
+          </h2>
+          <div class="editable animate fade-up">
+            <p>Velocity Clinical Research is an Owned Site Organization, providing excellence in patient care, high quality data and fully integrated research sites.</p>
+            <p>Velocity Clinical Research&rsquo;s integrated approach benefits both Sponsors and study participants. Our model delivers superior accelerated enrollment and consistent, reliable results &ndash; helping our clients maintain the highest standards of care while bringing, innovative medical treatments to patients as quickly and efficiently as possible across multiple therapeutic areas.</p>
+            <p>We are driving improvement to clinical research by enhancing site productivity, integrating study-related technologies and streamlining processes &ndash; efficiencies that can only be achieved in a wholly owned site model.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-5 order-lg-1">
-        <div class="content editable p-lg-5">
-          <h2>Who We Are</h2>
-          <p>Velocity Clinical Research is 100% committed to the successful delivery of clinical studies&mdash;helping our clients maintain the highest standards of care while bringing new medications directly to the patients who need them, as quickly and efficiently as possible. Our sites have over 20 years of experience and more than 1700 completed studies in a wide range of therapeutic areas.</p>
+      <div class="col-lg-6">
+        <div class="animate blur">
+          {% include home/mosaic-image-home-1.html %}
         </div>
+      </div>
+    </div>
+    <img src="/img/dots2.png" class="dots bottom-right" alt="Dots image" />
+  </div>
+</section>
+<section class="bg-primary py-5 bg-image aspect-auto" style="background-image: url(/img/Carousel-Bar.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include carousel-text.html %}
       </div>
     </div>
   </div>
 </section>
-<section>
+<section class="bg-light">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7">
-        <div class="overflow-hidden">
-          <div class="bg-image aspect-4x3" style="background-image: url(/img/Velocity-crowd.jpg)"></div>
+        <div class="animate blur">
+          <img class="img-fluid editable fade-in" data-lazy-type="image" data-lazy-src="/img/Map.png" alt="Map image" />
         </div>
       </div>
       <div class="col-lg-5">
-        <div class="content editable p-lg-5">
-          <h3>Support for Sponsors</h3>
-          <p>All site staff, including Medical Directors, are employees of Velocity Clinical Research. We simplify sponsor engagement by providing a central contact for feasibility, contracting, patient recruitment, study management, billing, and payment, whether a sponsor uses one of our sites or all of them.</p>
-          <p>We are committed to rapid responsiveness from contracting to close-out. Our processes are designed to deliver patients and data as quickly as possible without sacrificing exemplary data quality or patient care.</p>
-          <p>We work hard to deliver outstanding patient care. It is crucial for our patients and their families and contributes to the well-being of the communities we serve.</p>
+        <div class="text-center p-lg-5">
+          <div class="editable animate fade-up">
+            <h3>Strategically located research sites for patient access and diversity</h3>
+          </div>
+          <a href="/locations" class="btn btn-secondary animate fade-up editable">Explore our Sites</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7 order-lg-2">
-        <div class="overflow-hidden">
-          <div class="bg-image aspect-4x3" style="background-image: url(/img/Velocity-people-grid.jpg)"></div>
-        </div>
-      </div>
-      <div class="col-lg-5 order-lg-1">
-        <div class="content editable p-lg-5">
-          <h3>Committed to Patients</h3>
-          <p>We hire staff who are dedicated to providing excellent patient care. The best clinical researcher is not effective if they do not put patient needs and concerns first.</p>
-          <p>We prioritize positive patient outcomes. Making patients feel comfortable and well-cared for is a predictor of a well-executed study with high quality data. The highest compliment a patient can pay us is to enroll in another study or refer their friends and relatives. That is our goal.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="team">
-  <div class="container">
-    {% for object in site.data.team-order %}
+  <div class="container position-relative">
     <div class="row">
       <div class="col-12">
-        <div class="content">
-          <h3 class="text-center {% unless forloop.first %}mt-5{% endunless %}">Velocity Clinical Research {{ object.name }}</h3>
+        <div class="text-center">
+          <h3 class="subtitle animate fade-up editable">
+            Trusted Clinical Experience
+          </h3>
+          <h2 class="animate fade-up editable">
+            Extensive Clinical Trial Experience and Operational Excellence
+          </h2>
         </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      {% for item in object.team %}
-        {% assign member = site.team | where: "slug", item | first %}
-        <div class="col-md-6 col-lg-4">
-          <div class="content">
-            <a href="{{ member.url }}">
-              {% if member.image %}
-                <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ member.image }})"></div>
-              {% endif %}
-              <p class="mt-3 text-center text-dark mb-0">{% if member.name %}{{ member.name }}{% else %}{{ member.title }}{% endif %}</p>
-              {% if object.name contains 'Executive' %}
-                {% if member.role %}
-                  <p class="mb-0 text-center text-dark"><small>{{ member.role }}</small></p>
-                {% endif %}
-              {% else %}
-                {% if member.company %}
-                  <p class="mb-0 text-center text-dark"><small>{{ member.company }}</small></p>
-                {% endif %}
-              {% endif %}
-            </a>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    {% endfor %}
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-sm-auto">
-        <div class="content">
-          <h3 class="text-center">Therapeutic Experience</h3>
-          <ul class="column-list">
-            {% for object in page.therapeutic_experience %}
-              <li>{{ object }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row icons-row justify-content-center">
-      <div class="col-auto">
-        <img src="/img/icon1.svg" class="img-fluid" alt="Icon" />
-      </div>
-      <div class="col-auto">
-        <img src="/img/icon2.svg" class="img-fluid" alt="Icon" />
-      </div>
-      <div class="col-auto">
-        <img src="/img/icon3.svg" class="img-fluid" alt="Icon" />
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto">
-        <div class="content text-center editable">
-          <p class="mt-3">If you would like to speak with a member of our team regarding our capabilities and experience, or about placing a study with our sites, <a href="mailto:info@velocityclinical.com">email us</a> or call 919.926.1804.</p>
-          <p class="mt-3">.</p>
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-4 mt-4">
+          <div class="card card-white mb-4 animate fade-up">
+            <div class="card-body text-center">
+              <h3 class="h2 my-4 text-secondary font-weight-bolder editable">
+                Efficient
+              </h3>
+              <div class="editable mb-5">
+                <p>Expedited study start-up due to integrated systems</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-white mb-4 animate fade-up">
+            <div class="card-body text-center">
+              <h3 class="h2 my-4 text-secondary font-weight-bolder editable">
+                4600+
+              </h3>
+              <div class="editable mb-5">
+                <p>Completed clinical trials in multiple therapeutic areas</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-white mb-4 animate fade-up">
+            <div class="card-body text-center">
+              <h3 class="h2 my-4 text-secondary font-weight-bolder editable">
+                14
+              </h3>
+              <div class="editable mb-5">
+                <p>Dedicated research sites</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-white mb-4 animate fade-up">
+            <div class="card-body text-center">
+              <h3 class="h2 my-4 text-secondary font-weight-bolder editable">
+                1
+              </h3>
+              <div class="editable mb-5">
+                <p>Point of contact for budgets, contracts, and issue resolution</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <img src="/img/dots3.png" class="dots bottom-right overlap-bottom" alt="Dots image" />
   </div>
 </section>
-<section>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-auto">
-      <div class="content">
-        <h3 class="text-center">In The Press</h3>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-  {% assign articles = site.data.press | sort: 'date' | reverse %}
-  {% for article in articles limit:3 %}
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card bg-info h-100 border-0">
-        <div class="card-body">
-            <h4 class="text-dark">{{ article.title }}</h4>
-            {% if article.source %}
-            {{ article.source }}
-            {% endif %}
+<section class="bg-light ">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-lg-4">
+        <h3 class="subtitle editable animate fade-up">
+          Our Team
+        </h3>
+        <div class="editable animate fade-up">
+          <h3>Accomplished<br class="d-none d-lg-block" />Physician Investigators and Research Staff</h3>
+          <p>40+ physician investigators with<br class="d-none d-lg-block" />diverse sub-specialties</p>
+          <p>Dedicated study coordinators,<br class="d-none d-lg-block" />trained in GCP and SOPs</p>
+          <p>Focused expertise on patient<br class="d-none d-lg-block" />recruitment and retention</p>
         </div>
-        <div class="card-footer bg-info border-0">
-            <p class="text-center"><a href="{{ article.source_url }}" target="_blank" title="Go to source...{{ article.source_url }}">View
-              Article</a></p>
+        <a href="/about" class="btn btn-secondary editable animate fade-up">Learn More About Us</a>
+      </div>
+      <div class="col-lg-8">
+        <div class="animate blur">
+          {% include home/mosaic-image-home-2.html %}
         </div>
       </div>
-    </div>
-  {% endfor %}
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-auto">
-      <p class="d-inline-block justify-content-center pt-4"><a href="/press">View More Press</a></p>
+      <img src="/img/dots2.png" class="dots top-right" alt="Dots image" />
     </div>
   </div>
-  </div>
+  
 </section>
+
+

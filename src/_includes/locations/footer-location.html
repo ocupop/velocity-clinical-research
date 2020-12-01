@@ -1,0 +1,52 @@
+{% include locations/location-logic.html %}
+<footer id="page-footer" class="bg-primary text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="/">
+          <img src="/img/logo-white.svg" class="footer-logo img-fluid d-block mx-auto mb-3" alt="Velocity Clinical Research Logo" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <hr class="mt-4 mb-5" />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="https://www.facebook.com/velocityclinical/" target="_blank" class="social-link">
+          <img src="/img/facebook.svg" class="img-fluid" alt="Facebook icon" />
+          <a>
+      </a></a></div>
+      <div class="col-auto">
+        <a href="https://www.linkedin.com/company/velocity-clinical-research/" target="_blank" class="social-link">
+          <img src="/img/linkedin.svg" class="img-fluid" alt="Linkedin icon" />
+          <a>
+      </a></a></div>
+      <div class="col-auto">
+        <a href="https://www.instagram.com/velocityclinicalresearch/" target="_blank" class="social-link">
+          <img src="/img/instagram.svg" class="img-fluid" alt="Instagram icon" />
+          <a>
+      </a></a></div>
+      <div class="col-auto">
+        <a href="https://twitter.com/velocitycr" target="_blank" class="social-link">
+          <img src="/img/twitter.svg" class="img-fluid" alt="Twitter icon" />
+          <a>
+      </a></a></div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-3">
+        <p class="mb-0">{{ location.phone }}</p>
+        <p class="mb-0"><a href="mailto:info@velocityclinical.com" class="text-white editable">info@velocityclinical.com</a></p>
+        <p><a href="mailto:feasibility@velocityclinical.com" class="text-white">feasibility@velocityclinical.com</a></p>
+      </div>
+      <div class="col-lg-6 text-lg-center">
+        <p>Copyright &copy; {{ site.date | date: '%Y' }} &mdash; Velocity Clinical Research. All Rights Reserved.</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="text-lg-right"><a href="/privacy-policy" class="text-white">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</footer>

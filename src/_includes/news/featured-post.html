@@ -1,0 +1,24 @@
+<div class="bg-white shadow p-3 p-lg-5 animate fade-up">
+  {% if featured.featured_image %}
+    <div 
+      class="bg-image aspect-3x1"
+      data-lazy-type="bg-image"
+      data-lazy-src="{{ featured.featured_image }}"
+      ></div>
+  {% endif %}
+  <h3 class="mt-4 mb-2 font-weight-bold">{{ featured.title }}</h3>
+  {% assign num_categories = featured.categories | size %}
+  <p class="text-mid">{% if featured.author %} By {{ featured.author }} |{% endif %} {{ featured.post_date | date: "%-d/%m/%Y "}} {% if num_categories > 0 %}| {{ featured.categories }}{% endif %}</p>
+  {% if featured.summary_text %}
+    {{ featured.summary_text }}
+  {% else %}
+    {{ featured.content | truncatewords: 30 }}
+  {% endif %}
+  <div class="text-right">
+    {% if featured.source_url %}
+      <a href="{{ featured.source_url }}" class="text-secondary" target="_blank">View Article</a>
+    {% else %}
+      <a href="{{ featured.url }}" class="text-secondary">Read More</a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-auto">
+        <h3 class="text-center">In The Press</h3>
+      </div>
+    </div>
+    <div class="row">
+    {% assign articles = site.data.press | sort: 'date' | reverse %}
+    {% for article in articles limit:3 %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card bg-info h-100 border-0">
+          <div class="card-body">
+              <h4 class="text-dark">{{ article.title }}</h4>
+              {% if article.source %}
+              {{ article.source }}
+              {% endif %}
+          </div>
+          <div class="card-footer bg-info border-0">
+            <p class="text-center"><a href="{{ article.source_url }}" target="_blank" title="Go to source...{{ article.source_url }}">View
+              Article</a></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-auto">
+        <p class="d-inline-block justify-content-center pt-4"><a href="/press">View More Press</a></p>
+      </div>
+    </div>
+    </div>
+  </section>

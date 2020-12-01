@@ -1,0 +1,153 @@
+---
+layout: location
+title: Specialties & Facilities
+meta:
+list_section:
+  - title: Our Therapeutic Areas
+    list_item:
+      - title: Allergy / Immunology
+      - title: Cardiology
+      - title: Dermatology
+      - title: Endocrinology/ Metabolism
+      - title: Gastroenterology
+      - title: Infectious Disease
+      - title: Medical Devices
+      - title: Men’s Health
+      - title: Nephrology
+      - title: Neurology
+      - title: Psychiatry
+      - title: Pain
+      - title: Respiratory
+      - title: Rheumatology / Musculoskeletal
+      - title: Sleep Medicine
+      - title: Urology
+      - title: Vaccine
+      - title: Women’s Health
+facility_images:
+  - /uploads/locations/austin/Mask-Group-92.jpg
+  - /uploads/locations/austin/Mask-Group-93.jpg
+  - /uploads/locations/austin/Mask-Group-94.jpg
+  - /uploads/locations/austin/Mask-Group-95.jpg
+_assets:
+  - image: /uploads/locations/austin/Mask-Group-86.jpg
+---
+
+{% include locations/location-logic.html %}
+{% include locations/hero-no-overlay.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <h1 class="text-center text-secondary editable animate fade-up">
+          Proven Experience in Multiple Therapeutic Areas
+        </h1>
+        <div class="editable text-center animate fade-up">
+          <p>Velocity research sites and physician investigators have successfully completed studies in most major therapeutic areas. Our investigators&rsquo; expertise covers a wide range of subspecialties and understands local differences in patient populations. Broad categories of therapeutic area expertise are shown below with additional information on areas where we have extensive experience. The Velocity team is eager to provide more detail on our experience for your specific study.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% for list_section in page.list_section %}
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <h3 class="animate fade-up">{{ list_section.title }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <div class="text-center">
+          {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
+          <ul class="column-list column-{{ num_columns }} animate fade-up">
+            {% for list_item in list_section.list_item %}
+              <li>{{ list_item.title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+<div class="bg-image aspect-3x1 animate blur" data-lazy-type="bg-image" data-lazy-src="{{ page._assets[0].image }}" data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal">
+</div>
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="text-center editable animate fade-up">
+          <h2>Our Facility is Designed for Clinical Trials</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      {% for image in page.facility_images %}
+        <div class="col-lg-3 animate fade-up">
+          <div class="bg-image aspect-5x4 rounded mb-3 fade-in" data-lazy-type="bg-image" data-lazy-src="{{ image }}" style="background-image: url({{ image }})">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <div class="editable animate fade-up">
+          <p>The San Diego facility is designed for the ease and comfort of study participants and to allow optimal efficiencies in performing clinical trials.&nbsp; All Velocity sites include:</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-8 mx-lg-auto">
+        <div class="editable animate fade-up">
+          <ul>
+            <li>Private Examination/Consultation Rooms</li>
+            <li>Comfortable Patient Reception Areas</li>
+            <li>Facilities for Extended-Stay Pharmacokinetic Studies</li>
+            <li>Secure Monitoring Rooms or Workstations with Phone &amp; High-Speed Internet Access</li>
+            <li>Multiple Individual &amp; Secure Workstations for Research Staff</li>
+            <li>Regulatory Document Processing Area</li>
+            <li>Electronic Data Capture (EDC) Capabilities</li>
+            <li>Secure Record Storage</li>
+            <li>CLIA Certified Research Laboratory</li>
+            <li>Ambient and Refrigerated Centrifuge</li>
+            <li>Secured &amp; Temperature Controlled Investigational Product Storage with Pharmaceutical Refrigerator &amp; Freezer</li>
+            <li>Freezers equipped for laboratory specimens at -20 &amp; -70 degrees Celsius</li>
+            <li>Back Up Generator/ Power Source in the Event of Site Power Loss</li>
+            <li>Standard Medical equipment, including ECG and Holter Machines, digital and analog scales&nbsp;</li>
+          </ul>
+          <p>In addition, the Velocity Clinical San Diego site has overnight facilities for conducting Phase I studies in multiple therapeutic areas.&nbsp; This dedicated space includes dormitory style bedrooms with secure storage, lounge area and numerous amenities to provide a comfortable stay for overnight study participants.</p>
+          <p>Inpatient Facility Capabilities:</p>
+          <p>Attentive staff and quality care include:</p>
+          <ul>
+            <li>Fresh food and groceries, if allowed per study protocol</li>
+            <li>Cable TV and Netflix in the patient lounge</li>
+            <li>High Speed WiFi</li>
+            <li>Supervised smoke breaks if allowed per the study protocol</li>
+            <li>Visiting hours daily</li>
+            <li>Around the clock research staff, security, and daily meetings with Nurses and Investigators</li>
+            <li>Follow up visits after a stay with experienced medical clinic staff</li>
+            <li>ACLS certified nurses and BLS certified staff</li>
+            <li>Located next to Sharp Hospitals and ERs</li>
+          </ul>
+          <p>&nbsp;</p>
+          <p>Overnight clinical research bedrooms, lounge and amenities include:</p>
+          <ul>
+            <li>Several dormitory style bedrooms that are shared for overnight stays</li>
+            <li>Separate rooms for women and men</li>
+            <li>Rooms with separation curtains to enhance comfort and privacy</li>
+            <li>Secure lockers to store personal belongings during stay</li>
+            <li>In addition to a locker, all participants are provided a nightstand beside the bed</li>
+            <li>Private showers and restrooms</li>
+            <li>Laundry available on site</li>
+            <li>Toiletries are provided.&nbsp; (Study participants may bring own toiletries as well and comfortable clothes)</li>
+            <li>Upon arrival, all study participants receive a box of assorted goodies to welcome you to Velocity San Diego and help make your stay more home-like</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

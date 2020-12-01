@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-0 font-weight-bold">{{ page.title }}</h1>
+        <p>By {{ page.author }} | {{ page.post_date | date: "%-d/%m/%Y"}} {% if page.categories %}| {{ page.categories }}{% endif %}</p>
+        {% if page.featured_image %}
+          <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image">
+        {% endif %}
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</section>

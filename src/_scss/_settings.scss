@@ -4,45 +4,84 @@ $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #A7A7A7;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-900: #242424;
 $black:    #000000 !default;
 
 $blue:    #294199;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #e54142;
 $orange:  #fd7e14 !default;
 $yellow:  #f5C938;
-$green:   #87a63e;
+$green:   #3Dc64f;
 $lime-green: #49a93a;
 $teal:    #20c997 !default;
-$cyan:    #60D0FF;
+$cyan:    #36c0f8;
+$cyan-light: #9BE2FF;
 
 $primary:       $blue;
 $primary-dark:  #13225a;
-$secondary:     #242424;
+$secondary:     $cyan;
 $success:       $green !default;
-$info:          #EDEDED;;
+$info:          #EDEDED;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100;
 $dark:          $gray-700;
 
 
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+  ),
+  $colors
+);
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "mid": $gray-500,
+    "dark": $dark,
+    "cyan": $cyan,
+    "green": $green
+  ),
+  $theme-colors
+);
 
 $body-bg:               $white;
-$body-color:            $secondary;
-
+$body-color:            $gray-900;
 
 $font-family-base: 'Avenir W01', sans-serif;
 $font-family-book: 'Avenir W01', sans-serif;
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem;
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -53,10 +92,10 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 3.1;
-$h2-font-size:                $font-size-base * 2.4;
-$h3-font-size:                $font-size-base * 2;
-$h4-font-size:                $font-size-base * 1.5 !default;
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.8;
+$h3-font-size:                $font-size-base * 1.6;
+$h4-font-size:                $font-size-base * 1.4;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
@@ -66,7 +105,7 @@ $headings-line-height:        1.2 !default;
 $headings-color:              $primary;
 
 
-$border-radius:           0;
+$border-radius:           8px;
 
 $grid-breakpoints: (
   xs: 0,

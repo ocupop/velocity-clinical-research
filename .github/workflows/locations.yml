@@ -1,0 +1,51 @@
+name: Location Manager
+on:
+  push:
+    branches: ['develop']
+    paths: ['src/_locations/**']
+
+jobs:
+  sync_locations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 setup
+        uses: actions/checkout@v2
+      - name: filter
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          # Use context to get branch where commits were pushed.
+          # If there is only one long lived branch (e.g. master),
+          # you can specify it directly.
+          # If it's not configured, the repository default branch is used.
+          list-files: shell
+          base: ${{ github.ref }}
+          filters: |
+            new_location:
+              - added: 'src/_locations/**'
+      - name: Extract branch name
+        id: extract_branch
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      - name: Parse location name
+        id: parse
+        if: steps.filter.outputs.new_location == 'true'
+        run: |
+          input=${{ steps.filter.outputs.new_location_files }}
+          file_name="${input##*/}"
+          location="${file_name%.*}"
+          echo ::set-output name=location::${location}
+      - name: copy
+        if: steps.filter.outputs.new_location == 'true'
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_branch: ${{ steps.extract_branch.outputs.branch }}
+          dst_branch: ${{ steps.extract_branch.outputs.branch }}
+          src_path: src/locations/_default/.
+          dst_path: src/locations/${{ steps.parse.outputs.location }}/
+          dst_owner: VelocityClinical
+          dst_repo_name: velocity-clinical-research
+          commit_message: added location files
+
+

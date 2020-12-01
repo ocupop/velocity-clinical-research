@@ -1,0 +1,36 @@
+#us-map {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+  
+}
+
+.bubbles {
+  stroke-width: 2px;
+  &:hover {
+    color: $primary-dark;
+  }
+
+  [data-info*="Medford"] {
+    transform: translate(10px, 0px);
+  }
+
+}
+
+.hover-info {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: $white;
+  color: $primary;
+  p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+}

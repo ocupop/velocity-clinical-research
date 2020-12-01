@@ -1,0 +1,19 @@
+<div class="owl-carousel">
+  {% for capability in page.capabilities %}
+    <div class="card px-2 py-4 h-100 rounded">
+      <div class="icon-wrapper">
+        <img src="{{ capability.icon_image}}"  alt="{{ capability.title}} icon">
+      </div>
+      <div class="card-body">
+        <div class="title-wrapper">
+          <h4 class="text-center text-dark card-title">{{ capability.title }}</h4>
+        </div>
+        <ul class="color-bullets">
+          {% for item in capability.list_item %}
+            <li>{{ item.title }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>

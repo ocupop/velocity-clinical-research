@@ -1,0 +1,10 @@
+#faqs {
+  i {
+    @include transition(0.3s);
+  }
+  .collapsed {
+    i {
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<div class="bg-white shadow mb-5 p-3 p-lg-5 animate fade-up-fast">
+  <div class="row align-items-center">
+    {% if post.featured_image%}
+      <div class="col-lg-4">
+        <div 
+          class="bg-image aspect-1x1"
+          data-lazy-type="bg-image"
+          data-lazy-src="{{ post.featured_image }}"
+          ></div>
+      </div>
+    {% endif %}
+    <div class="{% if post.featured_image %}col-lg-8{% else %}col-12{% endif %}">
+      {% assign num_categories = post.categories | size %}
+      <h3 class="mt-4 mb-2 font-weight-bold">{{ post.title }}</h3>
+      <p class="text-mid">{% if post.author %}By {{ post.author }} |{% endif %} {{ post.post_date | date: "%-d/%m/%Y"}} {% if num_categories > 0 %}| {{ post.categories }}{% endif %}</p>
+      {% if post.summary_text %}
+        {{ post.summary_text }}
+      {% else %}
+        {{ post.content | truncatewords: 20 }}
+      {% endif %}
+      <div class="text-right">
+        {% if post.source_url %}
+          <a href="{{ post.source_url }}" class="text-secondary" target="_blank">View Article</a>
+        {% else %}
+          <a href="{{ post.url }}" class="text-secondary">Read More</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

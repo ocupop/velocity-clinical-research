@@ -20,9 +20,14 @@ analytics_code: UA-140308205-1
 # Collections
 collections:
   team:
+    output: false
+  locations:
+    output: false
+  specialties:
     output: true
-    layout: team
-    permalink: /team/:path/
+  posts:
+    output: true
+    permalink: /posts/:title/  
 
 # Build settings
 safe: false
@@ -33,10 +38,83 @@ plugins:
   - jekyll-sitemap
 
 placeholder_image: 'https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder'
+placeholder_image_wide: 'https://via.placeholder.com/1900x800/333333/000000?text=Placeholder'
+placeholder_team_image: '/img/locations/team-placheholder.svg'
 
 _options:
   layout:
     hidden: true
+  header_image:
+    uploads_dir: "uploads/:title"
+  white_logo_image:
+    uploads_dir: "uploads/:title"
+  color_logo_image:
+    uploads_dir: "uploads/:title"
+  featured_image:
+    uploads_dir: "uploads/:title"    
+
+
+_array_structures:
+  meta:
+    label: Meta Data
+    icon: share
+    value:
+      title:
+      description:
+      image:
+  hero: 
+    - label: Hero
+      icon: panorama
+      value:
+        image:
+        title:
+        subtitle:
+        color_overlay: false
+  statistic:
+    - label: Statistic
+      icon: insert_chart_outlined
+      value:
+        number:
+        description:
+  list_section:
+    - label: List Section
+      icon: format_list_bulleted
+      value:
+        title:
+        list_item:
+  capability:
+    - label: Capability
+      icon: view_list
+      value:
+        title:
+        list_item:
+  list_item:
+    - label: List item        
+      icon: view_list
+      value:
+        title:
+  text_carousel:
+    - label: Text Carousel
+      icon: view_carousel
+      value:
+        text_slide:
+  text_slide:
+    - label: Text Slide
+      icon: text_snippet
+      value:
+        title:
+        subtitle:
+        link:
+        link_label:
+  location_team:
+    label: Location Team
+    icon: face
+    value:
+      name:
+      role:
+      image:
+      bio_html:
+
 
 _comments:
   layout: 

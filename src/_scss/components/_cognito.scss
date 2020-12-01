@@ -130,17 +130,24 @@
   }
 }
 
-.covid-19-form {
+.covid-19-form,
+.contact-form {
   padding: 30px;
   background-color: $white;
   border-radius: 10px;
   box-shadow: 10px 20px 30px rgba($black, 0.1);
+  position: relative;
+  z-index: 10;
+  @include media-breakpoint-up(lg) {
+    min-height: 630px;
+  }
   .cognito {
     .c-forms-form {
       .c-label {
         margin-left: 5px;
         margin-bottom: 1px;
         font-weight: 600;
+        font-family: $font-family-base !important;
       }
       .c-helptext {
         p {
@@ -168,6 +175,15 @@
       display: none !important;
       visibility: hidden !important;
       height: 0 !important;
+    }
+    .c-forms-confirmation-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary;
+      color: $white !important;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
   #c-submit-button {

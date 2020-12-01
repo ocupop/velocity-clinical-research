@@ -1,0 +1,108 @@
+#nav-contact {
+  a {
+    opacity: 0.5;
+    z-index: 10;
+    @include transition(0.6s);
+    &.active,
+    &:hover {
+      opacity: 1;
+    }
+  }  
+}
+
+.overlap-image {
+  visibility: hidden;
+  height: 0;
+  @include media-breakpoint-up(lg) {
+    visibility: visible;
+    height: auto;
+  }
+}
+
+#contact-header {
+  .dots {
+    &.bottom-right {
+      bottom: -80%;
+      right: 6%;
+      width: 15%;
+      z-index: 2;
+    }
+  }
+}
+
+#place-a-study {
+  position: relative;
+  overflow: hidden;
+  .dots { 
+    bottom: -50px;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overlap-image {
+    @include media-breakpoint-up(lg) {
+      margin-top: -300px;
+      margin-left: 6%;
+      max-width: 800px;
+    }
+  }
+}
+
+#find-a-clinic {
+  overflow: hidden;
+  .container {
+    img {
+      z-index: 10;
+      position: relative;
+    }
+  }
+  .dots { 
+    bottom: -50px;
+    width: 20%;
+    left: 0;
+  }
+}
+
+#become-a-site {
+  overflow: hidden;
+  position: relative;
+  .contact-form {
+    @include media-breakpoint-up(lg) {
+      min-height: 1000px;
+    }
+  }
+  .overlap-image {
+    @include media-breakpoint-up(lg) {
+      margin-top: -40%;
+      margin-left: 6%;
+      max-width: 650px;
+    }
+  }
+  .dots {
+    bottom: 130px;
+    width: 29%;
+    left: 26%;
+    max-width: 300px;
+  }
+}
+
+#join-the-team {
+  overflow: hidden;
+  .bg-white {
+    position: relative;
+    z-index: 10;
+  }
+  .dots {
+    bottom: -50px;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overlap-image {
+    @include media-breakpoint-up(lg) {
+      margin-top: -85%;
+      margin-left: -8%;
+      max-width: 45%;
+    }
+  }
+}

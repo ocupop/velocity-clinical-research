@@ -1,0 +1,55 @@
+.read-more-wrapper {
+  margin: 22px auto;
+  max-height: 105px;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0,1,0,1);
+  &.open {
+    max-height: 100rem;
+    transition: max-height 0.3s cubic-bezier(0.9,0,0.8,0.2);
+    .expand-text {
+      animation: open 0.1s linear 0s forwards;
+      max-height: 100rem;
+    }
+    .text-more {
+      display: none;
+    }
+    .text-less {
+      display: inline-block;
+    }
+  }
+  .expand-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 12px 0;
+    animation: close 0.1s linear 0.1s forwards;
+    max-height: 65px;
+  }
+
+  .text-less {
+    display: none;
+  }
+
+  .read-more {
+    cursor: pointer;
+  }
+}
+
+@keyframes open {
+  from {
+    line-clamp: 3;
+  }
+  to {
+    line-clamp: initial;
+  }
+}
+
+@keyframes close {
+  from {
+    line-clamp: initial;
+  }
+  to {
+    line-clamp: 3;
+  }
+}

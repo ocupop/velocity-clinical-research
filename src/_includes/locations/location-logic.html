@@ -1,0 +1,4 @@
+{% assign page_url = page.url | split:'/'  %}
+{% assign slug = page_url[2] %}
+{% capture location_url %}/{{page_url[1]}}/{{page_url[2]}}{% endcapture %}
+{% assign location = site.locations | where: "slug", slug | first %}

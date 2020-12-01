@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.512" height="66.512" viewBox="0 0 66.512 66.512">
+  <g id="icon" transform="translate(0 0)">
+    <ellipse id="Ellipse_930" data-name="Ellipse 930" cx="33.256" cy="33.256" rx="33.256" ry="33.256" transform="translate(0 0)" fill="#3fb44e"/>
+    <path id="Path_288" data-name="Path 288" d="M23.316,27.252h14.56" transform="translate(3.172 -0.66)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="Path_289" data-name="Path 289" d="M23.316,27.252h14.56" transform="translate(3.172 6.963)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="Path_290" data-name="Path 290" d="M23.316,27.252h14.56" transform="translate(3.172 14.586)" fill="none" stroke="#fff" stroke-width="2"/>
+    <g id="Rectangle_403" data-name="Rectangle 403" transform="translate(20.677 18.512)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="26" height="31" stroke="none"/>
+      <rect x="1" y="1" width="24" height="29" fill="none"/>
+    </g>
+  </g>
+</svg>

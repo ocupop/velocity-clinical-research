@@ -5,6 +5,7 @@ image: /uploads/beth-safirstein-cropped-for-website-1.jpg
 role:
 company: MD Clinical
 phone:
+linkedin_url:
 ---
 
 Dr. Safirstein is the Medical Director of MD Clinical, a leading research center in South Florida that specializes in clinical trials for Phase 1-4 and diseases of the central nervous system. Dr. Safirstein is a board-certified Neurologist and Principal Investigator for trials involving patients with neuropsychiatric disorders and internal medicine disease. She has been a Principal Investigator since 2000 and has successfully conducted over 300 clinical trials.

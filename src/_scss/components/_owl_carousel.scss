@@ -1,0 +1,60 @@
+.owl-carousel {
+  .owl-item {
+    box-shadow: 0 5px 10px rgba($black,0.1);
+    @include transition(0.5s);
+    &.active {
+      opacity: 0.5;
+      transform: scale(0.9);
+      
+      &.center {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 1px 1px 15px rgba($black,0.1);
+  @include media-breakpoint-up(lg) {
+    left: -60px;
+  }
+  i {
+    font-size: 50px;
+    color: $cyan;
+  }
+}
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 1px 1px 15px rgba($black,0.1);
+  right: 0;
+  @include media-breakpoint-up(lg) {
+    right: -60px;
+  }
+  i {
+    font-size: 50px;
+    color: $cyan;
+  }
+}
+

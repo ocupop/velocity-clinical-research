@@ -1,0 +1,20 @@
+.specialty {
+  .hero-specialties {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+  .specialty-intro {
+    .bg-image {
+      @include media-breakpoint-up(lg) {
+        margin-top: -33%;
+      }
+    }
+  }
+}

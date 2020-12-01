@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+{% include specialties/hero-specialties.html %}
+<section class="position-relative specialty-intro">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <h3 class="subtitle animate fade-up">Specialties</h3>
+        <h2 class="mb-2 font-weight-bold animate fade-up">{{ page.title }}</h2>
+        {% if page.subtitle %}
+          <p class="lead text-primary animate fade-up">{{ page.subtitle }}</p>
+        {% endif %}
+        {% if page.description_html %}
+          <div class="animate fade-up">
+            {{ page.description_html }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-lg-6 ml-lg-auto">
+        <div class="bg-image aspect-4x3 rellax animate blur rounded" style="background-image: url({{ page.featured_image | default: site.placeholder_image }})" data-rellax-speed="-1"></div>
+      </div>
+    </div>
+  </div>
+  <img src="/img/dots2.png" class="dots bottom-left overlap-bottom" alt="Dots image" />
+</section>
+{% for stat_section in page.statistic_section %}
+<section class="{% if forloop.first %}pt-0 {% endif %}{% unless forloop.last %}pb-0{% endunless %} {% cycle '', 'bg-light' %}">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="text-center animate fade-up">
+          <h2>{{ stat_section.title }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for stat in stat_section.statistic %}
+        <div class="col-6 col-lg-4 mb-5 animate fade-up">
+          <div class="text-center">
+            {% if stat.icon_image %}
+              <div class="icon-wrapper">
+                <img src="{{ stat.icon_image }}" class="img-fluid" alt="Stat icon" />
+              </div>
+            {% endif %}
+            <p class="h1 font-weight-bold"><span class="stat-number animate fade-up" id="counter-{{ stat_section.title | slugify }}-{{ forloop.index }}" data-count="{{stat.number}}">{{stat.number}}</span> </p>
+            <p>{{ stat.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% for list_section in page.list_section %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center animate fade-up">
+          <h3>{{ list_section.title }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center animate fade-up">
+          {% assign num_columns = list_section.list_item | size | divided_by: 5  %}
+          <ul class="column-list column-{{ num_columns }}">
+            {% for list_item in list_section.list_item %}
+              <li>{{ list_item.title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+<section class="bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h2>Capabilities</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3">
+          {% for capability in page.capability %}
+            <div class="card px-4 mb-3 mb-lg-3">
+              <div class="card-body">
+                <h3 class="text-center my-5 font-weight-bold">{{ capability.title }}</h3>
+                <ul class="color-bullets">
+                  {% for item in capability.list_item %}
+                    <li class="mb-4">{{ item.title }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

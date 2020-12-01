@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Language" content="en_US" />
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.meta.description %}{{ page.meta.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% include socialshare.html %}
 
@@ -19,9 +19,14 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Fonts -->
-  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/c3697da1-7601-4790-b075-3a9651323d8e.css" />
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/c3697da1-7601-4790-b075-3a9651323d8e.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/16e4e167-1f88-4b5d-b6dd-67507703740d.css"/> -->
+
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+  <link class="cms-no-rewrite" rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+  
 
   <!-- Analytics -->
   {% include analytics.html %}

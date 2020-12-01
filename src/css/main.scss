@@ -5,8 +5,11 @@
 @import "vendor/bootstrap/scss/bootstrap"; // Copied from node_modules and committed to source to allow Bootstrap to compile during build
 
 //Global
+
 @import "global/mixins";
+@import "global/animations";
 @import "global/base";
+@import "global/layout";
 @import "global/typography";
 @import "global/utilities";
 
@@ -14,13 +17,33 @@
 //Components
 @import "components/cognito";
 @import "components/curved_border";
+@import "components/dots";
+@import "components/flip_card";
+@import "components/hero";
+@import "components/mosaic_images";
 @import "components/mobile-content-image-overlay";
+@import "components/map";
+@import "components/owl_carousel";
 @import "components/page_footer";
 @import "components/page_header";
+@import "components/read_more";
 
 //pages
+@import "pages/about";
+@import "pages/capabilities";
+@import "pages/contact";
 @import "pages/covid_19";
 @import "pages/homepage";
+@import "pages/clinical_research";
+@import "pages/post";
+@import "pages/location";
+@import "pages/specialty";
+
+@import "vendor/theme.default";
+@import "vendor/owl.carousel";
+@import "vendor/bootstrap";
+
+
 
 
 

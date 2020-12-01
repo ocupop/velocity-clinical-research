@@ -1,0 +1,33 @@
+---
+layout: default
+title: Velocity News
+meta:
+---
+<!-- featured item is most recent post by default -->
+<section class="bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h3 class="subtitle editable mb-4 animate fade-up">Velocity News</h3>
+        <h2 class="mb-0 editable animate fade-up">Featured news</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto animate blur">
+        {% assign news = site.posts | sort: 'post_date' | reverse %}
+        {% assign featured = news.first %}
+        {% include news/featured-post.html %}
+        
+        <div class="row mt-5 mb-3">
+          <div class="col-12">
+            <h2 class="editable">Latest Posts</h2>
+          </div>
+        </div>
+        {% for post in news offset: 1 %}
+          {% include news/post-list-item.html %}
+          
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
