@@ -30,7 +30,7 @@ layout: default
   <div class="container">
     <div class="row my-5">
       <div class="col-12">
-        <div class="text-center animate fade-up">
+        <div class="text-center animate fade-up {% if forloop.first %}pt-5 {% endif %}">
           <h2>{{ stat_section.title }}</h2>
         </div>
       </div>
