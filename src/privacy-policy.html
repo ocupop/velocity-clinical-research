@@ -1,0 +1,189 @@
+---
+layout: default
+title: Privacy Policy
+meta:
+hero:
+  - image: /uploads/capabilities-header2x.jpg
+    title:
+    subtitle:
+    color_overlay: false
+values:
+  - title: Doing the right thing
+    image: /uploads/MaskGroup126@2x.jpg
+    description: >-
+      We seek to act with compassion, be kind to each other, be useful and
+      remain authentic
+  - title: Efficiency
+    image: /uploads/group-4362x.jpg
+    description: >-
+      We seek to accomplish more by doing less, improving our productivity by
+      working smarter.
+  - title: Passion
+    image: /uploads/group-4332x.jpg
+    description: We do amazing things because our goals are fueled by passion
+  - title: Innovative
+    image: /uploads/MaskGroup127@2x.jpg
+    description: >-
+      We endeavor to keep our brains sharp by thinking differently, looking to
+      solve problems in ways we have not seen before. We approach "crazy" with
+      respect and a fresh perspective.
+  - title: Integrity
+    image: /uploads/group-4352x.jpg
+    description: 'Doing the right thing always, with a moral compass that doesn''t waver.'
+  - title: Progressive
+    image: /uploads/MaskGroup125@2x.jpg
+    description: >-
+      We believe in change and progress, open to new ways of doing things, both
+      in our work and in our lives.
+  - title: Quality
+    image: /uploads/MaskGroup128@2x.jpg
+    description: >-
+      We are committed to the pursuit of excellence, striving to be the best we
+      can and surpassing our competitors
+  - title: Reliability
+    image: /img/about/value-reliability.jpg
+    description: >-
+      On time, On budget. We are committed being dependable and trustworthy to
+      all our clients, colleagues and stakeholders.
+  - title: Trust
+    image: /img/about/value-trust.jpg
+    description: Our reliance on each other is driven by our deep confidence in each other.
+team:
+  - dr--g-paul-evans
+  - jeffrey-jensen
+  - melissa-holbrook-msn-np
+  - jamie-wilkerson-cpa-cgma
+  - craig-m-koch
+_assets:
+  - image: /img/about/Mask-Group-4.jpg
+  - image: /uploads/workshopmedia-vcr-20200817-0431-final2x.png
+---
+
+{% include hero.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto">
+        <h1 class="text-center animate fade-up editable">
+          Our Mission
+        </h1>
+        <div class="editable text-center animate fade-up">
+          <p>Velocity&rsquo;s mission is to bring innovative medical treatments to patients. We are committed to making clinical trials succeed by generating high quality data from as many patients as possible, as quickly as possible while providing exemplary patient care at every step.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="values" class="bg-light">
+  <div class="container">
+    <div class="row mb-5 position-relative">
+      <div class="col-12">
+        <div class="text-center editable animate fade-up">
+          <h2>Our Values</h2>
+        </div>
+      </div>
+      <img src="/img/dots2.png" class="dots bottom-right rellax" alt="Dots image" />
+    </div>
+    <div class="flip-card-grid position-relative">
+      {% assign counter = 0 %}
+      {% assign expandable_counter = 0 %}
+      {% for value in page.values %}
+        {% assign counter = counter | plus:1 %}
+        {% assign mod3 = counter | modulo: 3 %}
+        {% if mod3 == 0 %}
+          <div class="flip-card animate fade-up">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="mb-0 font-weight-bold text-white">{{ value.title }}</h3>
+                    </div>
+                  </div>
+                </div>
+                <img src="{{ value.image | default: site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
+              </div>
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3 class="font-weight-bold">{{ value.title }}</h3>
+                  <p>{{ value.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          {% assign expandable_counter = expandable_counter | plus:1 %}
+        {% else %}
+          <div class="flip-card animate fade-up">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rounded">
+                <div class="bg-image aspect-1x1" style="background-image: url({{ value.image | default: site.placeholder_image }})">
+                  <div class="text-overlay">
+                    <div class="overlay-content">
+                      <h3 class="text-white font-weight-bold mb-0">{{ value.title }}</h3>
+                    </div>
+                  </div>
+                </div>
+                <img src="{{ value.image | default: site.placeholder_image }}" class="img-fluid" alt="{{ value.title }} image" />
+              </div>
+              <div class="flip-card-back rounded">
+                <div class="flip-card-back-content">
+                  <h3 class="font-weight-bold mb-2 mb-lg-4">{{ value.title }}</h3>
+                  <p class="text-center">{{ value.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+</section>
+<section id="history">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <div class="bg-image aspect-4x3 mb-3 fade-in" data-lazy-type="bg-image" data-lazy-src="{{ page._assets[0].image }}" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
+        <div class="bg-image aspect-4x3 mb-3 fade-in" data-lazy-type="bg-image" data-lazy-src="{{ page._assets[1].image }}" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
+      </div>
+      <div class="col-lg-7 ml-lg-auto">
+        <h2 class="animate fade-up editable">
+          Our History
+        </h2>
+        <div class="editable animate fade-up">
+          <p>Velocity Clinical Research, headquartered in Durham, NC, is a wholly owned research site organization focused on patient engagement, quality, scalability and therapeutic breadth. Founded in 2017, Velocity now comprises 14 research sites, geographically dispersed across the United States. Collectively, our sites have been focusing on clinical study trials for over 225 years with more than 4600 successfully completed studies.</p>
+          <p>The Velocity model represents a new approach to site management. By owning and operating all sites directly, we offer consistent and highly efficient patient recruitment and engagement, and integrated study processes and systems.</p>
+          <p>Our entire organization focuses on several key principles:</p>
+          <ul>
+            <li>Volume and breadth of therapeutic capability</li>
+            <li>Quality experience for both sponsor and patients</li>
+            <li>Consistency and scalability</li>
+            <li>Expedited start-up and rapid patient enrollment</li>
+            <li>Single point of contact for study finances and issue resolution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="team" class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center animate fade-up editable">
+          Executive Team
+        </h2>
+        <div class="text-center editable animate fade-up">
+          <p>Experienced Leadership Makes a Difference</p>
+        </div>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% include team/team-list.html %}
+      </div>
+    </div>
+  </div>
+</section>
