@@ -9,36 +9,7 @@ meta:
 <!-- This is line below is for for Reachlocal advertising tracking, removal will not screw up anything-->
 <script type="text/javascript" src="//cdn.rlets.com/capture_configs/ad7/115/eeb/0744d25a20e2eb5fd8f9c99.js" async="async"></script>
 
-<section class="bg-light">
-  <div class="container">
-    <div class="row overlap-top animate fade-up">
-      <div class="col-12">
-        <div class="shadow p-3 p-lg-5 bg-white rounded position-relative">
-          <div class="row align-items-center">
-            <div class="col-6 col-lg-3 mx-auto mx-lg-0 mb-3 mb-lg-0">
-              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ location.featured_image }})"></div>
-            </div>
-            <div class="col-lg-5">
-              <h4 class="font-weight-bold mb-0">{{ location.title }}</h4>
-              <h4 class="font-weight-bold">{{ location.label }}</h4>
-              <div>
-                <p>{{ location.address }}</p>
-              </div>
-              <div>
-                <p class="mb-0"><a href="tel:{{ location.phone }}">{{ location.phone }}</a></p>
-                <p><a href="mailto:{{ location.email }}">{{ location.email }}</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="google-map bg-dark overflow-hidden">
-            {{ location.location_details.google_map_embed }}
-            {{ location.google_map_embed }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section id="location-contact" class="bg-light position-relative pt-0">
   <div class="container position-relative">
     <img src="/img/dots2.png" class="dots top-right" alt="Dots image" />
@@ -85,4 +56,34 @@ meta:
   </div>
   <img src="/uploads/locations/austin/Mask-Group-43.jpg" class="overlap-image" alt="" />
   <img src="/img/dots1.png" class="dots" alt="" />
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row overlap-top animate fade-up">
+      <div class="col-12">
+        <div class="shadow p-3 p-lg-5 bg-white rounded position-relative">
+          <div class="row align-items-center">
+            <div class="col-6 col-lg-3 mx-auto mx-lg-0 mb-3 mb-lg-0">
+              <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ location.featured_image }})"></div>
+            </div>
+            <div class="col-lg-5">
+              <h4 class="font-weight-bold mb-0">{{ location.title }}</h4>
+              <h4 class="font-weight-bold">{{ location.label }}</h4>
+              <div>
+                <p>{{ location.address }}</p>
+              </div>
+              <div>
+                <p class="mb-0"><a href="tel:{{ location.phone }}">{{ location.phone }}</a></p>
+                <p><a href="mailto:{{ location.email }}">{{ location.email }}</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="google-map bg-dark overflow-hidden">
+            {{ location.location_details.google_map_embed }}
+            {{ location.google_map_embed }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
