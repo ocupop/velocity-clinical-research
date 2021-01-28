@@ -47,7 +47,9 @@ research_sites:
                 <img src="/img/logo.svg" class="img-fluid logo d-block mx-auto mt-3 pb-4" alt="Velocity Clinical Research Logo" />
               </a>
             </h1>
-            <h2 class="text-center mt-5 editable text-dark"><strong>Trusted</strong> research, <strong>valued</strong> patients.</h2>
+            <h2 class="text-center mt-5 editable text-dark">
+             <strong>Trusted</strong> research, <strong>valued</strong> patients.
+            </h2>
           </div>
         </div>
       </div>
@@ -55,16 +57,17 @@ research_sites:
   </div>
 </section>
 <section id="prevention-research" class="bg-image aspect-auto bg-primary text-white position-relative" style="background-image: url('/img/bg-microscope.jpg')">
-  <img src="/img/dots-green-vertical.svg" class="position-absolute dots-green-vertical" alt="dots image">
-  <img src="/img/dots-blue-horizontal.svg" class="position-absolute dots-blue-horizontal" alt="dots image">
+  <img src="/img/dots-green-vertical.svg" class="position-absolute dots-green-vertical" alt="dots image" />
+  <img src="/img/dots-blue-horizontal.svg" class="position-absolute dots-blue-horizontal" alt="dots image" />
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto">
         <div class="content text-center">
-          <h2 class="text-white editable"><strong>COVID-19 Prevention Research</strong></h2>
+          <h2 class="text-white editable">
+           <strong>COVID-19 Prevention Research</strong>
+          </h2>
           <div class="editable lead">
-            <p>"The search for a coronavirus vaccine is unprecedented, not only in terms of how quickly the industry must pull
-              together to bring one to market but also in the sheer number of volunteers required."</p>
+           <p>"The search for a coronavirus vaccine is unprecedented, not only in terms of how quickly the industry must pull together to bring one to market but also in the sheer number of volunteers required."</p>
           </div>
         </div>
       </div>
@@ -76,11 +79,11 @@ research_sites:
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="content text-center">
-          <h3 class="text-cyan editable">Thank you for your interest in our studies.<br class="d-none d-lg-block">Science can't move forward without your help!</h3>
+          <h3 class="text-cyan editable">
+           Science can't move forward without your help!
+          </h3>
           <div class="editable">
-            <p>The purpose of this portal is to create a list of potential volunteers who want to take part in current or future
-              COVID-19 prevention clinical trials. You must be 18 years or older to participate. Our research coordinators will
-              reach out to you to answer your questions and see if you are suitable for any of our active or upcoming studies.</p>
+           <p>The purpose of this portal is to create a list of potential volunteers who want to take part in current or future COVID-19 prevention clinical trials. You must be 18 years or older to participate. Our research coordinators will reach out to you to answer your questions and see if you are suitable for any of our active or upcoming studies.</p>
           </div>
         </div>
       </div>
@@ -88,16 +91,17 @@ research_sites:
   </div>
 </section>
 <section id="covid-form-section" class="bg-light position-relative">
-  <img src="/img/dots-green-vertical.svg" class="dots-green-vertical" alt="dots image">
-  <img src="/img/dots-blue-horizontal.svg" class="dots-blue-horizontal" alt="dots image">
+  <img src="/img/dots-green-vertical.svg" class="dots-green-vertical" alt="dots image" />
+  <img src="/img/dots-blue-horizontal.svg" class="dots-blue-horizontal" alt="dots image" />
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
         <div class="content">
-          <h4 class="editable text-lime-green">Provide your contact information to receive participation information on COVID-19 prevention studies.</h4>
+          <h4 class="editable text-lime-green">
+           Provide your contact information to receive participation information on COVID-19 prevention studies.
+          </h4>
           <div class="editable">
-            <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this
-              information at any time.</p>
+           <p>Your information will be used only to contact you regarding Velocity research opportunities. We will not share this information at any time.</p>
           </div>
         </div>
       </div>
@@ -108,7 +112,7 @@ research_sites:
               <script src="https://www.cognitoforms.com/s/B04jtT4dY0C6ZJWIm8hgcQ"></script>
               <script>Cognito.load("forms", { id: "2" });</script>
               <div class="preloader">
-                <img src="/img/siteicon.png" alt="loading icon">
+                <img src="/img/siteicon.png" alt="loading icon" />
               </div>
             </div>
           </div>
@@ -126,8 +130,7 @@ research_sites:
             {% for site in page.research_sites %}
               <div class="card card-white mb-4">
                 <div class="image-wrapper">
-                  <div class="bg-image aspect-1x1 rounded-circle"
-                    style="background-image: url({{ site.image }})"></div>
+                  <div class="bg-image aspect-1x1 rounded-circle" style="background-image: url({{ site.image }})"></div>
                 </div>
                 
                 <div class="card-body text-center">
@@ -135,7 +138,7 @@ research_sites:
                   <p class="mb-0"><strong>{{ site.title }}</strong></p>
                 </div>
                 <div class="card-footer text-center border-0 bg-transparent">
-                  <a href="{{ site.link }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt=""></a>
+                  <a href="{{ site.link }}" class="btn btn-primary">Visit Website <img src="/img/button-arrow.svg" alt="" /></a>
                 </div>
               </div>
             {% endfor %}
