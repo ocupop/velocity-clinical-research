@@ -12,7 +12,7 @@
     <div class="{% if post.featured_image %}col-lg-8{% else %}col-12{% endif %}">
       {% assign num_categories = post.categories | size %}
       <h3 class="mt-4 mb-2 font-weight-bold">{{ post.title }}</h3>
-      <p class="text-mid">{% if post.author %}By {{ post.author }} |{% endif %} {{ post.post_date | date: "%-d/%m/%Y"}} {% if num_categories > 0 %}| {{ post.categories }}{% endif %}</p>
+      <p class="text-mid">{% if post.author %}By {{ post.author }} |{% endif %} {{ post.post_date | date: "%m/%-d/%Y"}} {% if num_categories > 0 %}| {{ post.categories }}{% endif %}</p>
       {% if post.summary_text %}
         {{ post.summary_text }}
       {% else %}
