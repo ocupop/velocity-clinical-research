@@ -57,4 +57,4 @@ During the COVID studies, we added significant square footage, bringing our tota
 
 We’ve come a long way in fighting this global pandemic but we have some dark months ahead of us. I estimate we still need roughly 150,000 volunteers across the US to participate in ongoing COVID vaccines studies. Hopefully I can be writing a post this time next year to say we finally did it.
 
-![](/uploads/velocity-clinical-research-clr.png){: width="9900" height="5400"}
+&nbsp;
