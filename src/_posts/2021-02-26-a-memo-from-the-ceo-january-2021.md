@@ -15,7 +15,7 @@ related_locations:
 
 When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.&nbsp;
 
-In fact, Velocity Clinical Research is the only North American site company to have worked across all COVID vaccine studies in the U.S., including all six funded by Operation Warp Speed. In a matter of months we had recruited thousands of volunteers. This unprecedented rate of patient recruitment is a big part of why the vaccines were approved so quickly.
+In fact, Velocity Clinical Research is the only North American site company to have worked across all COVID-19 vaccine studies in the U.S., including all six funded by Operation Warp Speed. In a matter of months we had recruited thousands of volunteers. This unprecedented rate of patient recruitment is a big part of why the vaccines were approved so quickly.
 
 So when I’m asked, what do people still need to know? I have three answers for them.
 
@@ -45,7 +45,7 @@ If we locate sites close to those who want to participate in clinical research, 
 
 We are also looking more closely at diversity among our workforce and have hired people in outreach roles to build trust with communities and raise awareness of the work we do.
 
-![](/uploads/Paul Crop.jpg){: width="1050" height="1399"}
+&nbsp;
 
 **Finally, we need to make clinical trials more accessible to everyone.**
 
@@ -56,3 +56,5 @@ The restrictions COVID imposed on everyone in 2020 forced us to be creative with
 During the COVID studies, we added significant square footage, bringing our total site footprint to the equivalent of a Manhattan block. We also employed new technology to conduct visits and monitor patients, which has provided greater flexibility for both us and our volunteers.
 
 We’ve come a long way in fighting this global pandemic but we have some dark months ahead of us. I estimate we still need roughly 150,000 volunteers across the US to participate in ongoing COVID vaccines studies. Hopefully I can be writing a post this time next year to say we finally did it.
+
+![](/uploads/velocity-clinical-research-clr.png){: width="9900" height="5400"}
