@@ -4,11 +4,10 @@ title: 'Velocity Executive Memo Series, Vol. 1'
 post_date: 2021-01-29 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
-  - Memo
-  - Executive
-  - Covid-19
-  - diversity
-  - vaccine
+  - Executive Memo
+  - COVID-19
+  - Vaccine
+  - Diversity
 author: Dr. Paul Evans
 summary_text: 'A memo from the Chief Executive and President, Dr Paul Evans'
 source:
