@@ -13,7 +13,9 @@ related_locations:
 
 **Velocity Clinical Research<br>A memo from the Chief Executive and President, Dr Paul Evans**
 
-When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.
+When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had
+
+all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.
 
 In fact, Velocity Clinical Research is the only North American site company to have worked across all COVID vaccine studies in the U.S., including all six funded by Operation Warp Speed. In a matter of months we had recruited thousands of volunteers. This unprecedented rate of patient recruitment is a big part of why the vaccines were approved so quickly.
 
