@@ -2,7 +2,7 @@
 layout: post
 title: 'A Memo from the CEO, January 2021'
 post_date: 2021-01-29 00:00:00
-featured_image:
+featured_image: /uploads/Executive Memo Series.jpg
 categories:
 author: Dr. Paul Evans
 summary_text: 'A memo from the Chief Executive and President, Dr Paul Evans'
