@@ -2,7 +2,7 @@
 layout: post
 title: 'A Memo from the CEO, January 2021'
 post_date: 2021-01-29 00:00:00
-featured_image: /uploads/velocity-paul-1.jpg
+featured_image: /uploads/Paul Crop.jpg
 categories:
 author: Dr. Paul Evans
 summary_text: 'A memo from the Chief Executive and President, Dr Paul Evans'
@@ -13,7 +13,7 @@ related_locations:
 
 **Velocity Clinical Research<br>A memo from the Chief Executive and President, Dr Paul Evans**
 
-![](/uploads/paul-crop.jpg){: width="1050" height="1399"}When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.
+When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.
 
 In fact, Velocity Clinical Research is the only North American site company to have worked across all COVID vaccine studies in the U.S., including all six funded by Operation Warp Speed. In a matter of months we had recruited thousands of volunteers. This unprecedented rate of patient recruitment is a big part of why the vaccines were approved so quickly.
 
@@ -21,7 +21,7 @@ So when I’m asked, what do people still need to know? I have three answers for
 
 &nbsp;
 
-**Firstly, our work here is not done. **
+\*\*Firstly, our work here is not done. \*\*
 
 It is fantastic to have three vaccines already approved, but if we are going to limit the spread of this virus in the U.S., let alone the rest of the world, then we need more than two or three vaccines.
 
