@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Executive Memo Series, Vol. 2'
+title: 'Velocity Executive Memo Series, Vol. 2'
 post_date: 2021-03-01 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
