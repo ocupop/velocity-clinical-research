@@ -5,8 +5,6 @@ post_date: 2021-03-01 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
   - Executive Memo
-  - COVID-19
-  - Vaccine
 author: Dr. Paul Evans
 summary_text: What do teenagers and over 65s have in common?
 source:
@@ -41,7 +39,7 @@ When it comes to volunteer recruitment, we’re back to where we started. And by
 
 Patient recruitment is the biggest barrier to rapid drug development and has only been made easier for COVID research thanks to increased media coverage. 80% of new drugs are late to market and 50% of this occurs at the trial phase.
 
-However, protocols with an active control -- meaning, the vaccine is tested against a previously approved vaccine rather than a placebo -- could solve the recruitment problem because volunteers are guaranteed to get an active vaccine. There will always be people who cannot access vaccines easily, especially in countries with complex healthcare systems like the U.S.
+However, protocols with an active control – meaning, the vaccine is tested against a previously approved vaccine rather than a placebo – could solve the recruitment problem because volunteers are guaranteed to get an active vaccine. There will always be people who cannot access vaccines easily, especially in countries with complex healthcare systems like the U.S.
 
 ![](/uploads/velocity-paul.jpg){: width="600" height="600"}
 
