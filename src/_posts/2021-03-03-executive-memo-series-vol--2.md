@@ -2,7 +2,7 @@
 layout: post
 title: 'Executive Memo Series, Vol. 2'
 post_date: 2021-03-01 00:00:00
-featured_image:
+featured_image: /uploads/Executive Memo Series.jpg
 categories:
   - Executive Memo
 author: Dr. Paul Evans
@@ -11,8 +11,6 @@ source:
 source_url:
 related_locations:
 ---
-![](/uploads/Executive Memo Series.jpg){: width="1280" height="391"}
-
 **Velocity Clinical Research<br>A memo from the Chief Executive and President, Dr Paul Evans**
 
 > **What do teenagers and over 65s have in common?**
