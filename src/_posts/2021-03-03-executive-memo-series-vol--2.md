@@ -2,7 +2,7 @@
 layout: post
 title: 'Executive Memo Series, Vol. 2'
 post_date: 2021-03-01 00:00:00
-featured_image: /uploads/Paul Crop.jpg
+featured_image:
 categories:
   - Executive Memo
 author: Dr. Paul Evans
