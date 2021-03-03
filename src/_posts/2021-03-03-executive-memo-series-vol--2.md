@@ -15,7 +15,7 @@ related_locations:
 
 > **What do teenagers and over 65s have in common?**
 
-Until recently, they were both very easy to recruit to COVID vaccine studies.&nbsp; Unfortunately, it’s becoming increasingly more difficult to recruit people over 65 for COVID studies. The opposite is true for teenagers.
+Until recently, they were both very easy to recruit to COVID vaccine studies. &nbsp; Unfortunately, it’s becoming increasingly more difficult to recruit people over 65 for COVID studies. The opposite is true for teenagers.
 
 **Teenagers are easier to recruit than adults**
 
