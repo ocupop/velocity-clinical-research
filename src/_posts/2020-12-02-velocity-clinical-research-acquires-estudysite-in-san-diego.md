@@ -7,7 +7,7 @@ categories:
   - Acquisitions
 author:
 summary_text:
-source:
+source: Yahoo Finance
 source_url: >-
   https://finance.yahoo.com/news/velocity-clinical-research-acquires-estudysite-140000932.html?guccounter=1
 related_locations:
