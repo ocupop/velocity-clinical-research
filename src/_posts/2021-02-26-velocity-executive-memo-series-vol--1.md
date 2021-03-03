@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Velocity Executive Memo Series, Vol. 1'
-post_date: 2021-01-29 00:00:00
+post_date: 2021-02-01 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
 author: Dr. Paul Evans
