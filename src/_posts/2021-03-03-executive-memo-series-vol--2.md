@@ -17,6 +17,8 @@ related_locations:
 
 Until recently, they were both very easy to recruit to COVID vaccine studies. &nbsp; Unfortunately, it’s becoming increasingly more difficult to recruit people over 65 for COVID studies. The opposite is true for teenagers.
 
+&nbsp;
+
 **Teenagers are easier to recruit than adults**
 
 Recruiting for the adolescent trials has progressed very well and ahead of our expectations. So far, over 1,000 volunteers have signed up to the Moderna adolescent COVID vaccine trial we’re running at our site, which is a third of their US study.&nbsp;
