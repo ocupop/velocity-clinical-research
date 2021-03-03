@@ -4,7 +4,6 @@ title: 'Executive Memo Series, Vol. 2'
 post_date: 2021-03-01 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
-  - Executive Memo
 author: Dr. Paul Evans
 summary_text: What do teenagers and over 65s have in common?
 source:
