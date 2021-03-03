@@ -4,17 +4,12 @@ title: 'Velocity Executive Memo Series, Vol. 1'
 post_date: 2021-01-29 00:00:00
 featured_image: /uploads/Executive Memo Series.jpg
 categories:
-  - Executive Memo
-  - COVID-19
-  - Vaccine
-  - Diversity
 author: Dr. Paul Evans
-summary_text: 'A memo from the Chief Executive and President, Dr Paul Evans'
+summary_text: 'COVID-19, Our work is not done.'
 source:
 source_url:
 related_locations:
 ---
-
 **Velocity Clinical Research<br>A memo from the Chief Executive and President, Dr Paul Evans**
 
 When my colleagues and I heard the Moderna, Pfizer and AstraZeneca vaccines had all received EUAs in the U.S. and Europe last year, as humans we felt relief, and as professionals we felt pride, having worked on all three studies.&nbsp;
