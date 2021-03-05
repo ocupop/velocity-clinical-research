@@ -2,7 +2,7 @@
 layout: post
 title: 'Velocity Executive Memo Series, Vol. 1'
 post_date: 2021-02-01 00:00:00
-featured_image: /uploads/Executive Memo Series.jpg
+featured_image: /uploads/Executive-Memo-Series.jpg
 categories:
 author: Dr. Paul Evans
 summary_text: 'COVID-19, Our work is not done.'
