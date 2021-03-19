@@ -5,7 +5,7 @@ image: /uploads/melissa-cropped-for-web-site-1.jpg
 role: 'Vice President, Operations'
 company:
 phone: 919.417.8384
-linkedin_url:
+linkedin_url: 'https://www.linkedin.com/in/melissa-holbrook-3964a410/'
 ---
 
 Melissa joined Velocity Clinical after 13 years at IQVIA, where she held increasing responsibility over a range of roles in clinical operations and site management. Added to her previous experience at Duke Clinical Research Institute (DCRI) and Duke University Medical Center, Melissa is an expert at driving best business practices while still keeping first-class patient care as priority one. Melissa holds a Master of Science in Nursing from Duke University and a BS in Nursing from Winston-Salem State University.
