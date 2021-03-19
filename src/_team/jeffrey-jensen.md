@@ -5,7 +5,7 @@ image: /uploads/velocity-jeff.jpg
 role: 'Senior Vice President, Corporate Development'
 company:
 phone: +1 425.941.0352
-linkedin_url:
+linkedin_url: 'https://www.linkedin.com/in/jeffreyjensen/'
 ---
 
 Jeff brings a broad range of clinical site experience to Velocity, having spent 8 years on the site services side of the business with Radiant Research and another 8 years as a consultant in the industry. Jeff holds an MBA in Finance and Marketing from the University of Notre Dame and a BA in Finance from the University of Washington.
