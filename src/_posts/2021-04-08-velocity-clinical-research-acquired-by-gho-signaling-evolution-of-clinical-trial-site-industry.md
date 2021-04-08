@@ -1,6 +1,8 @@
 ---
 layout: post
-title: GHO Capital Acquires Velocity Clinical Research
+title: >-
+  Velocity Clinical Research acquired by GHO signaling evolution of clinical
+  trial site industry
 post_date: 2021-04-08 00:00:00
 featured_image: /GHOWebsite.jpg
 categories:
